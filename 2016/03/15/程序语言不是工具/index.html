@@ -1,0 +1,740 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="编程," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="程序语言不是工具在谈论到程序语言的好坏的时候，总是有人说：“程序语言只是一种工具。只要你的算法好，不管用什么语言都能写出一样好的程序。”在本科第一堂编程课上，我的教授就这么对我们说。可是现在我却发现，这是一个根本错误的说法。
+我不知道这种说法确切的来源，然而昨天在浏览网页的时候，偶然发现了 C++ 的设计者 Bjarne Stroustrup 的一些类似的说法。这些说法来自于 2007 年 MIT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序语言不是工具">
+<meta property="og:url" content="http://yoursite.com/2016/03/15/程序语言不是工具/index.html">
+<meta property="og:site_name" content="Wushuang’blog">
+<meta property="og:description" content="程序语言不是工具在谈论到程序语言的好坏的时候，总是有人说：“程序语言只是一种工具。只要你的算法好，不管用什么语言都能写出一样好的程序。”在本科第一堂编程课上，我的教授就这么对我们说。可是现在我却发现，这是一个根本错误的说法。
+我不知道这种说法确切的来源，然而昨天在浏览网页的时候，偶然发现了 C++ 的设计者 Bjarne Stroustrup 的一些类似的说法。这些说法来自于 2007 年 MIT">
+<meta property="og:image" content="http://www.yinwang.org/images/osha-goggle.jpg">
+<meta property="og:updated_time" content="2016-03-15T10:35:05.107Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="程序语言不是工具">
+<meta name="twitter:description" content="程序语言不是工具在谈论到程序语言的好坏的时候，总是有人说：“程序语言只是一种工具。只要你的算法好，不管用什么语言都能写出一样好的程序。”在本科第一堂编程课上，我的教授就这么对我们说。可是现在我却发现，这是一个根本错误的说法。
+我不知道这种说法确切的来源，然而昨天在浏览网页的时候，偶然发现了 C++ 的设计者 Bjarne Stroustrup 的一些类似的说法。这些说法来自于 2007 年 MIT">
+<meta name="twitter:image" content="http://www.yinwang.org/images/osha-goggle.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 程序语言不是工具 | Wushuang’blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Wushuang’blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                程序语言不是工具
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T16:38:57+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="程序语言不是工具"><a href="#程序语言不是工具" class="headerlink" title="程序语言不是工具"></a>程序语言不是工具</h1><p>在谈论到程序语言的好坏的时候，总是有人说：“程序语言只是一种工具。只要你的算法好，不管用什么语言都能写出一样好的程序。”在本科第一堂编程课上，我的教授就这么对我们说。可是现在我却发现，这是一个根本错误的说法。</p>
+<p>我不知道这种说法确切的来源，然而昨天在浏览网页的时候，偶然发现了 C++ 的设计者 Bjarne Stroustrup 的一些类似的说法。这些说法来自于 2007 年 MIT Technology Review 对 Stroustrup 的<a href="http://www.technologyreview.com/qa/407076/bjarne-stroustrup" target="_blank" rel="external">采访</a>。</p>
+<ul>
+<li><p>问：一个好的语言是什么样的？<br>Stroustrup：所有能帮助人们表达他们的想法的东西都会让语言更好。一个语言在一个好的工匠手里应该能胜任每天的任务。语言是否优美是次要的问题。被认为是丑陋的语言开发出来的有用的系统，比优美的语言开发出来的系统要多得多。</p>
+</li>
+<li><p>问：优雅难道不重要吗？<br>Stroustrup：优雅很重要，可是你如何衡量“优雅”？可以表达问题答案的最少字数？我觉得我们应该看构造出来的应用程序的优雅程度，而不是语言自身的优雅程度。就像你不能把木工的一套复杂的工具（很多是危险的工具）叫做“优雅”一样。但是我的餐桌和椅子却真的很优雅，很美。当然，如果一个语言本身也很美，那当然最好。</p>
+</li>
+</ul>
+<h3 id="一些基本的错误"><a href="#一些基本的错误" class="headerlink" title="一些基本的错误"></a>一些基本的错误</h3><p>对这两个回答，我都不满意，我觉得这只是他对于 C++ 的恶劣设计的借口而已。下面我对其中几个说法进行质疑：</p>
+<blockquote>
+<p>所有能帮助人们表达他们的想法的东西都会让语言更好。</p>
+</blockquote>
+<p>作为一个程序语言，并不是好心想“帮助人”就可以说是好的。如果是这样的话，那么我就可以把所有国家的脏话都加到你的语言里面，因为它们可以帮助我们骂人。</p>
+<blockquote>
+<p>被认为是丑陋的语言开发出来的有用的系统，比优美的语言开发出来的系统要多得多。</p>
+</blockquote>
+<p>系统的数量再多也不能说明这个语言好。正好相反，众多的系统由于语言的一些设计失误，把人们的生命置于危险之中，这说明了这个语言的危害性之大。一种像炸药一样的语言，用的人越多越是危险。</p>
+<h3 id="语言不是工具，而是材料"><a href="#语言不是工具，而是材料" class="headerlink" title="语言不是工具，而是材料"></a>语言不是工具，而是材料</h3><p>我这篇文章想说的最关键的部分，其实是他所支持的“语言工具论”的错误。</p>
+<p>Stroustrup 说：</p>
+<blockquote>
+<p>我觉得我们应该看构造出来的应用程序的优雅程度，而不是语言自身的优雅程度。就像你不能把木工的一套复杂的工具（很多是危险的工具）叫做“优雅”一样。但是我的餐桌和椅子却很优雅，很美。</p>
+</blockquote>
+<p>他的言下之意就是把程序语言比作木工的工具，而餐桌也椅子就是这些工具做出来的产品。比方的威力是很大的，很多人一见到大牛给出这么形象的比方，想都不用想就接受了。如果你不仔细分析的话，这貌似一个恰当的比方，然而经过仔细推敲，这却是错误的比方。这是因为程序语言其实不是一种“工具”，而是一种“材料”。</p>
+<p>木工不会把自己的锯子，墨线等东西放进餐桌和椅子里面，而程序员却需要把语言的代码放到应用程序里面。虽然这些程序经过了编译器的转化，但是程序本身却仍然带有语言的特征。这就像一种木材经过墨线和锯子的加工，仍然是同样的木材。一个 C++ 的程序在编译之后有可能产生内存泄漏和下标越界等低级错误，而更加安全的语言却不会出现这个问题。</p>
+<p>所以在这个比方里面，程序语言所对应的应该是木工所用的木料，钉子和粘胶等“材料”，而不是锯子和墨线等“工具”。这些材料其实随着应用程序一起，到了用户的手里。那么对应木工工具的是什么呢？是 Emacs, vi, Eclipse，Visual Studio 等编程环境，以及各种编译器，调试器，make，界面设计工具，等等。这些真正的“工具”丑一点，真的暂时无所谓。</p>
+<p>现在你还觉得程序语言的优雅程度是次要的问题吗？一个复杂而不安全的语言就像劣质的木料和粘胶。它不但会让餐桌和椅子的美观程度大打折扣，而且会造成它们结构的不牢靠，以至于威胁到用户的生命安全。同时它还可能会造成木工的工作效率低下以及工伤的产生。</p>
+<p>这也许就是为什么我的一个同事说，他看 C++ 代码的时候都会带上 OSHA（美国职业安全与健康管理局）批准的护目镜。</p>
+<p><img src="http://www.yinwang.org/images/osha-goggle.jpg" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/编程/" rel="tag">#编程</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/15/谈谈 Currying/" rel="prev" title="谈谈 Currying">
+                谈谈 Currying <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/person.jpg"
+               alt="Wu Shuang" />
+          <p class="site-author-name" itemprop="name">Wu Shuang</p>
+          <p class="site-description motion-element" itemprop="description">胡编一通，乱写一气。猴赛雷。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.ruanyifeng.com/blog/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 阮一峰
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序语言不是工具"><span class="nav-number">1.</span> <span class="nav-text">程序语言不是工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一些基本的错误"><span class="nav-number">1.0.1.</span> <span class="nav-text">一些基本的错误</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语言不是工具，而是材料"><span class="nav-number">1.0.2.</span> <span class="nav-text">语言不是工具，而是材料</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wu Shuang</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+
+</body>
+</html>
