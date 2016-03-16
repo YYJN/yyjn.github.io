@@ -65,7 +65,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/03/15/关于语言的思考/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
 <meta property="og:description" content="关于语言的思考之前写了那么多 Haskell 的不好的地方，却没有提到它好的地方，其实我必须承认我从 Haskell 身上学到了非常重要的东西，那就是对于“类型”的思考。虽然 Haskell 的类型系统有过于强烈的约束性，从一种“哲学”的角度（不是数学的角度）来看非常“不自然”，但如果一个程序员从来没学过 Haskell，那么他的脑子里就会缺少一种重要的东西。这种东西很难从除 Haskell，ML">
-<meta property="og:updated_time" content="2016-03-15T11:07:54.284Z">
+<meta property="og:updated_time" content="2016-03-15T15:58:05.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于语言的思考">
 <meta name="twitter:description" content="关于语言的思考之前写了那么多 Haskell 的不好的地方，却没有提到它好的地方，其实我必须承认我从 Haskell 身上学到了非常重要的东西，那就是对于“类型”的思考。虽然 Haskell 的类型系统有过于强烈的约束性，从一种“哲学”的角度（不是数学的角度）来看非常“不自然”，但如果一个程序员从来没学过 Haskell，那么他的脑子里就会缺少一种重要的东西。这种东西很难从除 Haskell，ML">
@@ -302,10 +302,10 @@
       
         <h1 id="关于语言的思考"><a href="#关于语言的思考" class="headerlink" title="关于语言的思考"></a>关于语言的思考</h1><p>之前写了那么多 Haskell 的不好的地方，却没有提到它好的地方，其实我必须承认我从 Haskell 身上学到了非常重要的东西，那就是对于“类型”的思考。虽然 Haskell 的类型系统有过于强烈的约束性，从一种“哲学”的角度（不是数学的角度）来看非常“不自然”，但如果一个程序员从来没学过 Haskell，那么他的脑子里就会缺少一种重要的东西。这种东西很难从除 Haskell，ML，Clean，Coq，Agda 以外的其它语言身上学到。</p>
 <h3 id="Haskell-给我的启发"><a href="#Haskell-给我的启发" class="headerlink" title="Haskell 给我的启发"></a>Haskell 给我的<a href="http://www.yinwang.org/blog-cn/2013/04/12/inspiration" target="_blank" rel="external">启发</a></h3><p>一个没有学过 Haskell 的 Scheme 程序员最容易犯的一个错误就是，把除 #f（Scheme 的逻辑“假”） 以外的任何值都作为 #t（Scheme 的逻辑“真”）。很多人认为这是 Scheme 的一个“特性”，可是殊不知这其实是 Scheme 的极少数缺点之一。如果你了解 Lisp 的历史，就会发现在最早的时候，Lisp 把 nil（空链表）这个值作为“假”来使用，而把 nil 以外的其它值都当成“真”。这带来了逻辑思维的混乱。</p>
-<p>Scheme 对 Lisp 的这种混乱做法采取了一定的改进，所以在 Scheme 里面，空链表 ‘() 和逻辑“假”值 #f 被划分开来。这是很显然的事情，一个是链表，一个是 bool，怎么能混为一谈。Lisp 的这个错误影响到了很多其它的语言，比如 C 语言。C 语言把 0 作为“假”，而把不是 0 的值全都作为“真”。所以你就看到有些自作聪明的 C 程序员写出这样的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int i = 0;</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">if (i++) &#123; ...&#125;</span><br></pre></td></tr></table></figure></p>
-<p>Scheme 停止把 nil 作为“假”，却仍然把不是 #f 的值全都作为“真”。Scheme 的崇拜者一般都告诉你，这样做的好处是，你可以使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(or x y z)</span><br></pre></td></tr></table></figure></p>
-<p>这样的表达式，如果其中有一个不是 #f，那么这个表达式会直接返回它实际的值，而不只是 #t。然后你就可以写这样的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(cond</span><br><span class="line"> [(or x y z)</span><br><span class="line">  =&gt; (lambda (found)</span><br><span class="line">       (do-something-with found))])</span><br></pre></td></tr></table></figure></p>
-<p>而不是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(let ([found (first-non-false x y z)])</span><br><span class="line">  (cond</span><br><span class="line">   [(not (eq? found #f))</span><br><span class="line">    (do-something-with found)]))</span><br></pre></td></tr></table></figure></p>
+<p>Scheme 对 Lisp 的这种混乱做法采取了一定的改进，所以在 Scheme 里面，空链表 ‘() 和逻辑“假”值 #f 被划分开来。这是很显然的事情，一个是链表，一个是 bool，怎么能混为一谈。Lisp 的这个错误影响到了很多其它的语言，比如 C 语言。C 语言把 0 作为“假”，而把不是 0 的值全都作为“真”。所以你就看到有些自作聪明的 C 程序员写出这样的代码：<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int i = <span class="number">0</span>;</span><br><span class="line"><span class="attr">...</span></span><br><span class="line"><span class="attr">...</span></span><br><span class="line"><span class="keyword">if</span> (i++) &#123; <span class="attr">...</span>&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Scheme 停止把 nil 作为“假”，却仍然把不是 #f 的值全都作为“真”。Scheme 的崇拜者一般都告诉你，这样做的好处是，你可以使用<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">or</span></span> x y z)</span><br></pre></td></tr></table></figure></p>
+<p>这样的表达式，如果其中有一个不是 #f，那么这个表达式会直接返回它实际的值，而不只是 #t。然后你就可以写这样的代码：<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">cond</span></span></span><br><span class="line"> [(<span class="name"><span class="builtin-name">or</span></span> x y z)</span><br><span class="line">  =&gt; (<span class="name">lambda</span> (<span class="name">found</span>)</span><br><span class="line">       (<span class="name">do-something-with</span> found))])</span><br></pre></td></tr></table></figure></p>
+<p>而不是：<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">let</span></span> ([found (<span class="name">first-non-false</span> x y z)])</span><br><span class="line">  (<span class="name"><span class="builtin-name">cond</span></span></span><br><span class="line">   [(<span class="name"><span class="builtin-name">not</span></span> (<span class="name">eq?</span> found #f))</span><br><span class="line">    (<span class="name">do-something-with</span> found)]))</span><br></pre></td></tr></table></figure></p>
 <p>第一段代码使用了 Scheme 的一个特殊“语法”，=&gt; 后面的 (lambda (found) …) 会把 (or x y z) 返回的值作为它的参数 found，然后返回函数计算出的结果。第二段代码没有假设任何不是 #f 的值都是“真”，所以它不把 (or x y z) 放进 cond 的条件里，而是首先把它返回的值绑定到 found，然后再把这个值放进 cond 的条件。</p>
 <p>这第二段代码比第一段代码多了一个 let，增加了一层缩进，貌似更加复杂了，所以很多人觉得把不是 #f 的值全都作为“真”这一做法是合理的。其实 Scheme 为了达到这个目的，恰好犯了“片面追求短小”的语言设计的小聪明（参考这篇<a href="http://www.yinwang.org/blog-cn/2013/03/15/language-design-mistake1" target="_blank" rel="external">博文</a>）。为了让这种情况变得短小而损失类型的准确，这种代价是非常不值得的。</p>
 <p>Haskell 的类型系统就是帮助你严密的思考类似关于类型的问题的。如果你从来没学过 Haskell，你就不会发现这里面其实有个类型错误。可是 Haskell 做得过分了一点，由于对类型推导，一阶逻辑和 category theory 等理论的盲目崇拜，Haskell 里面引入了很多不必要的复杂性。</p>
@@ -425,7 +425,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -433,7 +433,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

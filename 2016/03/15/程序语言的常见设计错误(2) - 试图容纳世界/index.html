@@ -67,7 +67,7 @@
 <meta property="og:site_name" content="Wushuang’blog">
 <meta property="og:description" content="程序语言的常见设计错误(2) - 试图容纳世界之前的一篇文章里，我谈到了程序语言设计的一个常见错误倾向：片面追求短小，它导致了一系列的历史性的设计错误。今天我来谈一下另外一种错误的倾向，这种倾向也导致了很多错误，并且继续在导致错误的产生。
 今天我要说的错误倾向叫做“试图容纳世界”。这个错误导致了 Python，Ruby 和 JavaScript 等“动态语言”里面的一系列问题。我给 Python">
-<meta property="og:updated_time" content="2016-03-15T11:07:09.931Z">
+<meta property="og:updated_time" content="2016-03-15T15:57:51.413Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序语言的常见设计错误(2) - 试图容纳世界">
 <meta name="twitter:description" content="程序语言的常见设计错误(2) - 试图容纳世界之前的一篇文章里，我谈到了程序语言设计的一个常见错误倾向：片面追求短小，它导致了一系列的历史性的设计错误。今天我来谈一下另外一种错误的倾向，这种倾向也导致了很多错误，并且继续在导致错误的产生。
@@ -309,7 +309,7 @@
 <p>但是 Python 觉得，程序应该可以随时创建或者删除这些 field。所以，你可以给一个特定的人增加一个 field，比如叫做“第三只手”。你也可以删除它的某个 field，比如“头”。Python 认为这更加符合这个世界的工作原理，有些人就是可以没有头，有些人又多长了一只手。</p>
 <p>好吧，这真是太方便了。然后你就遇到这样的问题，你要给这世界上的每个人戴一顶帽子。当你写这段代码的时候，你意识中每个人都有头，所以你写了一个函数叫做 putOnHat，它的输入参数是任意一个人，然后它会给他（她）的头上戴上帽子。然后你想把这个函数 map 到一个国家的所有人的集合。</p>
 <p>然而你没有想到的是，由于 Python 提供的这种“描述世界的能力”，其它写代码的人制造出各种你想都没想到的怪人。比如，无头人，或者有三只手，六只眼的人，…… 然后你就发现，无论你的 putOnHat 怎么写，总是会出意外。你惊讶的发现居然有人没有头！最悲惨的事情是，当你费了几个月时间和相当多的能源，给好几亿人戴上了帽子之后，才忽然遇到一个无头人，所以程序当掉了。然而即使你知道程序有 bug，你却很难找出这些无头人是从哪里来的，因为他们来到这个国家的道路相当曲折，绕了好多道弯。为了重现这个 bug，你得等好几个月，它还不一定会出现…… 这就是所谓 <a href="http://www.yinwang.org/blog-cn/2013/04/14/terminology" target="_blank" rel="external">Higgs-Bugson</a> 吧。</p>
-<p>怎么办呢？所以你想出了一个办法，把“正常人”单独放在一个列表里，其它的怪人另外处理。于是你就希望有一个办法，让别人无法把那些怪人放进这个列表里。你想要的其实就是 Java 里的“类型”，像这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;有一个头和两只手的正常人&gt; normalPeople;</span><br></pre></td></tr></table></figure></p>
+<p>怎么办呢？所以你想出了一个办法，把“正常人”单独放在一个列表里，其它的怪人另外处理。于是你就希望有一个办法，让别人无法把那些怪人放进这个列表里。你想要的其实就是 Java 里的“类型”，像这样：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List<span class="tag">&lt;<span class="name">有一个头和两只手的正常人</span>&gt;</span> normalPeople;</span><br></pre></td></tr></table></figure></p>
 <p>很可惜，Python 不提供给你这种机制，因为这种机制按照 Python 的“哲学”，不足以容纳这个世界的博大精深的万千变化。让程序员手工给参数和变量写上类型，被认为是“过多的劳动”。</p>
 <p>这个问题也存在于 JavaScript 和 Ruby。</p>
 <p>语言的设计者们都应该明白，程序语言不是用来“构造世界”的，而只是对它进行简单的模拟。试图容纳世界的倾向，没带来很多好处，没有节省程序员很多精力，却使得代码完全没有规则可言。这就像生活在一个没有规则，没有制度，没有法律的世界，经常发生无法预料的事情，到处跑着没有头，三只手，六只眼的怪人。这是无穷无尽的烦恼和时间精力的浪费。</p>
@@ -336,8 +336,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/程序语言不是工具/" rel="next" title="程序语言不是工具">
-                <i class="fa fa-chevron-left"></i> 程序语言不是工具
+              <a href="/2016/03/15/程序语言的常见设计错误(1) - 片面追求短小/" rel="next" title="程序语言的常见设计错误(1) - 片面追求短小">
+                <i class="fa fa-chevron-left"></i> 程序语言的常见设计错误(1) - 片面追求短小
               </a>
             
           </div>
@@ -418,7 +418,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">34</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -426,7 +426,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
