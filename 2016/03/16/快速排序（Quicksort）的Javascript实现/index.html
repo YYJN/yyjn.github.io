@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="转摘," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -59,31 +59,38 @@
 
 
 
-<meta name="description" content="爱因斯坦谈教育继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。
+<meta name="description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
+  
 
-我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。
-世界上已经有太多的教育，特别是在美国的学校里面。
-教育的唯一理性的方式是自己做一个榜样——如果实在不行，你可以做一个反例。
-教一个">
+“快速排">
 <meta property="og:type" content="article">
-<meta property="og:title" content="爱因斯坦谈教育">
-<meta property="og:url" content="http://yoursite.com/2016/03/15/爱因斯坦谈教育/index.html">
+<meta property="og:title" content="快速排序（Quicksort）的Javascript实现">
+<meta property="og:url" content="http://yoursite.com/2016/03/16/快速排序（Quicksort）的Javascript实现/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
-<meta property="og:description" content="爱因斯坦谈教育继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。
+<meta property="og:description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
+  
 
-我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。
-世界上已经有太多的教育，特别是在美国的学校里面。
-教育的唯一理性的方式是自己做一个榜样——如果实在不行，你可以做一个反例。
-教一个">
-<meta property="og:updated_time" content="2016-03-15T11:04:21.320Z">
+“快速排">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040401_0.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040402.jpg">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040403.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040404.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040405.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040406.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040407.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040408.png">
+<meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040409.png">
+<meta property="og:updated_time" content="2016-03-16T02:46:17.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="爱因斯坦谈教育">
-<meta name="twitter:description" content="爱因斯坦谈教育继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。
+<meta name="twitter:title" content="快速排序（Quicksort）的Javascript实现">
+<meta name="twitter:description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
+  
 
-我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。
-世界上已经有太多的教育，特别是在美国的学校里面。
-教育的唯一理性的方式是自己做一个榜样——如果实在不行，你可以做一个反例。
-教一个">
+“快速排">
+<meta name="twitter:image" content="http://image.beekka.com/blog/201104/bg2011040401_0.png">
 
 
 
@@ -101,7 +108,7 @@
   };
 </script>
 
-  <title> 爱因斯坦谈教育 | Wushuang’blog </title>
+  <title> 快速排序（Quicksort）的Javascript实现 | Wushuang’blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +257,7 @@
             
             
               
-                爱因斯坦谈教育
+                快速排序（Quicksort）的Javascript实现
               
             
           </h1>
@@ -262,8 +269,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:04:14+08:00" content="2016-03-15">
-              2016-03-15
+            <time itemprop="dateCreated" datetime="2016-03-16T00:51:02+08:00" content="2016-03-16">
+              2016-03-16
             </time>
           </span>
 
@@ -276,8 +283,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/教育/" itemprop="url" rel="index">
-                    <span itemprop="name">教育</span>
+                  <a href="/categories/排序法/" itemprop="url" rel="index">
+                    <span itemprop="name">排序法</span>
                   </a>
                 </span>
 
@@ -292,8 +299,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/15/爱因斯坦谈教育/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/爱因斯坦谈教育/" itemprop="commentsCount"></span>
+                <a href="/2016/03/16/快速排序（Quicksort）的Javascript实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/快速排序（Quicksort）的Javascript实现/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -315,16 +322,43 @@
       
 
       
-        <h1 id="爱因斯坦谈教育"><a href="#爱因斯坦谈教育" class="headerlink" title="爱因斯坦谈教育"></a>爱因斯坦谈教育</h1><p>继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。</p>
-<blockquote>
-<p>我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。</p>
-<p>世界上已经有太多的教育，特别是在美国的学校里面。</p>
-<p>教育的唯一理性的方式是自己做一个榜样——如果实在不行，你可以做一个反例。</p>
-<p>教一个人专业知识是不够的。通过专业知识，他可以变成一个有用的机器，但却不具有和谐的人格。</p>
-<p>过分强调竞争，过早的功利化和专业化，可以杀灭所有文化生活所赖以生存的精神。</p>
-<p>独立的，批判性的思维，必须从小培养。过度的，过于多样化的科目（分数制度）会破坏这种思维的发展。</p>
-<p>教育应该是这样：被传授的知识应该被当成宝贵的礼物，而不是沉重的任务。</p>
-</blockquote>
+        <p>日本程序员norahiko，写了一个排序算法的<a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external">动画演示</a>，非常有趣。</p>
+<p><a href="http://en.wikipedia.org/wiki/Sorting_algorithm" target="_blank" rel="external">排序算法</a>（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。<br>目前，最常见的排序算法大概有七八种，其中<a href="http://en.wikipedia.org/wiki/Quicksort" target="_blank" rel="external">“快速排序”</a>（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。</p>
+<p><a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external"> <img src="http://image.beekka.com/blog/201104/bg2011040401_0.png" alt=""> </a></p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040402.jpg" alt=""></p>
+<p>“快速排序”的思想很简单，整个排序过程只需要三步：</p>
+<ol>
+<li><p>在数据集之中，选择一个元素作为”基准”（pivot）。</p>
+</li>
+<li><p>所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。</p>
+</li>
+<li><p>对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。</p>
+</li>
+</ol>
+<p>举例来说，现在有一个数据集{85, 24, 63, 45, 17, 31, 96, 50}，怎么对其排序呢？</p>
+<p>第一步，选择中间的元素45作为”基准”。（基准值可以任意选择，但是选择中间的值比较容易理解。）</p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040403.png" alt=""></p>
+<p>第二步，按照顺序，将每个元素与”基准”进行比较，形成两个子集，一个”小于45”，另一个”大于等于45”。</p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040404.png" alt=""></p>
+<p>第三步，对两个子集不断重复第一步和第二步，直到所有子集只剩下一个元素为止。</p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040405.png" alt=""></p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040406.png" alt=""></p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040407.png" alt=""></p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040408.png" alt=""></p>
+<p>下面参照网上的资料（<a href="http://acatalept.com/blog/2008/10/28/stable-quicksort-in-javascript/" target="_blank" rel="external">这里</a>和<a href="http://www.stoimen.com/blog/2010/06/11/friday-algorithms-quicksort-difference-between-php-and-javascript/" target="_blank" rel="external">这里</a>），用Javascript语言实现上面的算法。</p>
+<p>首先，定义一个quickSort函数，它的参数是一个数组。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> quickSort = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>然后，检查数组的元素个数，如果小于等于1，就返回。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> quickSort = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">　　<span class="keyword">if</span> (arr.length &lt;= <span class="number">1</span>) &#123; <span class="keyword">return</span> arr; &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>接着，选择”基准”（pivot），并将其与原数组分离，再定义两个空数组，用来存放一左一右的两个子集。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> quickSort = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">　　<span class="keyword">if</span> (arr.length &lt;= <span class="number">1</span>) &#123; <span class="keyword">return</span> arr; &#125;</span><br><span class="line">　　<span class="keyword">var</span> pivotIndex = <span class="built_in">Math</span>.floor(arr.length / <span class="number">2</span>) ;</span><br><span class="line">　　<span class="keyword">var</span> pivot = arr.splice(pivotIndex, <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">　　<span class="keyword">var</span> left = [];</span><br><span class="line">　　<span class="keyword">var</span> right = [];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>然后，开始遍历数组，小于”基准”的元素放入左边的子集，大于基准的元素放入右边的子集。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> quickSort = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">　　<span class="keyword">if</span> (arr.length &lt;= <span class="number">1</span>) &#123; <span class="keyword">return</span> arr; &#125;</span><br><span class="line">　　<span class="keyword">var</span> pivotIndex = <span class="built_in">Math</span>.floor(arr.length / <span class="number">2</span>) ;</span><br><span class="line">　　<span class="keyword">var</span> pivot = arr.splice(pivotIndex, <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">　　<span class="keyword">var</span> left = [];</span><br><span class="line">　　<span class="keyword">var</span> right = [];</span><br><span class="line">　　<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">　　　　<span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</span><br><span class="line">　　　　　　left.push(arr[i]);</span><br><span class="line">　　　　&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">　　　　　　right.push(arr[i]);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后，使用递归不断重复这个过程，就可以得到排序后的数组。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> quickSort = <span class="function"><span class="keyword">function</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">　　<span class="keyword">if</span> (arr.length &lt;= <span class="number">1</span>) &#123; <span class="keyword">return</span> arr; &#125;</span><br><span class="line">　　<span class="keyword">var</span> pivotIndex = <span class="built_in">Math</span>.floor(arr.length / <span class="number">2</span>);</span><br><span class="line">　　<span class="keyword">var</span> pivot = arr.splice(pivotIndex, <span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line">　　<span class="keyword">var</span> left = [];</span><br><span class="line">　　<span class="keyword">var</span> right = [];</span><br><span class="line">　　<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">　　　　<span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</span><br><span class="line">　　　　　　left.push(arr[i]);</span><br><span class="line">　　　　&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">　　　　　　right.push(arr[i]);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="keyword">return</span> quickSort(left).concat([pivot], quickSort(right));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>使用的时候，直接调用quickSort()就行了。</p>
+<p><img src="http://image.beekka.com/blog/201104/bg2011040409.png" alt=""></p>
+<p>（完）<br>END <a href="http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html" target="_blank" rel="external">摘自</a></p>
 
       
     </div>
@@ -339,7 +373,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/转摘/" rel="tag">#转摘</a>
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
         </div>
       
@@ -348,17 +382,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/Yoda 表示法错在哪里/" rel="next" title="Yoda 表示法错在哪里">
-                <i class="fa fa-chevron-left"></i> Yoda 表示法错在哪里
+              <a href="/2016/03/15/怎样写一个解释器/" rel="next" title="怎样写一个解释器">
+                <i class="fa fa-chevron-left"></i> 怎样写一个解释器
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/15/编辑器与IDE/" rel="prev" title="编辑器与IDE">
-                编辑器与IDE <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -384,8 +414,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/15/爱因斯坦谈教育/"
-           data-title="爱因斯坦谈教育" data-url="http://yoursite.com/2016/03/15/爱因斯坦谈教育/">
+      <div class="ds-thread" data-thread-key="2016/03/16/快速排序（Quicksort）的Javascript实现/"
+           data-title="快速排序（Quicksort）的Javascript实现" data-url="http://yoursite.com/2016/03/16/快速排序（Quicksort）的Javascript实现/">
       </div>
     
   </div>
@@ -530,7 +560,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#爱因斯坦谈教育"><span class="nav-number">1.</span> <span class="nav-text">爱因斯坦谈教育</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

@@ -47,6 +47,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="Wushuang’blog" type="application/atom+xml" />
+
 
 
 
@@ -90,6 +92,15 @@
 
   
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75158762-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -226,6 +237,127 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/16/快速排序（Quicksort）的Javascript实现/" itemprop="url">
+                  快速排序（Quicksort）的Javascript实现
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-16T00:51:02+08:00" content="2016-03-16">
+              2016-03-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/排序法/" itemprop="url" rel="index">
+                    <span itemprop="name">排序法</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/16/快速排序（Quicksort）的Javascript实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/16/快速排序（Quicksort）的Javascript实现/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/16/快速排序（Quicksort）的Javascript实现/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/15/怎样写一个解释器/" itemprop="url">
                   怎样写一个解释器
                 </a>
@@ -268,6 +400,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/怎样写一个解释器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/怎样写一个解释器/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -288,89 +427,14 @@
       
         
           
-            <h1 id="怎样写一个解释器"><a href="#怎样写一个解释器" class="headerlink" title="怎样写一个解释器"></a>怎样写一个解释器</h1><p>这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是这篇教程并不是针对编程的入门知识，所以我假设你已经学会了最基本的 Scheme 和函数式编程。我不是很推崇函数式编程，但它里面确实包含了很重要的一些方法。如果你完全不了解这些，可以读一下 SICP 的第一，二章（或者接下去读 The Little Schemer)。当然你也可以继续读这篇文章，有不懂的地方再去查资料。我在这里也会讲递归和模式匹配的原理。如果你已经了解这些东西，这里的内容也许可以加深你的理解。</p>
-<p>解释器是一种简单却又深奥的东西，以至于好多人都不会写，或者自认为会写却又不真正的会写。在这个领域里有一些历史遗留下来的误解，以至于很少有人真正的知道如何写出正确的解释器。很多“语言专家”或者“逻辑学家”的解释器代码里面有各种各样的错误，却又以谬传谬，搞得无比复杂。这误解的渊源之深，真是一言难尽。</p>
-<p>你必须从最简单的语言开始，逐步增加语言的复杂度，才能构造出正确的解释器。这篇文章就是告诉你如何写出一个最简单的语言 (lambda calculus) 的解释器，并且带有基本的的算术功能，可以作为一个高级计算器来使用。</p>
-<p>一般的程序语言课程往往从语法分析(parsing)开始，折腾 lex 和 yacc 等麻烦却不中用的工具，解决一些根本不需要存在的问题。Parsing 的作用其实只是把字符串解码成程序的语法树（AST）结构。麻烦好久得到了 AST 之后，真正的困难才开始！而很多人在写完 parser 之后就已经倒下了。鉴于这个原因，这里我用所谓的“S-expression”来表示程序的语法树（AST）结构。S-expression （加上 Lisp 对它发自“本能”的处理能力）让我们可以直接跳过 parse 的步骤，进入关键的主题：语义(semantics)。</p>
-<p>这里用的 Scheme 实现是 Racket。为了让程序简洁，我使用了 Racket 的模式匹配（pattern matching）。我对 Racket 没有特别的好感。但它安装比较方便，而且是免费的。如果你用其它的 Scheme 实现的话，恐怕要自己做一些调整。</p>
-<h1 id="解释器是什么"><a href="#解释器是什么" class="headerlink" title="解释器是什么"></a>解释器是什么</h1><p>首先我们来谈一下解释器是什么。说白了解释器跟计算器差不多。它们都接受一个“表达式”，输出一个 “结果”。比如，得到 ‘(+ 1 2) 之后就输出 3。不过解释器的表达式要比计算器的表达式复杂一些。解释器接受的表达式叫做“程序”，而不只是简单的算术表达式。从本质上讲，每个程序都是一台机器的“描述”，而解释器就是在“模拟”这台机器的运转，也就是在进行“计算”。所以从某种意义上讲，解释器就是计算的本质。当然，不同的解释器就会带来不同的计算。</p>
-<p>需要注意的是，我们的解释器接受的参数是一个表达式的“数据结构”，而不是一个字符串。这里我们用一种叫“S-expression”的数据结构来表示表达式。比如表达式 ‘(+ 1 2) 里面的内容是三个符号：’+, ‘1 和 ‘2，而不是字符串“(+ 1 2)”。从结构化的数据里面提取信息很方便，而从字符串里提取信息很麻烦，而且容易出错。</p>
-<p>从广义上讲，解释器是一个通用的概念。计算器实际上是解释器的一种形式，只不过它处理的语言比程序的解释器简单很多。也许你会发现，CPU 和人脑，从本质上来讲也是解释器，因为解释器的本质实际上是“任何用于处理语言的机器”。</p>
-<h1 id="递归定义-recursive-definition"><a href="#递归定义-recursive-definition" class="headerlink" title="递归定义 (recursive definition)"></a>递归定义 (recursive definition)</h1><p>解释器一般都是“递归程序”。之所以是递归的原因，在于它处理的数据结构（程序）本身是“递归定义”的结构。算术表达式就是一个这样的结构，比如：’(<em> (+ 1 2) (</em> (- 9 6) 4))。每一个表达式里面可以含有子表达式，子表达式里面还可以有子表达式，如此无穷无尽的嵌套。看似很复杂，其实它的定义不过是：</p>
-<p>“算术表达式”有两种形式：</p>
-<ol>
-<li>一个数</li>
-<li>一个 ‘(op e1 e2) 这样的结构（其中 e1 和 e2 是两个“算术表达式”）</li>
-</ol>
-<p>看出来哪里在“递归”了吗？我们本来在定义“算术表达式”这个概念，而它的定义里面用到了“算术表达式”这个概念本身！这就构造了一个“回路”，让我们可以生成任意深度的表达式。</p>
-<p>很多其它的数据，包括自然数，都是可以用递归来定义的。比如常见的对自然数的定义是：</p>
-<p>“自然数”有两种形式：</p>
-<ol>
-<li>零</li>
-<li>某个“自然数”的后继</li>
-</ol>
-<p>看到了吗？“自然数”的定义里面出现了它自己！这就是为什么我们有无穷多个自然数。</p>
-<p>所以可以说递归是无所不在的，甚至有人说递归就是自然界的终极原理。递归的数据总是需要递归的程序来处理。虽然递归有时候表现为另外的形式，比如循环(loop)，但是“递归”这个概念比“循环”更广泛一些。有很多递归程序不能用循环来表达，比如我们今天要写的解释器就是一个递归程序，它就不能用循环来表达。所以写出正确的递归程序，对于设计任何系统都是至关重要的。其实递归的概念不限于程序设计。在数学证明里面有个概念叫“归纳法”(induction)，比如“数学归纳法”(mathematical induction)。其实归纳法跟递归完全是一回事。</p>
-<p>我们今天的解释器就是一个递归程序。它接受一个表达式，递归的调用它自己来处理各个子表达式，然后把各个递归的结果组合在一起，形成最后的结果。这有点像二叉树遍历，只不过我们的数据结构（程序）比二叉树复杂一些。</p>
-<p>#　模式匹配和递归：一个简单的计算器</p>
-<p>既然计算器是一种最简单的解释器，那么我们为何不从计算器开始写？下面就是一个计算器，它可以计算四则运算的表达式。这些表达式可以任意的嵌套，比如 ‘(* (+ 1 2) (+ 3 4))。我想从这个简单的例子来讲一下模式匹配(pattern matching) 和递归 (recursion) 的原理。</p>
-<p>下面就是这个计算器的代码。它接受一个表达式，输出一个数字作为结果，正如上一节所示。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(define calc</span><br><span class="line">  (lambda (exp)</span><br><span class="line">    (match exp                                ; 匹配表达式的两种情况</span><br><span class="line">      [(? number? x) x]                       ; 是数字，直接返回</span><br><span class="line">      [`(,op ,e1 ,e2)                         ; 匹配并且提取出操作符 op 和两个操作数 e1, e2</span><br><span class="line">       (let ([v1 (calc e1)]                   ; 递归调用 calc 自己，得到 e1 的值</span><br><span class="line">             [v2 (calc e2)])                  ; 递归调用 calc 自己，得到 e2 的值</span><br><span class="line">         (match op                            ; 分支：处理操作符 op 的 4 种情况</span><br><span class="line">           [&apos;+ (+ v1 v2)]                     ; 如果是加号，输出结果为 (+ v1 v2)</span><br><span class="line">           [&apos;- (- v1 v2)]                     ; 如果是减号，乘号，除号，相似的处理</span><br><span class="line">           [&apos;* (* v1 v2)]</span><br><span class="line">           [&apos;/ (/ v1 v2)]))])))</span><br><span class="line">```          </span><br><span class="line"></span><br><span class="line">这里的 match 语句是一个模式匹配。它的形式是这样：</span><br></pre></td></tr></table></figure>
-<p>(match exp<br>  [模式 结果]<br>  [模式 结果]<br>   …   …<br>)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">它根据表达式 exp 的“结构”来进行“分支”操作。每一个分支由两部分组成，左边的是一个“模式”，右边的是一个结果。左边的模式在匹配之后可能会绑定一些变量，它们可以在右边的表达式里面使用。</span><br><span class="line"></span><br><span class="line">一般说来，数据的“定义”有多少种情况，用来处理它的“模式”就有多少情况。比如算术表达式有两种情况，数字或者 (op e1 e2)。所以用来处理它的 match 语句就有两种模式。“你所有的情况，我都能处理”，这就是“穷举法”。穷举的思想非常重要，你漏掉的任何一种情况，都非常有可能带来麻烦。所谓的“数学归纳法”，就是这种穷举法在自然数的递归定义上面的表现。因为你穷举了所有的自然数可能被构造的两种形式，所以你能确保定理对“任意自然数”成立。</span><br><span class="line"></span><br><span class="line">那么模式是如何工作的呢？比如 &apos;(,op ,e1 ,e2) 就是一个模式（pattern），它被用来匹配输入的 exp。模式匹配基本的原理就是匹配与它“结构相同”的数据。比如，如果 exp 是 &apos;(+ 1 2)，那么 &apos;(,op ,e1 ,e2) 就会把 op 绑定到 &apos;+，把 e1 绑定到 &apos;1，把 e2 绑定到 &apos;2。这是因为它们结构相同：</span><br></pre></td></tr></table></figure></p>
-<p>‘(,op ,e1 ,e2)<br>‘( +   1   2)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">说白了，模式就是一个可以含有“名字”（像 op, e1 和 e2）的“数据结构”，像 &apos;(,op ,e1 ,e2)。我们拿这个带有名字的结构去“匹配”实际的数据（像 &apos;(+ 1 2))。当它们一一对应之后，这些名字就自动被绑定到实际数据里相应位置的值。模式里面不但可以含有名字，也可以含有具体的数据。比如你可以构造一个模式 &apos;(,op ,e1 42)，用来匹配第二个操作数固定为 42 的那些表达式。</span><br><span class="line"></span><br><span class="line">看见左边的模式，你就像直接“看见”了输入数据的形态，然后对里面的元素进行操作。它可以让我们一次性的“拆散”(destruct) 数据结构，把各个部件（域）的值绑定到多个变量，而不需要使用多个访问函数。所以模式匹配是非常直观的编程方式，值得每种语言借鉴。很多函数式语言里都有类似的功能，比如 ML 和 Haskell。</span><br><span class="line"></span><br><span class="line">注意这里 e1 和 e2 里面的操作数还不是值，它们是表达式。我们递归的调用 interp1 自己，分别得到 e1 和 e2 的值 v1 和 v2。它们应该是数字。</span><br><span class="line"></span><br><span class="line">你注意到我们在什么地方使用了递归吗？如果你再看一下“算术表达式”的定义：</span><br><span class="line"></span><br><span class="line">“算术表达式”有两种形式：</span><br><span class="line"></span><br><span class="line"> 1. 一个数</span><br><span class="line"> 2. 一个 &apos;(op e1 e2) 这样的结构（其中 e1 和 e2 是两个“算术表达式”）</span><br><span class="line"> </span><br><span class="line">你就会发现这个定义里面“递归”的地方就是 e1 和 e2，所以 calc 在 e1 和 e2 上面递归的调用自己。如果你在数据定义的每个递归处都进行递归，那么你的递归程序就会穷举所有的情况。</span><br><span class="line"></span><br><span class="line">之后，我们根据操作符 op 的不同，对这两个值 v1 和 v2 分别进行操作。如果 op 是加号 &apos;+，我们就调用 Scheme 的加法操作，作用于 v1 和 v2，并且返回运算所得的值。如果是减号，乘号，除号，我们也进行相应的操作，返回它们的值。</span><br><span class="line"></span><br><span class="line">所以你就可以得到如下的测试结果：</span><br></pre></td></tr></table></figure></p>
-<p>(calc ‘(+ 1 2))<br>;; =&gt; 3</p>
-<p>(calc ‘(* 2 3))<br>;; =&gt; 6</p>
-<p>(calc ‘(* (+ 1 2) (+ 3 4)))<br>;; =&gt; 21<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">一个计算器就是这么简单。你可以试试这些例子，然后自己再做一些新的例子。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 什么是 lambda calculus？</span><br><span class="line"></span><br><span class="line">现在让我们过渡到一种更强大的语言：lambda calculus。它虽然名字看起来很吓人，但是其实非常简单。它的三个元素分别是是：变量，函数，调用。用传统的表达法，它们看起来就是：</span><br><span class="line">- 变量：x</span><br><span class="line">- 函数：λx.t</span><br><span class="line">- 调用：t1 t2</span><br><span class="line"></span><br><span class="line">每个程序语言里面都有这三个元素，只不过具体的语法不同，所以你其实每天都在使用 lambda calculus。用 Scheme 作为例子，这三个元素看起来就像：</span><br><span class="line"></span><br><span class="line">- 变量：x</span><br><span class="line">- 函数：(lambda (x) e)</span><br><span class="line">- 调用：(e1 e2)</span><br><span class="line"></span><br><span class="line">一般的程序语言还有很多其它的结构，可是这三个元素却是缺一不可的。所以构建解释器的最关键步骤就是把这三个东西搞清楚。构造任何一个语言的解释器一般都是从这三个元素开始，在确保它们完全正确之后才慢慢加入其它的元素。</span><br><span class="line"></span><br><span class="line">有一个很简单的思维方式可以让你直接看到这三元素的本质。记得我说过，每个程序都是一个“机器的描述”吗？所以每个 lambda calculus 的表达式也是一个机器的描述。这种机器跟电子线路非常相似。lambda calculus 的程序和机器有这样的一一对应关系：一个变量就是一根导线。一个函数就是某种电子器件的“样板”，有它自己的输入和输出端子，自己的逻辑。一个调用都是在设计中插入一个电子器件的“实例”，把它的输入端子连接到某些已有的导线，这些导线被叫做“参数”。所以一个 lambda calculus 的解释器实际上就是一个电子线路的模拟器。所以如果你听说有些芯片公司开始用类似 Haskell 的语言（比如 Bluespec System Verilog）来设计硬件，也就不奇怪了。</span><br><span class="line"></span><br><span class="line">需要注意的是，跟一般语言不同，lambda calculus 的函数只有一个参数。这其实不是一个严重的限制，因为 lambda calculus 的函数可以被作为值传递 (这叫 first-class function)，所以你可以用嵌套的函数定义来表示两个以上参数的函数。比如，(lambda (x) (lambda (y) y)) 就可以表示一个两个参数的函数，它返回第二个参数。不过当它被调用的时候，你需要两层调用，就像这样：</span><br></pre></td></tr></table></figure></p>
-<p>(((lambda (x) (lambda (y) y)) 1) 2)<br>;; =&gt; 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">虽然看起来丑一点，但是它让我们的解释器达到终极的简单。简单对于设计程序语言的人是至关重要的。一开头就追求复杂的设计，往往导致一堆纠缠不清的问题。</span><br><span class="line"></span><br><span class="line">lambda calculus 不同于普通语言的另外一个特点就是它没有数字等基本的数据类型，所以你不能直接用 lambda calculus 来计算像 (+ 1 2) 这样的表达式。但是有意思的是，数字却可以被 lambda calculus 的三个基本元素“编码”(encoding) 出来。这种编码可以用来表示自然数，布尔类型，pair，list，以至于所有的数据结构。它还可以表示 if 条件语句等复杂的语法结构。常见的一种这样的编码叫做 Church encoding。所以 lambda calculus 其实可以产生出几乎所有程序语言的功能。中国的古话“三生万物”，也许就是这个意思。</span><br><span class="line"></span><br><span class="line"># 求值顺序，call-by-name, call-by-value</span><br><span class="line"></span><br><span class="line">当解释一个程序的时候，我们可以有好几种不同的“求值顺序”(evaluation order)。这有点像遍历二叉树有好几种不同的顺序一样（中序，前序，后序）。只不过这里的顺序更加复杂一些。比如下面的程序：</span><br></pre></td></tr></table></figure></p>
-<p>((lambda (x) (* x x)) (+ 1 2))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我们可以先执行最外层的调用，把 (+ 1 2) 传递进入函数，得到 (* (+ 1 2) (+ 1 2))。所以求值顺序是：</span><br></pre></td></tr></table></figure></p>
-<p>((lambda (x) (<em> x x)) (+ 1 2))<br>=&gt; (</em> (+ 1 2) (+ 1 2))<br>=&gt; (<em> 3 (+ 1 2))<br>=&gt; (</em> 3 3)<br>=&gt; 9<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">但是我们也可以先算出 (+ 1 2) 的结果，然后再把它传进这个函数。所以求值顺序是：</span><br></pre></td></tr></table></figure></p>
-<p>((lambda (x) (<em> x x)) (+ 1 2))<br>=&gt; ((lambda (x) (</em> x x)) 3)<br>=&gt; (* 3 3)<br>=&gt; 9<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">我们把第一种方式叫做 call-by-name (CBN)，因为它把参数的“名字”（也就是表达式自己）传进函数。我们把第二种方式叫做 call-by-value (CBV)，因为它先把参数的名字进行解释，得到它们的“值”之后，才把它们传进函数。</span><br><span class="line"></span><br><span class="line">这两种解释方式的效率是不一样的。从上面的例子，你可以看出 CBN 比 CBV 多出了一步。为什么呢？因为函数 (lambda (x) (* x x)) 里面有两个 x，所以 (+ 1 2) 被传进函数的时候被复制了一份。之后我们需要对它的每一拷贝都进行一次解释，所以 (+ 1 2) 被计算了两次！</span><br><span class="line"></span><br><span class="line">鉴于这个原因，几乎所有的程序语言都采用 CBV，而不是 CBN。CBV 常常被叫做“strict”或者“applicative order”。虽然 CBN 效率低下，与它等价的一种顺序 call-by-need 却没有这个问题。call-by-need 的基本原理是对 CBN 中被拷贝的表达式进行“共享”和“记忆”。当一个表达式的一个拷贝被计算过了之后，其它的拷贝自动得到它的值，从而避免重复求值。call-by-need 也叫“lazy evaluation”，它是 Haskell 语言所用的语义。</span><br><span class="line"></span><br><span class="line">求值顺序不只停留于 call-by-name, call-by-value, call-by-need。人们还设计了很多种其它的求值顺序，虽然它们大部分都不能像 call-by-value 和 call-by-need 这么实用。</span><br><span class="line"></span><br><span class="line"># 完整的 lambda calculus 解释器</span><br><span class="line">下面是我们今天要完成的解释器，它只有39行（不包括空行和注释）。你可以先留意一下各个部分的注释，它们标注各个部件的名称，并且有少许讲解。这个解释器实现的是 CBV 顺序的 lambda calculus，外加基本的算术。加入基本算术的原因是为了可以让初学者写出比较有趣一点的程序，不至于一开头就被迫去学 Church encoding。</span><br></pre></td></tr></table></figure></p>
-<p>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</p>
-<p>;;; 以下三个定义 env0, ent-env, lookup 是对环境（environment）的基本操作：</p>
-<p>;; 空环境<br>(define env0 ‘())</p>
-<p>;; 扩展。对环境 env 进行扩展，把 x 映射到 v，得到一个新的环境<br>(define ext-env<br>  (lambda (x v env)<br>    (cons `(,x . ,v) env)))</p>
-<p>;; 查找。在环境中 env 中查找 x 的值<br>(define lookup<br>  (lambda (x env)<br>    (let ([p (assq x env)])<br>      (cond<br>       [(not p) x]<br>       [else (cdr p)]))))</p>
-<p>;; 闭包的数据结构定义，包含一个函数定义 f 和它定义时所在的环境<br>(struct Closure (f env))</p>
-<p>;; 解释器的递归定义（接受两个参数，表达式 exp 和环境 env）<br>;; 共 5 种情况（变量，函数，调用，数字，算术表达式）<br>(define interp1<br>  (lambda (exp env)<br>    (match exp                                          ; 模式匹配 exp 的以下情况（分支）<br>      [(? symbol? x) (lookup x env)]                    ; 变量<br>      [(? number? x) x]                                 ; 数字<br>      [<code>(lambda (,x) ,e)                                ; 函数
-       (Closure exp env)]
-      [</code>(,e1 ,e2)                                       ; 调用<br>       (let ([v1 (interp1 e1 env)]<br>             [v2 (interp1 e2 env)])<br>         (match v1<br>           [(Closure <code>(lambda (,x) ,e) env1)
-            (interp1 e (ext-env x v2 env1))]))]
-      [</code>(,op ,e1 ,e2)                                   ; 算术表达式<br>       (let ([v1 (interp1 e1 env)]<br>             [v2 (interp1 e2 env)])<br>         (match op<br>           [‘+ (+ v1 v2)]<br>           [‘- (- v1 v2)]<br>           [‘<em> (</em> v1 v2)]<br>           [‘/ (/ v1 v2)]))])))</p>
-<p>;; 解释器的“用户界面”函数。它把 interp1 包装起来，掩盖第二个参数，初始值为 env0<br>(define interp<br>  (lambda (exp)<br>    (interp1 exp env0)))</p>
-<p>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 测试例子</span><br><span class="line"></span><br><span class="line">这里有一些测试的例子。你最好先玩一下再继续往下看，或者自己写一些新的例子。学习程序的最好办法就是玩弄这个程序，给它一些输入，观察它的行为。有时候这比任何语言的描述都要直观和清晰。</span><br></pre></td></tr></table></figure></p>
-<p>(interp ‘(+ 1 2))<br>;; =&gt; 3</p>
-<p>(interp ‘(* 2 3))<br>;; =&gt; 6</p>
-<p>(interp ‘(* 2 (+ 3 4)))<br>;; =&gt; 14</p>
-<p>(interp ‘(* (+ 1 2) (+ 3 4)))<br>;; =&gt; 21</p>
-<p>(interp ‘(((lambda (x) (lambda (y) (* x y))) 2) 3))<br>;; =&gt; 6</p>
-<p>(interp ‘((lambda (x) (* 2 x)) 3))<br>;; =&gt; 6</p>
-<p>(interp ‘((lambda (y) (((lambda (y) (lambda (x) (* y 2))) 3) 0)) 4))<br>;; =&gt; 6</p>
-<p>;; (interp ‘(1 2))<br>;; =&gt; match: no matching clause for 1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在接下来的几节，我们来看看这个解释器里主要的分支（match）表达式的各种情况。</span><br><span class="line"></span><br><span class="line"># 对基本算术操作的解释</span><br><span class="line"></span><br><span class="line">算术操作在解释器里是最简单也是最“基础”的东西，因为它们不能再被细分为更小的元素了。所以在接触函数，调用等复杂的结构之前，我们来看一看对算术操作的处理。以下就是这个解释器里处理基本算术的部分，它是 interp1 的最后一个分支。</span><br></pre></td></tr></table></figure></p>
-<p>(match exp<br>  … …<br>  [`(,op ,e1 ,e2)<br>   (let ([v1 (interp1 e1 env)]            ; 递归调用 interp1 自己，得到 e1 的值<br>         [v2 (interp1 e2 env)])           ; 递归调用 interp1 自己，得到 e2 的值<br>     (match op                            ; 分支：处理操作符 op 的 4 种情况<br>       [‘+ (+ v1 v2)]                     ; 如果是加号，输出结果为 (+ v1 v2)<br>       [‘- (- v1 v2)]                     ; 如果是减号，乘号，除号，相似的处理<br>       [‘<em> (</em> v1 v2)]<br>       [‘/ (/ v1 v2)]))])<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">你可以看到它几乎跟刚才写的计算器一模一样，不过现在 interp1 的调用多了一个参数 env 而已。这个 env 是什么，我们下面很快就讲。</span><br><span class="line"></span><br><span class="line"># 变量和函数</span><br><span class="line"></span><br><span class="line">我想用两个小节来简单介绍一下变量，函数和环境。稍后的几节我们再来看它们是如何实现的。</span><br><span class="line"></span><br><span class="line">变量(variable)的产生是数学史上的最大突破之一。因为变量可以被绑定到不同的值，从而使得函数的实现成为可能。比如数学函数 f(x) = x*2，其中 x 是一个变量，它把输入的值传递到函数的主体 x*2里面。如果没有变量，函数就不可能实现。</span><br><span class="line"></span><br><span class="line">对变量的最基本的操作是对它的“绑定”（binding）和“取值”（evaluate）。什么是绑定呢？拿上面的函数 f(x) 作为例子吧。当 x 等于 1 的时候，f(x) 的值是 2，而当 x 等于 2 的时候，f(x) 的值是 4。在上面的句子里，我们对 x 进行了两次绑定。第一次 x 被绑定到了 1，第二次被绑定到了 2。你可以把“绑定”理解成这样一个动作，就像当你把插头插进电源插座的那一瞬间。插头的插脚就是 f(x) 里面的那个 x，而 x*2 里面的 x，则是电线的另外一端。所以当你把插头插进插座，电流就通过这根电线到达另外一端。如果电线导电性能良好，两头的电压应该几乎相等。有点跑题了…… 反正只要记住一点：绑定就是插进插座的那个“动作”。</span><br><span class="line"></span><br><span class="line">那么“取值”呢？再想一下前面的例子，当我们用伏特表测电线另外一端的电压的时候，我们就是在对这个变量进行取值。有时候这种取值的过程不是那么明显，比如电流如果驱动了风扇的电动机。虽然电线的另外一头没有显示电压，其实电流已经作用于电动机的输入端子，进入线圈。所以你也可以说其实是电动机在对变量进行取值。</span><br><span class="line"></span><br><span class="line"># 环境</span><br><span class="line"></span><br><span class="line">我们的解释器是一个挺笨的程序，它只能一步一步的做事情。比如，当它需要求 f(1) 的值的时候，它做以下两步操作：1) 把 x 绑定到 1; 2) 进入 f 的函数体对 x*2 进行求值。这就像一个人做出这两个动作：1)把插头插进插座，2) 走到电线的另外一头测量它的电压，并且把结果乘以 2。在第一步和第二步之间，我们如何记住 x 的值呢？它必须被传递到那个用来处理函数体的递归解释器里面。这就是为什么我们需要“环境”，也就是 interp1 的第二个参数 env。</span><br><span class="line"></span><br><span class="line">环境记录变量的值，并且把它们传递到它们的“可见区域”，用术语说就叫做“作用域”(scope)。通常作用域是整个函数体，但是有一个例外，就是当函数体内有嵌套的函数定义的时候，内部的那个函数如果有同样的参数名，那么外层的参数名就会被“屏蔽”（shadow）掉。这样内部的函数体就看不到外层的参数了，只看到它自己的。比如 (lambda (x) (lambda (x) (* x 2)))，里面的那个 x 看到的就是内层函数的 x，而不是外层的。</span><br><span class="line"></span><br><span class="line">在我们的解释器里，用于处理环境的主要部件如下：</span><br></pre></td></tr></table></figure></p>
-<p>;; 空环境<br>(define env0 ‘())</p>
-<p>;; 对环境 env 进行扩展，把 x 映射到 v<br>(define ext-env<br>  (lambda (x v env)<br>    (cons `(,x . ,v) env)))</p>
-<p>;; 取值。在环境中 env 中查找 x 的值<br>(define lookup<br>  (lambda (x env)<br>    (let ([p (assq x env)])<br>      (cond<br>       [(not p) x]<br>       [else (cdr p)]))))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这里我们用的是 Scheme 的 association list 来表示环境。Association list 看起来像这个样子：((x . 1) (y . 2) (z . 5))。也就是一个两元组（pair）的链表，左边的元素是 key，右边的元素是 value。写的直观一点就是：</span><br></pre></td></tr></table></figure></p>
-<p>((x . 1)<br> (y . 2)<br> (z . 5))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">查表操作就是从头到尾搜索，如果左边的 key 是要找的变量，就返回整个 pair。简单吧？</span><br><span class="line"></span><br><span class="line">ext-env 扩展一个环境。比如，如果原来的环境是 ((y . 2) (z . 5)) 那么 (ext-env x 1 ((y . 2) (z . 5)))，就会得到 ((x . 1) (y . 2) (z . 5))。也就是把 (x . 1) 放到最前面去。值得注意的一点是，环境被扩展以后其实是形成了一个新的环境，原来的环境并没有被“改变”。比如上面红色的部分就是原来的数据结构，只不过它被放到另一个更大的结构里面了。这叫做“函数式数据结构”。这个性质在我们的解释器里是至关重要的，因为当我们扩展了一个环境之后，其它部分的代码仍然可以原封不动的访问扩展前的那个旧的环境。当我们讲到调用的时候也许你就会发现这个性质的用处。</span><br><span class="line"></span><br><span class="line">你也可以用另外的，更高效的数据结构（比如 splay tree）来表示环境。你甚至可以用函数来表示环境。唯一的要求就是，它是变量到值的“映射”(map)。你把 x 映射到 1，待会儿查询 x 的值，它应该仍然是 1，而不会消失掉或者别的值。也就是说，这几个函数要满足这样的一种“界面约定”：如果 e 是 (ext-env &apos;x 1 env) 返回的环境，那么 (lookup &apos;x e) 应该返回 1。只要满足这样的界面约定的函数都可以被叫做 ext-env 和 lookup，以至于可以它们用来完全替代这里的函数而不会导致其它代码的修改。这叫做“抽象”，也就是“面向对象语言”的精髓所在。</span><br><span class="line"></span><br><span class="line"># 对变量的解释</span><br><span class="line"></span><br><span class="line">了解了变量，函数和环境，让我们来看看解释器对变量的操作，也就是 interp1 的 match 的第一种情况。它非常简单，就是在环境中查找变量的值。这里的 (? symbol? x) 是一个特殊的模式，它使用 Scheme 函数 symbol? 来判断输入是否匹配，如果是的就把它绑定到 x，查找它的值，然后返回这个值。</span><br></pre></td></tr></table></figure></p>
-<p>  [(? symbol? x) (lookup x env)]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">注意由于我们的解释器是递归的，所以这个值也许会被返回到更高层的表达式，比如 (* x 2)。</span><br><span class="line"></span><br><span class="line"># 对数字的解释</span><br><span class="line"></span><br><span class="line">对数字的解释也很简单。由于在 Scheme 里面名字 &apos;2 就是数字 2（我认为这是 Scheme 设计上的一个小错误），所以我们不需要对数字的名字做特殊的处理，把它们原封不动的返回。</span><br></pre></td></tr></table></figure></p>
-<p>[(? number? x) x]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 对函数的解释</span><br><span class="line"></span><br><span class="line">对函数的解释是一个比较难说清楚的问题。由于函数体内也许会含有外层函数的参数，比如 (lambda (y) (lambda (x) (* y 2))) 里面的 y 是外层函数的参数，却出现在内层函数定义中。如果内层函数被作为值返回，那么 (* y 2) 就会跑到 y 的作用域以外。所以我们必须把函数做成“闭包”(closure)。闭包是一种特殊的数据结构，它由两个元素组成：函数的定义和当前的环境。所以我们对 (lambda (x) e) 这样一个函数的解释就是这样：</span><br></pre></td></tr></table></figure></p>
-<p> [`(lambda (,x) ,e)<br>   (Closure exp env)]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">注意这里的 exp 就是 `(lambda (,x) ,e) 自己。我们只是把它包装了一下，把它与当前的环境一起放到一个数据结构(闭包)里，并不进行任何复杂的运算。这里我们的闭包用的是一个 Racket 的 struct 结构，也就是一个记录类型(record)。你也可以用其它形式来表示闭包，比如有些解释器教程提倡用函数来表示闭包。其实用什么形式都无所谓，只要能存储 exp 和 env 的值。我比较喜欢使用 struct，因为它的界面简单清晰。</span><br><span class="line"></span><br><span class="line">为什么需要保存当前的环境呢？因为当这个函数被作为一个值返回的时候，我们必须记住里面的外层函数的参数的绑定。比如，(lambda (y) (lambda (x) (* y 2)))。当它被作用于 1 之后，我们会得到内层的函数 (lambda (x) (* y 2))。当这个函数被经过一阵周折之后再被调用的时候，y 应该等于几呢？正确的做法应该是等于1。这种把外层参数的值记录在内层函数的闭包里的做法，叫做“lexical scoping”或者“static scoping”。</span><br><span class="line"></span><br><span class="line">如果你不做闭包，而是把函数体直接返回，那么在 (lambda (x) (* y 2)) 被调用的位置，你可能会另外找到一个 y，从而使用它的值。在调用的时候“动态”解析变量的做法，叫做“dynamic scoping”。事实证明 dynamic scoping 的做法是严重错误的，它导致了早期语言里面出现的各种很难发现的bug。很多早期的语言是 dynamic scoping，就是因为它们只保存了函数的代码，而没有保存它定义处的环境。这样要简单一些，但是带来太多的麻烦。早期的 Lisp，现在的 Emacs Lisp 和 TeX 就是使用 dynamic scoping 的语言。</span><br><span class="line"></span><br><span class="line">为了演示 lexical scoping 和 dynamic scoping 的区别。你可以在我们的解释器里执行以下代码：</span><br></pre></td></tr></table></figure></p>
-<p>(interp ‘((lambda (y) (((lambda (y) (lambda (x) (* y 2))) 3) 0)) 4))<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">其中红色的部分就是上面提到的例子。在这里，(* y 2) 里的 y，其实是最里面的那个 (lambda (y) ...) 里的。当红色部分被作用于 3 之后。 (lambda (x) (* y 2)) 被作为一个值返回。然后它被作用于 0（x 被绑定到 0，被忽略），所以 (* y 2) 应该等于 6。但是如果我们的解释器是 dynamic scoping，那么最后的结果就会等于 8。这是因为最外层的 y 开头被绑定到了 4，而 dynamic scoping 没有记住内层的 y 的值，所以使用了外层那个 y 的值。</span><br><span class="line"></span><br><span class="line">为什么 Lexical scoping 更好呢？你可以从很简单的直觉来理解。当你构造一个“内部函数”的时候，如果它引用了外面的变量，比如这个例子里的 y，那么从外层的 y 到这个函数的内部，出现了一条“信道”（channel）。你可以把这个内部函数想象成一个电路元件，它的内部有一个节点 y 连接到一根从外部来的电线 y。当这个元件被返回，就像这个元件被挖出来送到别的地方去用。但是在它被使用的地方（调用），这个 y 节点应该从哪里得到输入呢？显然你不应该使用调用处的某个 y，因为这个 y 和之前的那个 y，虽然都叫 y，却不是“同一个 y”，也就是同名异义。它们甚至可以代表不同的类型的东西。所以这个 y 应该仍然连接原来的那根 y 电线。当这个内部元件移动的时候，就像这跟电线被无限的延长，但是它始终连接到原来的节点。</span><br><span class="line"></span><br><span class="line"># 对函数调用的解释</span><br><span class="line"></span><br><span class="line">好，我们终于到了最后的关头，函数调用。函数调用都是 (e1 e2) 这样的形式，所以我们需要先分别求出 e1 和 e2 的值。这跟基本运算的时候需要先求出两个操作数的值相似。</span><br><span class="line"></span><br><span class="line">函数调用就像把一个电器的插头插进插座，使它开始运转。比如，当 (lambda (x) (* x 2)) 被作用于 1 时，我们把 x 绑定到 1，然后解释它的函数体 (* x 2)。但是这里有一个问题，如果函数体内有未绑定的变量，它应该取什么值呢？从上面闭包的讨论，你已经知道了，其实操作数 e1 被求值之后应该是一个闭包，所以它的里面应该有未绑定变量的值。所以，我们就把这个闭包中保存的环境(env1)取出来，扩展它，把 x 绑定到 v2，然后用这个扩展后的环境来解释函数体。</span><br><span class="line"></span><br><span class="line">所以函数调用的代码如下：</span><br></pre></td></tr></table></figure></p>
-<p>  [<code>(,e1 ,e2)                                            
-   (let ([v1 (interp1 e1 env)]
-         [v2 (interp1 e2 env)])
-     (match v1
-       [(Closure</code>(lambda (,x) ,e) env1)   ; 用模式匹配的方式取出闭包里的各个子结构<br>        (interp1 e (ext-env x v2 env1))]   ; 在闭包的环境中把 x 绑定到 v2，解释函数体<br>       ))]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">你可能会奇怪，那么解释器的环境 env 难道这里就不用了吗？是的。我们通过 env 来计算 e1 和 e2 的值，是因为 e1 和 e2 里面的变量存在于“当前环境”。我们把 e1 里面的环境 env1 取出来用于计算函数体，是因为函数体并不是在当前环境定义的，它的代码在别的地方。如果我们用 env 来解释函数体，那就成了 dynamic scoping。</span><br><span class="line"></span><br><span class="line">实验：你可以把 (interp1 e (ext-env x v2 env1)) 里面的 env1 改成 env，再试试我们之前讨论过的代码，它的输出就会是 8：</span><br></pre></td></tr></table></figure></p>
-<p>(interp ‘((lambda (y) (((lambda (y) (lambda (x) (* y 2))) 3) 0)) 4))<br>```</p>
-<p>另外在这里我们也看到环境用“函数式数据结构”表示的好处。闭包被调用时它的环境被扩展，但是这并不会影响原来的那个环境，我们得到的是一个新的环境。所以当函数调用返回之后，函数的参数绑定就自动“注销”了。如果你用一个非函数式的数据结构，在绑定参数时不生成新的环境，而是对已有环境进行赋值，那么这个赋值操作就会永久性的改变原来环境的内容。所以你在函数返回之后必须删除参数的绑定。这样不但麻烦，而且在复杂的情况下几乎不可能有效的控制。每一次当我使用赋值操作来修改环境，最后都会出现意想不到的麻烦。所以在写解释器，编译器的时候，我都只使用函数式数据结构来表示环境。</p>
-<h1 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h1><p>在懂得了这里讲述的基本的解释器构造之后，下一步可以做什么呢？其实从这个基本的解释器原型，你可以进一步发展出很多内容，比如：</p>
-<ul>
-<li>在这个解释器里加一些构造，比如递归和状态，你就可以得到一个完整的程序语言的解释器，比如 Scheme 或者 Python。</li>
-<li>对这个解释器进行“抽象”，你就可以对程序进行类型推导。感兴趣的话可以参考我实现的这个 Hindley-Milner系统，或者 Python 类型推导。</li>
-<li>对这个解释器进行一些改变，就可以得到一个非常强大的 online partial evaluator，可以用于编译器优化。</li>
-</ul>
-<p>另外需要指出的是，学会这个解释器并不等于理解了程序语言的理论。所以在学会了这些之后，还是要看一些语义学的书。</p>
+          怎样写一个解释器这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是这篇教程并不是针对编程的入门知识，所以我假设你已经学会了最基本的 Scheme 和函数式编程。我不是很推崇函数式编程，但它里面确实包含了很重要的一些方法。如果你完全不了解这些，可以读一下 SI
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/怎样写一个解释器/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -456,6 +520,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/一种新的操作系统设计/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/一种新的操作系统设计/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -476,37 +547,16 @@
       
         
           
-            <h1 id="一种新的操作系统设计"><a href="#一种新的操作系统设计" class="headerlink" title="一种新的操作系统设计"></a>一种新的操作系统设计</h1><p>我一直在试图利用程序语言的设计原理，设计一种超越“Unix 哲学”的操作系统。这里是我的设想：</p>
-<ul>
-<li><p>这种系统里面的程序间通信不使用无结构的字符串，而是使用带有类型和结构的数据。在这样的系统里面，Unix 和其它类似操作系统（比如 Windows）里的所谓“应用程序”的概念基本上完全消失。系统由一个个很小的“函数”组成，每个函数都可以调用另外一个函数，通过参数传递数据。每个函数都可以手动或者自动并发执行。用现在的系统术语打个比方，这就像是所有代码都是“库”代码，而不存在独立的“可执行文件”。</p>
-</li>
-<li><p>由于参数是数据结构而不是字符串，这避免了程序间通信繁琐的编码和解码过程。使得“进程间通信”变得轻而易举。任何函数都可以调用另一个函数来处理特定类型的数据，这使得像 “OLE 嵌入”这样的机制变得极其简单。</p>
-</li>
-<li><p>所有函数由同一种先进的高级程序语言写成，所以函数间的调用完全不需要“翻译”。不存在 SQL injection 之类由于把程序当成字符串而产生的错误。</p>
-</li>
-<li><p>由于这种语言不允许应用程序使用“指针运算”，应用程序不可能产生 segfault 一类的错误。为了防止不良用户手动在机器码里面加入指针运算，系统的执行的代码不是完全的机器代码，而必须通过进一步的验证和转换之后才会被硬件执行。这有点像 JVM，但它直接运行在硬件之上，所以必须有一些 JVM 没有的功能，比如把内存里的数据结构自动换出到硬盘上，需要的时候再换进内存。</p>
-</li>
-<li><p>由于没有指针运算，系统可以直接使用“实地址”模式进行内存管理，从而不再需要现代处理器提供的内存映射机制以及 TLB。内存的管理粒度是数据结构，而不是页面。这使得内存访问和管理效率大幅提高，而且简化了处理器的设计。据 Kent Dybvig 的经验，这样的系统的内存使用效率要比 Unix 类的系统高一个数量级。</p>
-</li>
-<li><p>系统使用与应用程序相同的高级语言写成，至于“系统调用”，不过是调用另外一个函数。由于只有这些“系统驱动函数”才有对设备的“引用”，又因为系统没有指针运算，所以用户函数不可能绕过系统函数而非法访问硬件。</p>
-</li>
-<li><p>系统没有 Unix 式的“命令行”，它的“shell”其实就是这种高级语言的 REPL。用户可以在终端用可视化的结构编辑方式输入各种函数调用，从而启动进程的运行。所以你不需要像 Unix 一样另外设计一种毛病语言来“粘接”应用程序。</p>
-</li>
-<li><p>所有的数据都作为“结构”，保存在一个分布式的数据共享空间。同样的那个系统语言可以被轻松地发送到远程机器，调用远程机器上的库代码，执行任意复杂的查询索引等动作，取回结果。这种方式可以高效的完成数据库的功能，然而却比数据库简单很多。所谓的“查询语言”（比如 SQL，Datalog，Gremlin，Cypher）其实是多此一举，它们远远不如普通的程序语言强大。说是可以让用户“不需要编程，只提出问题”，然而它们所谓的“优化”是非常局限甚至不可能实现的，带来的麻烦远比直接编程还要多。逻辑式编程语言（比如 Prolog）其实跟 SQL 是一样的问题，一旦遇到复杂点的查询就效率低下。所以系统不使用关系式数据库，不需要 SQL，不需要 NoSQL，不需要 Datalog。</p>
-</li>
-<li><p>由于数据全都是结构化的，所以没有普通操作系统的无结构“文件系统”。数据结构可能通过路径来访问，然而路径不是一个字符串或者字符串模式。系统不使用正则表达式，而是一种类似 NFA 的数据结构，对它们的拆分和组合操作不会出现像字符串那样的问题，比如把 /a/b/ 和 /c/d 串接在一起就变成错误的 /a/b//c/d。</p>
-</li>
-<li><p>所有的数据在合适的时候被自动同步到磁盘，并且进行容错处理，所以即使在机器掉电的情况，绝大部分的数据和进程能够在电源恢复后继续运行。</p>
-</li>
-<li><p>程序员和用户几乎完全不需要知道“数据库”或者“文件系统”的存在。程序假设自己拥有无穷大的空间，可以任意的构造数据。根据硬件的能力，一些手动的存盘操作也可能是有必要的。</p>
-</li>
-<li><p>为了减少数据的移动，系统或者用户可以根据数据的位置，选择： 1）迁移数据，或者 2）迁移处理数据的“进程”。程序员不需要使用 MapReduce，Hadoop 等就能进行大规模并行计算，然而表达能力却比它们强大很多，因为它们全都使用同一种程序语言写成。</p>
-</li>
-</ul>
-<p>我曾经以为我是第一个想到这个做法的人。可是调查之后发现，很多人早就已经做出了类似的系统。Lisp Machine 似乎是其中最接近的一个。<a href="http://www.yinwang.org/blog-cn/2013/03/07/oberon/" target="_blank" rel="external">Oberon</a> 是另外一个。IBM System/38 是类似系统里面最老的一个。最近一些年出现的还有微软的 <a href="http://research.microsoft.com/en-us/projects/Singularity" target="_blank" rel="external">Singularity</a>，另外还有人试图把 JVM 和 Erlang VM 直接放到硬件上执行。</p>
-<p>所以这篇文章的标题其实是错的，这不是一种“新的操作系统设计”。它看起来是新的，只不过因为我们现在用的操作系统忘记了它们本该是什么样子。我也不该说它“超越了 Unix 哲学”，而应该说，所谓的 Unix 哲学其实是历史的倒退。</p>
+          一种新的操作系统设计我一直在试图利用程序语言的设计原理，设计一种超越“Unix 哲学”的操作系统。这里是我的设想：
 
-          
+这种系统里面的程序间通信不使用无结构的字符串，而是使用带有类型和结构的数据。在这样的系统里面，Unix 和其它类似操作系统（比如 Windows）里的所谓“应用程序”的概念基本上完全
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/一种新的操作系统设计/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -573,6 +623,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/我为什么离开 Cornell/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/我为什么离开 Cornell/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -593,16 +650,14 @@
       
         
           
-            <h1 id="我为什么离开-Cornell"><a href="#我为什么离开-Cornell" class="headerlink" title="我为什么离开 Cornell"></a>我为什么离开 Cornell</h1><p>很多人都知道，我曾经在 Cornell 博士就读，两年之后转学到了 Indiana 大学。几乎所有人，包括 Indiana 大学的人都感觉奇怪，为什么会有人从 Cornell 这样的“牛校”转学到 Indiana。我曾经在之前的博文里提到 Cornell 的情况，比如学生一上课就忙着抄笔记，作业压得喘不过气，等等。那些都是实际的情况，所以我没什么必要为我的“母校”说好话。</p>
-<p>离开 Cornell 之后，看到有人在 facebook 上成立了一个“Cornell 痛恨者协会”。其中一个人写到：</p>
-<blockquote>
-<p>“Cornell 说要教你游泳，就把你推进池塘里，任凭你扑腾挣扎。等你快扑腾到岸边的时候，它忽然拿起一块大石头砸在你头上，然后继续等着你上岸。当你再次接近岸边的时候，它又拿起一个榔头敲在你头上，这样你就可以死了，可是 Cornell 仍然继续等着你游上岸边……”</p>
-</blockquote>
-<p>这就是一个非常形象的，对我在 Cornell 的两年的总结。现在看看我在 Indiana 学到了什么，而 Cornell 教会了我什么，感觉简直一个天上一个地下。Dan Friedman 和 R. Kent Dybvig，他们的教育真的像是爱因斯坦所说的，像是珍贵的礼物，而不是沉重的负担。他们教会我的东西，让我不再在乎任何“牛校”的博士学位甚至教授职位，不管是 Cornell, Stanford, Berkeley, MIT 还是 Harvard, ……</p>
-<p>所谓的“牛校”，恐怕都是这样吧。学生对于它们只是一种成为“牛校”的工具。你拼着命要进来，好我让你进来。但是我不教你，我让你拼死的做作业。如果你做出来了，我就拿最偏最扯淡的试卷来考你。如果你通过了所有这些，那我就给你一个学位。你得到了这样的“荣誉”，自然就会说“我的学校很牛”。你不敢说它不牛，因为那样就是说你也不牛了。所以这样的学校其实什么也不用干，你能学会东西能毕业，全都是靠你自己，到时候你却要把功劳都归到学校头上。天底下就是有这样好的生意。</p>
-<p>曾经有一个 Cornell 的校友跟我是朋友。当我提到 Cornell 的一些事，他总是像个老师一样，上气不接下气地“教育”我，也就是说类似家丑不可外扬的意思吧。“牛校”就是一种传染病，在你还没进去之前就已经埋下病种，当你进去之后它就开始蔓延，等你毕业很多年，它仍然与你同在。</p>
+          我为什么离开 Cornell很多人都知道，我曾经在 Cornell 博士就读，两年之后转学到了 Indiana 大学。几乎所有人，包括 Indiana 大学的人都感觉奇怪，为什么会有人从 Cornell 这样的“牛校”转学到 Indiana。我曾经在之前的博文里提到 Cornell 的情况，比如学生
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/我为什么离开 Cornell/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -688,6 +743,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈语法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -708,49 +770,15 @@
       
         
           
-            <h1 id="谈语法"><a href="#谈语法" class="headerlink" title="谈语法"></a>谈语法</h1><p><img src="http://www.yinwang.org/images/lisp_cycles.png" alt=""></p>
-<p>使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。</p>
-<p>要想指出 Scheme 所有的优点，并且跟其它语言比较，恐怕要写一本书才讲的清楚。所以在这篇文章里，我只提其中一个最简单，却又几乎被所有人忽视的方面：语法。</p>
-<p>其它的 Lisp “方言”也有跟 Scheme 类似的语法（都是基于“S表达式”），所以在这篇（仅限这篇）文章里我所指出的“Scheme 的优点”，其实也可以作用于其它的 Lisp 方言。从现在开始，“Scheme”和“Lisp”这两个词基本上含义相同。</p>
-<p>我觉得 Scheme （Lisp） 的基于“S表达式”（S-expression）的语法，是世界上最完美的设计。其实我希望它能更简单一点，但是在现存的语言中，我没有找到第二种能与它比美。也许在读过这篇文章之后，你会发现这种语法设计的合理性，已经接近理论允许的最大值。</p>
-<p>为什么我喜欢这样一个“全是括号，前缀表达式”的语言呢？这是出于对语言结构本质的考虑。其实，我觉得语法是完全不应该存在的东西。即使存在，也应该非常的简单。因为语法其实只是对语言的本质结构，“抽象语法树”（abstract syntax tree，AST），的一种编码。一个良好的编码，应该极度简单，不引起歧义，而且应该容易解码。在程序语言里，这个“解码”的过程叫做“语法分析”（parse）。</p>
-<p>为什么我们却又需要语法呢？因为受到现有工具（操作系统，文本编辑器）的限制，到目前为止，几乎所有语言的程序都是用字符串的形式存放在文件里的。为了让字符串能够表示“树”这种结构，人们才给程序语言设计了“语法”这种东西。但是人们喜欢耍小聪明，在有了基本的语法之后，他们开始在这上面大做文章，使得简单的问题变得复杂。</p>
-<p>Lisp （Scheme 的前身）是世界上第二老的程序语言。最老的是 Fortran。Fortran 的程序，最早的时候都是用打孔机打在卡片上的，所以它其实是几乎没有语法可言的。</p>
-<p><img src="http://www.yinwang.org/images/punch-card.gif" alt=""></p>
-<p>显然，这样写程序很痛苦。但是它却比现代的很多语言有一个优点：它没有歧义，没有复杂的 parse 过程。</p>
-<p>在 Lisp 诞生的时候，它的设计者们一下子没能想出一种好的语法，所以他们决定干脆先用括号把这语法树的结构全都括起来，一个不漏。等想到更好的语法再换。</p>
-<p>自己想一下，如果要表达一颗“树”，最简单的编码方式是什么？就是用括号把每个节点的“数据”和“子节点”都括起来放在一起。Lisp 的设计者们就是这样想的。他们把这种完全用括号括起来的表达式，叫做“S表达式”（S 代表 “symbolic”）。这貌似很“粗糙”的设计，甚至根本谈不上“设计”。奇怪的是，在用过一段时间之后，他们发现自己已经爱上了这个东西，再也不想设计更加复杂的语法。于是S表达式就沿用至今。</p>
-<p>在使用过 Scheme，Haskell，ML，和常见的 Java，C，C++，Python，Perl，…… 之后，我也惊讶的发现， Scheme 的语法，不但是最简单，而且是最好看的一个。这不是我情人眼里出西施，而是有一定理论依据的。</p>
-<p>首先，把所有的结构都用括号括起来，轻松地避免了别的语言里面可能发生的“歧义”。程序员不再需要记忆任何“运算符优先级”。</p>
-<p>其次，把“操作符”全都放在表达式的最前面，使得基本算术操作和函数调用，在语法上发生完美的统一，而且使得程序员可以使用几乎任何符号作为函数名。</p>
-<p>在其他的语言里，函数调用看起来像这个样子：f(1)，而算术操作看起来是这样：1+2。在 Lisp 里面，函数调用看起来是这样(f 1)，而算术操作看起来也是这样(+ 1 2)。你发现有什么共同点吗？那就是 f 和 + 在位置上的对应。实际上，加法在本质也是一个函数。这样做的好处，不但是突出了加法的这一本质，而且它让人可以用跟定义函数一模一样的方式，来定义“运算符”！这比起 C++ 的“运算符重载”强大很多，却又极其简单。</p>
-<p>关于“前缀表达式”与“中缀表达式”，我有一个很独到的见解：我觉得“中缀表达式”其实是一种过时的，来源于传统数学的历史遗留产物。几百年以来，人们都在用 x+y 这样的符号来表示加法。之所以这样写，而不是 (+ x y)，是因为在没有计算机以前，数学公式都得写在纸上，写 x+y 显然比 (+ x y) 方便简洁。但是，中缀表达式却是容易出现歧义的。如果你有多个操作符，比如 1+2<em>3。那么它表示的是 (+ 1 (</em> 2 3)) 呢，还是 (<em> (+ 1 2) 3)？所以才出现了“运算符优先级”这种东西。看见没有，S表达式已经在这里显示出它没有歧义的优点。你不需要知道 + 和 </em> 的优先级，就能明白 (+ 1 (<em> 2 3)) 和 (</em> (+ 1 2) 3) 的区别。第一个先乘后加，而第二个先加后乘。</p>
-<p>对于四则运算，这些优先级还算简单。可是一旦有了更多的操作，就容易出现混淆。这就是为什么数学（以及逻辑学）的书籍难以看懂。 实际上，那些看似复杂的公式，符号，不过是在表示一些程序里的“数据结构”，“对象”以及“函数”。大部分读数学书的时间，其实是浪费在琢磨这些公式：它们到底要表达的什么样一个“数据结构”或者“操作”！这个“琢磨”的过程，其实就是程序语言里所谓的“语法分析”（parse）。</p>
-<p>这种问题在微积分里面就更加明显。微积分难学，很大部分原因，就是因为微积分的那些传统的运算符，其实不是很好的设计。如果你想了解更好的设计，可以参考一下 Mathematica 的公式设计。试试在 Mathematica 里面输入“单行”的微积分运算（而不使用它传统的“2D语法”）。</p>
-<p>其实 Lisp 已经可以轻松地表示这种公式，比如对 x^2 进行微分，可以表示成</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(D ‘(^ x 2) ‘x)</span><br></pre></td></tr></table></figure>
-<p>看到了吗？微分不过是一个用于处理符号的函数 D，输入一个表达式和另一个符号，输出一个新的表达式。</p>
-<p>同样的公式，传统的数学符号是这个样子：</p>
-<p><img src="http://www.yinwang.org/images/deriv-math.png" alt=""></p>
-<p>这是什么玩意啊？d 除以 dx，然后乘以 x 的平方？</p>
-<p>在 Lisp 里，你其实可以比较轻松地实现符号微分的计算。SICP里貌似有一节就是教你写个符号微分程序。做微积分这种无聊的事情，就是应该交给电脑去做。总之，这从一方面显示了，Lisp 的语法其实超越了传统的数学。</p>
-<p>其实我一直都在想，如果把数学看成是一种程序语言，它也许就是世界上语法最糟糕的语言。数学里的“变量”，几乎总是没有明确定义的作用域（scope）。也就是说他们只有“全局变量”。上一段话的 x，跟下一段话的 x，经常指的不是同一个东西。所以训练有素的数学家，总是避免使用同一个符号来表示两种不同的东西。很快他们就发现所有的拉丁字母都用光了，于是乎开始用希腊字母。大写的，小写的，粗体的，斜体的，花体的，…… 而其实，他们只不过是想实现 C++ 里的 “namespace”。</p>
-<p>可惜的是，很多程序语言的设计者没能摆脱数学的思想束缚，对数学和逻辑有盲目崇拜的倾向。所以他们继续在新的语言里使用中缀表达法。Haskell，ML，Coq，Agda，这些“超高级”的语言设计，其实都中了这个圈套。在 Coq 和 Agda 里面，你不但可以使用中缀表达式，还可以定义所谓的 “mixfix” 表达式。这样其实是把简单的问题复杂化。想让自己看起来像“数学”，很神秘的样子，其实是学会了数学的糟粕，自讨苦吃。</p>
-<p>另外，由于 Lisp 的表达能力和灵活性比其他语言要大很多，所以类似 C 或者 Pascal 那样的语法其实不能满足 Lisp 的需要。在 Lisp 里，你可以写 (+ 10 (if test 1 2)) 这样的代码，然而如果你使用 C 那样的无括号语法，就会发现没法很有效的嵌入里面的那个条件语句而不出现歧义。这就是为什么 C 必须使用 test? 1 : 2 这样的语法来表示 Lisp 的 if 能表示的东西。然而即使如此，你仍然会经常被迫加上一对括号，结果让程序非常难看，最后的效果其实还不如用 Lisp 的语法。在 C 这样的语言里，由于结构上有很多限制，所以才觉得那样的语法还可以。可是一旦加入 Lisp 的那些表达能力强的结构，就发现越来越难看。JavaScript（node.js）就是对此最好的一个证据。</p>
-<p>最后，从美学的角度上讲，S表达式是很美观的设计。所有的符号都用括号括起来，这形成一种“流线型”的轮廓。而且由于可以自由的换行排版，你可以轻松地对齐相关的部分。在 Haskell 里，你经常会发现一些很蹩脚，很难看的地方。这是因为中缀表达式的“操作符”，经常不能对在一起。比如，如果你有像这样一个 case 表达式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">case x</span><br><span class="line">  Short _ -&gt; 1</span><br><span class="line">  VeryLooooooooooooooooooooooooog _ -&gt; 2</span><br></pre></td></tr></table></figure>
-<p>为了美观，很多 Haskell 程序员喜欢把那两个箭头对齐。结果就成了这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">case x</span><br><span class="line">  Short _                           -&gt; 1</span><br><span class="line">  VeryLooooooooooooooooooooooooog _ -&gt; 2</span><br></pre></td></tr></table></figure>
-<p>作为一个菜鸟级摄影师，你不觉得第一行中间太“空”了一点吗？</p>
-<p>再来看看S表达式如何表达这东西：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(case x</span><br><span class="line">  (-&gt; (Short _) 1)</span><br><span class="line">  (-&gt; (VeryLooooooooooooooooooooooooog _) 2))</span><br></pre></td></tr></table></figure>
-<p>发现“操作符总在最前”的好处了吗？不但容易看清楚，而且容易对齐，而且没有多余的间隙。</p>
-<p>其实我们还可以更进一步。因为箭头的两边全都用括号括起来了，所以其实我们并不需要那两个箭头就能区分“左”和“右”。所以我们可以把它简化为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(case x</span><br><span class="line">  ((Short _) 1)</span><br><span class="line">  ((VeryLooooooooooooooooooooooooog _) 2))</span><br></pre></td></tr></table></figure>
-<p>最后我们发现，这个表达式“进化”成了 Lisp 的 case 表达式。</p>
-<p>Lisp 的很多其它的设计，比如“垃圾回收”，后来被很多现代语言（比如 Java）所借鉴。可是人们遗漏了一个很重要的东西：Lisp 的语法，其实才是世界上最好的语法。</p>
+          谈语法使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。
+要想
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈语法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -817,6 +845,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈谈 Currying/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈谈 Currying/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -837,38 +872,15 @@
       
         
           
-            <h1 id="谈谈-Currying"><a href="#谈谈-Currying" class="headerlink" title="谈谈 Currying"></a>谈谈 Currying</h1><p>很多基于 lambda calculus 的程序语言，比如 ML 和 Haskell，都习惯用一种叫做 currying 的手法来表示函数。比如，如果你在 Haskell 里面这样写一个函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f x y = x + y</span><br></pre></td></tr></table></figure></p>
-<p>然后你就可以这样把链表里的每个元素加上 2：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (f 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>它会输出 [3, 4, 5]。</p>
-<p>注意本来 f 需要两个参数才能算出结果，可是这里的 (f 2) 只给了 f 一个参数。这是因为 Haskell 的函数定义的缺省方式是“currying”。Currying 其实就是用“单参数”的函数，来模拟多参数的函数。比如，上面的 f 的定义在 Scheme 里面相当于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(define f</span><br><span class="line">  (lambda (x)</span><br><span class="line">    (lambda (y)</span><br><span class="line">      (+ x y))))</span><br></pre></td></tr></table></figure></p>
-<p>它是说，函数 f，接受一个参数 x，返回另一个函数（没有名字）。这个匿名函数，如果再接受一个参数 y，就会返回 x + y。所以上面的例子里面，(f 2) 返回的是一个匿名函数，它会把 2 加到自己的参数上面返回。所以把它 map 到 [1, 2, 3]，我们就得到了 [3, 4, 5]。</p>
-<p>在这个例子里面，currying 貌似一个挺有用的东西，它让程序变得“简短”。如果不用 currying，你就需要制造另一个函数，写成这个样子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (\y-&gt;f 2 y) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>这就是为什么 Haskell 和 ML 的程序员那么喜欢 currying。这个做法其实来源于最早的 lambda calculus 的设计。因为 lambda calculus 的函数都只有一个参数，所以为了能够表示多参数的函数，有一个叫 Haskell Curry 的数学家和逻辑学家，发明了这个方法。</p>
-<p>当然，Haskell Curry 是我很尊敬的人。不过我今天想指出的是，currying 在程序设计的实践中，其实并不是想象中的那么好。大量使用 currying，其实会带来程序难以理解，复杂性增加，并且还可能因此引起意想不到的错误。</p>
-<p>不用 currying 的写法(\y-&gt;f 2 y)虽然比起 currying 的写法(f 2)长了那么一点，但是它有一点好。那就是你作为一个人（而不是机器），可以很清楚的从“\y-&gt;f 2 y”这个表达式，看到它的“用意”是什么。你会很清楚的看到：</p>
-<blockquote>
-<p>“f 本来是一个需要两个参数的函数。我们只给了它第一个参数 2。我们想要把 [1, 2, 3] 这个链表里的每一个元素，放进 f 的第二个参数 y，然后把 f 返回的结果一个一个的放进返回值的链表里。”</p>
-</blockquote>
-<p>仔细看看上面这段话说了什么吧，再来看看 (f 2) 是否表达了同样的意思？注意，我们现在的“重点”在于你，一个人，而不在于计算机。你仔细想，不要让思维的定势来影响你的判断。</p>
-<p>你发现了吗？(f 2) 并不完全的含有 \y-&gt;f 2 y 所表达的内容。因为单从 (f 2) 这个表达式（不看它的定义），你看不到“f 总共需要几个参数”这一信息，你也看不到 (f 2) 会返回什么东西。f 有可能需要2个参数，也有可能需要3个，4个，5个…… 比如，如果它需要3个参数的话，map (f 2) [1, 2, 3] 就不会返回一个整数的链表，而会返回一个函数的链表，它看起来是这样：[(\z-&gt;f 2 1 z), (\z-&gt;f 2 2 z), (\z-&gt;f 2 3 z)]。这三个函数分别还需要一个参数，才会输出结果。</p>
-<p>这样一来，表达式 (f 2) 含有的对“人”有用的信息，就比较少了。你不能很可靠地知道这个函数接受了一个参数之后会变成什么样子。当然，你可以去看 f 的定义，然后再回来，但是这里有一种“直觉”上的开销。如果你不能同时看见这些信息，你的脑子就需要多转一道弯，你就会缺少一些重要的直觉。这种直觉能帮助你写出更好的程序。</p>
-<p>然而，currying 的问题不止在于这种“认知”的方面，有时候使用 curry 会直接带来代码复杂性的增加。比如，如果你的 f 定义不是加法，而是除法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f x y = x / y</span><br></pre></td></tr></table></figure></p>
-<p>然后，我们现在需要把链表 [1, 2, 3] 里的每一个数都除以 2。你会怎么做呢？</p>
-<p>map (f 2) [1, 2, 3] 肯定不行，因为 2 是除数，而不是被除数。熟悉 Haskell 的人都知道，可以这样做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (flip f 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>flip 的作用是“交换”两个参数的位置。它可以被定义为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flip f x y = f y x</span><br></pre></td></tr></table></figure></p>
-<p>但是，如果 f 有 3 个参数，而我们需要把它的第 2 个参数 map 到一个链表，怎么办呢？比如，如果 f 被定义为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f x y z = (x - y) / z</span><br></pre></td></tr></table></figure></p>
-<p>稍微动一下脑筋，你可能会想出这样的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (flip (f 1) 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>能想出这段代码说明你挺聪明，可是如果你这样写代码，那就是缺乏一些“智慧”。有时候，好的程序其实不在于显示你有多“聪明”，而在于显示你有多“笨”。现在我们就来看看笨一点的代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (\y -&gt; f 1 y 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>现在比较一下，你仍然觉得之前那段代码很聪明吗？如果你注意观察，就会发现 (flip (f 1) 2) 这个表达式，是多么的晦涩，多么的复杂。</p>
-<p>从 (flip (f 1) 2) 里面，你几乎看不到自己想要干什么。而 \y-&gt; f 1 y 2 却很明确的显示出，你想用 1 和 2 填充掉 f 的第一，三号参数，把第二个参数留下来，然后把得到的函数 map 到链表 [1, 2, 3]。仔细看看，是不是这样的？</p>
-<p>所以你花费了挺多的脑力才把那使用 currying 的代码写出来，然后你每次看到它，还需要耗费同样多的脑力，才能明白你当时写它来干嘛。你是不是吃饱了没事干呢？</p>
-<p>练习题：如果你还不相信，就请你用 currying 的方法（加上 flip）表达下面这个语句，也就是把 f 的第一个参数 map 到链表 [1, 2, 3]：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (\y -&gt; f y 1 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
-<p>得到结果之后再跟上面这个语句对比，看谁更加简单？</p>
-<p>到现在你也许注意到了，以上的“笨办法”对于我们想要 map 的每一个参数，都是差不多的形式；而使用 currying 的代码，对于每个参数，形式有很大的差别。所以我们的“笨办法”其实才是以不变应万变的良策。</p>
-<p>才三个参数，currying 就显示出了它的弱点，如果超过三个参数，那就更麻烦了。所以很多人为了写 currying 的函数，特意把参数调整到方便 currying 的顺序。可是程序的设计总是有意想不到的变化。有时候你需要增加一个参数，有时候你又想减少一个参数，有时候你又会有别的用法，导致你需要调整参数的顺序…… 事先安排好的那些参数顺序，很有可能不能满足你后来的需要。即使它能满足你后来的需要，你的函数也会因为 currying 而难以看懂。</p>
-<p>这就是为什么我从来不在我的 ML 和 Haskell 程序里使用 currying 的原因。古老而美丽的理论，也许能够给我带来思想的启迪，可是未必就能带来工程中理想的效果。</p>
+          谈谈 Currying很多基于 lambda calculus 的程序语言，比如 ML 和 Haskell，都习惯用一种叫做 currying 的手法来表示函数。比如，如果你在 Haskell 里面这样写一个函数：1f x y = x + y
+然后你就可以这样把链表里的每个元素加上 2：1map (
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈谈 Currying/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -935,6 +947,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈惰性求值/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈惰性求值/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -955,31 +974,16 @@
       
         
           
-            <h1 id="谈惰性求值"><a href="#谈惰性求值" class="headerlink" title="谈惰性求值"></a>谈惰性求值</h1><p>从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：</p>
-<ul>
-<li><p>复杂的基于缩进的语法，使得任何编辑器都不能高效的编辑 Haskell 程序，并且使得语法分析难度加倍。对这个观点，请参考我的博文《谈语法》以及我的英文博文《Layout Syntax Considered Harmful》。</p>
-</li>
-<li><p>“纯函数式”的语义以及 monad 其实不是好东西。对此请参考博文《对函数式语言的误解》。</p>
-</li>
-<li><p>Haskell 所用的 Hindley-Milner 类型系统，其实含有一个根本性的错误。对此请参考《Hindley-Milner 类型系统的根本性错误》。</p>
-</li>
-<li><p>Haskell 所用的 type class，其实跟一般语言（比如 Java）里面的重载（overloading）并没有本质区别。你看到的区别都是因为 Hindley-Milner 系统和重载混合在一起产生的效果。type class 并不能比其它语言里的重载做更多的事。</p>
-</li>
-</ul>
-<p>这样一来，好像 Haskell 的“特征”，要么是错误的，要么就不是自己的。可是现在我再给它加上一棵稻草：Haskell 的惰性求值（lazy evaluation）方式，其实大大的限制了它的运行效率，并且使得它跟并行计算的目标相矛盾。</p>
-<p>这是一个对我已经非常明显的问题，所以我只简要的说明一下。惰性求值的方式，使得我们在“需要”一个变量的值的时候，总是有两种可能性：1）这个变量在这之前已经被求值，所以可以直接取值 2）这个变量还没有被求值，也就是说它还是一个 thunk，我们必须启动对它的求值。</p>
-<p>可能你已经发现了，这其实带来了类型系统的混乱。任何类型，不管是 Int, Bool, List, … 或者自定义数据类型，都多出了这么一个东西：thunk。它表示的是“还没有求值的计算”。Haskell 程序员一般把它叫做“bottom”，写作 |。它的意思是：死循环。因为任何 thunk 都有可能 1）返回一个预定的类型的值，或者 2）导致死循环。</p>
-<p>这有点像 C++ 和 Java 里的 null 指针，因为 null 可以被作为任何其他类型使用，却又不具有那种类型的特征，所以会产生意想不到的问题。| 给 Haskell 带来的问题没那么严重，但却一样的不可预料，难以分析和调试。对于 Haskell 来说，有可能出现这样的事情：明明写了一个很小的函数，觉得应该不会花很多时间。结果呢，因为它对某个变量取值，间接的触发了一段很耗时间的代码，所以等了老半天还没返回。想知道是哪里出了问题，却难以发现线索，因为这函数并没有直接或者间接的调用那段耗时间的代码，而是这个变量的 thunk 启动了那段代码。这就导致了程序的效率难以分析：被“惰性”搁在那里的计算，有可能在出乎你意料的地方爆发。这就是所谓“平时不烧香，临时抱佛脚。”</p>
-<p>这种不确定性，并没有带来总体计算开销的增加。然而“惰性”却在另外一方面带来了巨大的开销，这就是“问问题”的开销。每当看到一个变量，Haskell 都会问它一个问题：“你被求值了没有？”即使这变量已经被求值，而且已经被取值一百万次，Haskell 仍然会问这个问题：“你被求值了没有？”问一个变量这问题可能不要紧，可是 Haskell 会问几乎所有的变量这个问题，反复的问这个问题。这就累积成了巨大的开销。跟我在另一篇博文里谈到的“解释开销”差不多，这种问题是“运行时”的，所以没法被编译器“优化”掉。</p>
-<p>具有讽刺意味的是，Haskell 这种“纯函数式语言”的惰性求值所需要的 thunk，全都需要“副作用”才可以更新，所以它们必须被放在内存里面，而不是寄存器里面。如果你理解了我写的《对函数式语言的误解》，你就会发现连 C 程序里面的“副作用”也没有 Haskell 这么多。这样一来，处理器的寄存器其实得不到有效的利用，从而大大增加了内存的访问。我为什么可以很确信的告诉你这个呢？因为我曾经设计了一个寄存器分配算法，于是开会的时候我问 GHC 的实现者们，你们会不会对一个新的寄存器分配算法感兴趣，我可以帮你们加到 GHC 里面。结果他们说，我们不需要，因为 Haskell 到处都是 thunk，根本就没什么机会用寄存器。</p>
-<p>所以，问太多问题，没法充分利用寄存器，这使得 Haskell 在效率上大打折扣。</p>
-<p>然后我们来看看，为什么惰性求值会跟并行计算的目标相冲突。这其实很明显，它的原因就在于“惰性求值”的定义。惰性求值说：“到需要我的时候再来计算我。”而并行计算说：“到需要你的时候，你最好已经被某个处理器算出来了。”所以你看到了，并行计算要求你“勤奋”，要求你事先做好准备。而惰性求值本来就是很“懒”，怎么可能没事找事，先把自己算出来呢？由于这个问题来自于“惰性求值”的定义，所以这是不可调和的矛盾。</p>
-<p>所以，惰性求值不管是在串行处理还是在并行处理的时候，都会带来效率上的大打折扣。它是一个很鸡肋的语言特征。</p>
-<p>虽然惰性求值不能给我们带来直接的益处，但它背后的理论思想却可以启发另外的设计。如果你想真的了解惰性求值的原理，可以先看一下我写的一个惰性求值的解释器。看看如何在不到 40 行代码之内，实现 Haskell 语义的精髓：</p>
-<p><a href="https://github.com/yinwang0/lightsabers/blob/master/interp-lazy.rkt" target="_blank" rel="external">https://github.com/yinwang0/lightsabers/blob/master/interp-lazy.rkt</a></p>
-<p>这段代码的工作原理，我以后再专门写文章讲解。</p>
+          谈惰性求值从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：
 
-          
+复杂的基于缩进的语法，使得任何编辑器都不能高效的编辑 Haskell 程序，并且使得语法分析难度加倍。对这个观点，请参考我的博文《谈
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈惰性求值/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1046,6 +1050,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈程序的“通用性”/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈程序的“通用性”/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1066,39 +1077,15 @@
       
         
           
-            <h1 id="谈程序的“通用性”"><a href="#谈程序的“通用性”" class="headerlink" title="谈程序的“通用性”"></a>谈程序的“通用性”</h1><p>在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。</p>
-<p>这些人的思维方式是这样的：“将来这段代码可能会被用到更多的场合，所以我现在就考虑到扩展问题。”于是乎，他们在代码中加入了各种各样的“框架结构”，目的是为了在将来有新的需要的时候，代码能够“不加修改”就被用到新的地方。</p>
-<p>我并不否认“通用性”的价值，实际上我的某些程序通用性非常之强。可是很多人所谓的“通用性”，其实达到的是适得其反的效果。这种现象通常被称为“过度工程” (over-engineer)。关于过度工程，有一个有趣的故事：</p>
-<p><a href="http://www.snopes.com/business/genius/spacepen.asp" target="_blank" rel="external">http://www.snopes.com/business/genius/spacepen.asp</a></p>
-<blockquote>
-<p>传说 1960 年代美俄“太空竞赛”的时候，NASA 遇到一个严重的技术问题：宇航员需要一支可以在外太空的真空中写字的钢笔。最后 NASA 耗资150万美元研制出了这样的钢笔。可惜这种钢笔在市场上并不行销。</p>
-<p>俄国人也遇到同样的问题。他们使用了铅笔。</p>
-</blockquote>
-<p>这个故事虽然是假的，但是却具有伊索寓言的威力。现在再来看我们的软件行业，你也许会发现：</p>
-<ol>
-<li>代码需要被“重用”的场合，实际上比你想象的要少</li>
-</ol>
-<p>我发现很多人写程序的时候连“眼前特例”都没做好，就在开始“展望将来”。他们总是设想别人会重用这段代码。而实际上，由于他们的设计过于复杂，理解这设计所需的脑力开销已经高于从头开始的代价，所以大部分人其实根本不会去用他们的代码，自己重新写一个就是了。也有人到后来发现，之前写的那段代码，连自己都看不下去了，恨不得删了重来，就不要谈什么重用了。</p>
-<ol>
-<li>修改代码所需要的工作实际上比你想象的要少</li>
-</ol>
-<p>还有一种情况是，这些被设计来“共享”的代码，其实根本没有被用在很多的地方，所以即使你完全手动的修改它们也花不了很多时间。现在再加上 IDE 技术的发展和各种先进的 refactor 工具，批量的修改代码已经不是特别麻烦的事情。曾经需要在逻辑层面上进行的可维护性设计，现在有可能只需要在 IDE 里面点几下鼠标就轻松完成。所以在考虑设计一个框架之前，你应该同时考虑到这些因素。</p>
-<ol>
-<li>“考虑”到了通用性，并不等于你就准确地“把握”住了通用性</li>
-</ol>
-<p>很多人考虑到了通用性，却没有准确的看到，到底是哪一个部分将来可能需要修改，所以他们的设计经常抓不住关键。当有新的需要出现的时候，才发现原来设想的可能变化的部分，其实根本没有变，而原来以为不会变的地方却变了。</p>
-<p>能够准确的预测将来的需要，能够从代码中抽象出真正通用的框架，是一件非常困难的事情。它不止需要有编程的能力，而且需要对真实世界里的事物有强大的观察能力。很多人设计出来的框架，其实只是照搬别人的经验，却不能适应实际的需要。在 Java 世界里的很多 design pattern，就是这些一知半解的人设计出来的。</p>
-<ol>
-<li>初期设计的复杂性</li>
-</ol>
-<p>如果在第一次的设计中就过早的考虑到将来，由此带来的多余的复杂性，有可能让初期的设计就出现问题。所以这种对于将来的变化的考虑，实际上帮了倒忙。本来如果专注于解决现在的问题，能够得到非常好的结果。但是由于“通用性”带来的复杂度，设计者的头脑每次都要多转几道弯，所以它无法设计出优雅的程序。</p>
-<ol>
-<li>理解和维护框架性代码的开销</li>
-</ol>
-<p>如果你设计了框架性的代码，每个程序员为了在这个框架下编写代码，都需要理解这种框架的构造，这带来了学习的开销。一旦发现这框架有设计问题，依赖于它的代码很有可能需要修改，这又带来了修改的开销。所以加入“通用性”之后，其实带来了更多的工作。这种开销能不能得到回报，依赖于以上的多种因素。</p>
-<p>所以在设计程序的时候，我们最好是先把手上的问题解决好。如果发现这段代码还可以被用在很多别的地方，到时候再把框架从中抽象出来也不迟。</p>
+          谈程序的“通用性”在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。
+这些人的思维方式是这样的：“将来这段代码可能会被用到更多的场合，所以我现在就考虑到扩展问题。”于是乎，
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈程序的“通用性”/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1165,6 +1152,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈“测试驱动的开发”/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈“测试驱动的开发”/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1185,16 +1179,14 @@
       
         
           
-            <h1 id="谈“测试驱动的开发”"><a href="#谈“测试驱动的开发”" class="headerlink" title="谈“测试驱动的开发”"></a>谈“测试驱动的开发”</h1><p>现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。</p>
-<p>这不是一个坏主意。我在 Kent 的编译器课程上也使用了很多测试。它们在编译器的开发中是不可缺少的。编译器是一种极其精密的程序，微小的改动都可能带来重大的错误。所以编译器的项目一般都含有大量的测试。</p>
-<p>然而测试的构建，应该是在程序主体已经成形的情况下才能进行。如果程序属于创造性的设计，主体并未成形，过早的加入测试反而会大幅度的降低开发效率。所以当我给 Google 开发 Python 静态分析的时候，我几乎没有使用任何测试。虽然组里的成员催我写测试，但是我却知道那只会降低我的开发效率，因为这个程序在几个星期的过程中，被我推翻重来了好几次。要是我一开头就写上测试，这些测试就会碍手碍脚，阻碍我大幅度的修改代码。</p>
-<p>测试的另一个副作用是，它让很多人对测试有一种盲目的依赖心理。改了程序之后，把测试跑一遍没出错，就以为自己的代码是正确的。可是测试其实并不能保证代码的正确，即使完全“覆盖”了也是一样。覆盖只是说你的代码被测试碰到过了，可是它在什么条件下碰到的却没法判断。如果实际的条件跟测试时的条件不同，那么实际运行中仍然会出问题。测试的条件往往是“组合爆炸”的数量级，所以你不可能测试所有的情况。唯一能可靠的方法是使用严密的“逻辑推理”，证明它的正确。</p>
-<p>当然我并不是让你用 ACL2 或者 Coq 这样的定理证明软件。虽然它们的逻辑非常严密，但是用它们来证明复杂的软件系统，需要顶尖的程序员和大量的时间。即使如此，由于理论的限制，程序的正确性有可能根本无法证明。所以我这里说的“逻辑推理”，只是局部的，人力的，基本的逻辑推理。</p>
-<p>很多人写程序只是凭现象来判断，而不能精密的分析程序的逻辑，所以他们修改程序经常“治标不治本”。如果程序出问题了，他们的办法是看看哪里错了，也不怎么理解，就改一下让它不再出错，最多再把所有测试跑一遍。或者再加上一些新的测试，以保证这个地方下次不再出问题。</p>
-<p>这种做法的结果是，程序里出现大量的“特殊情况”和“创可贴”。把一个“虫子”按下去，另一个虫子又冒出来。忙活来忙活去，最后仍然不能让程序满足“所有情况”。其实能够“满足所有情况”的程序，往往比能够“满足特殊情况”的程序简单很多。这是一个很奇怪的事情：能做的事越多，代码量却越少。也许这就叫做程序的“美”，它跟数学的“美”其实是一回事。</p>
-<p>美的程序不可能从修修补补中来。它必须完美的把握住事物的本质，否则就会有许许多多无法修补的特例。其实程序员跟画家差不多，画家如果一天到头蹲在家里，肯定什么好东西也画不出来。程序员也一样，蹲在家里面对电脑，其实很难写出什么好的代码。你必须出去观察事物，寻找“灵感”，而不只是写代码。在修改代码的时候，你必须用“心灵之眼”看见代码背后所表达的事物。这也是为什么很多高明的程序员不怎么用调试器（debugger）的原因。他们只是用眼睛看着代码，然后闭上眼，脑海里浮现出其中信息的流动，所以他们经常一动手就能改到正确的地方。</p>
+          谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈“测试驱动的开发”/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1261,137 +1253,12 @@
 
           
             
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="谈-Linux，Windows-和-Mac"><a href="#谈-Linux，Windows-和-Mac" class="headerlink" title="谈 Linux，Windows 和 Mac"></a>谈 Linux，Windows 和 Mac</h1><p>这段时间受到很多人的来信。他们看了我很早以前写的推崇 Linux 的文章，想知道如何“抛弃 Windows，学习 Linux”。天知道他们在哪里找到那么老的文章，真是好事不出门…… 我觉得我有责任消除我以前的文章对人的误导，洗清我这个“Linux 狂热分子”的恶名。我觉得我已经写过一些澄清的文章了，可是怎么还是有人来信问 Linux 的问题。也许因为感觉到“舆论压力”，我把文章都删了。</p>
-<p>简言之，我想对那些觉得 Linux 永远也学不会的“菜鸟”们说：</p>
-<ol>
-<li><p>Linux 和 Unix 里面包含了一些非常糟糕的设计。不要被 Unix 的教条主义者吓倒。学不会有些东西很多时候不是你的错，而是 Linux 的错，是“Unix 思想” 的错。不要浪费时间去学习太多工具的用法，钻研稀奇古怪的命令行。那些貌似难的，复杂的东西，特别要小心分析。</p>
-</li>
-<li><p>Windows 避免了 Unix，Linux 和 Mac OS X 的很多问题。微软是值得尊敬的公司，是真正在乎程序开发工具的公司。我收回曾经对微软的鄙视态度。请菜鸟们吸收 Windows 设计里面好的东西。另外 Visual Studio 是非常好的工具，会带来编程效率的大幅度提升。请不要歧视 IDE。要正视 Emacs，VIM 等文本编辑器的局限性。当然，这些正面评价不等于说你应该为微软工作。就像我喜欢 iPhone，但是却不一定想给 Apple 工作一样。</p>
-</li>
-<li><p>学习操作系统最好的办法是学会（真正的）程序设计思想，而不是去“学习”各种古怪的工具。所有操作系统，数据库，Internet，以至于 WEB 的设计思想（和缺陷），几乎都能用程序语言的思想简单的解释。</p>
-</li>
-</ol>
-<p>先说说我现在对 Linux 和相关工具（比如 TeX）的看法吧。我每天上班都用 Linux，可是回家才不想用它呢。上班的时候，我基本上只是尽我所能的改善它，让它不要给我惹麻烦。Unix 有许许多多的设计错误，却被当成了教条，传给了一代又一代的程序员，恶性循环。Unix 的 shell，命令，配置方式，图形界面，都是相当糟糕的。每一个新版本的 Ubuntu 都会在图形界面的设计上出现新的错误，让你感觉历史怎么会倒退。其实这只是表面现象。Linux 所用的图形界面（X Window）在本质上几乎是没救的。我不想在这里细说 Unix 的缺点，在它出现的早期，已经有人写了一本书，名叫 Unix Hater’s Handbook，里面专门有一章叫做 The X-Windows Disaster。它分析后指出，X Window 貌似高明的 client-server 设计，其实并不像说的那么好。</p>
-<p>这本书汇集了 Unix 出现的年代，很多人对它的咒骂。有趣的是，这本书有一个“反序言”，是 Unix 的创造者之一 Dennis Ritchie 写的。我曾经以为这些骂 Unix 的人都是一些菜鸟。他们肯定是智商太低，或者被 Windows 洗脑了，不能理解 Unix 的高明设计才在那里骂街。现在理解了程序语言的设计原理之后，才发现他们说的那些话里面居然大部分是实话！其实他们里面有些人在当年就是世界顶尖的编程高手，自己写过操作系统和编译器，功底不亚于 Unix 的创造者。在当年他们就已经使用过设计更加合理的系统，比如 Multics，Lisp Machine 等。</p>
-<p>可惜的是，在现在的操作系统书籍里面，Multics 往往只是被用来衬托 Unix 的“简单”和伟大。Unix 的书籍喜欢在第一章讲述这样的历史：“Multics 由于设计过于复杂，试图包罗万象，而且价格昂贵，最后失败了。” 可是 Multics 失败了吗？Multics，Oberon，IBM System/38， Lisp Machine，…… 在几十年前就拥有了 Linux 现在都还没有的好东西。Unix 里面的东西，什么虚拟内存，文件系统，…… 基本上都是从 Multics 学来的。Multics 的机器，一直到 2000 年都还在运行。Unix 不但“窜改”了历史教科书，而且似乎永远不吸取教训，到现在还没有实现那些早期系统早就有的好东西。Unix 的设计几乎完全没有一致性和原则。各种工具程序功能重复，冗余，没法有效地交换数据。可是最后 Unix 靠着自己的“廉价”，“宗教”和“哲学”，战胜了别的系统在设计上的先进，统治了程序员的世界。</p>
-<p>如果你想知道这些“失败的”操作系统里面有哪些我们现在都还没有的先进技术，可以参考这篇文章：Oberon - The Overlooked Jewel。它介绍的是 Niklaus Wirth（也就是 Pascal 语言的设计者）的 Oberon 操作系统。</p>
-<p>胜者为王，可是 Unix 其实是一个暴君，它不允许你批评它的错误。它利用其它程序员的舆论压力，让每一个系统设计上的错误，都被说成是用户自己的失误。你不敢说一个工具设计有毛病，因为如果别人听到了，就会以为你自己不够聪明，说你“人笨怪刀钝”。这就像是“皇帝的新装”里的人们，明明知道皇帝没穿衣服，还要说“这衣服这漂亮”！总而言之，“对用户友好”这个概念，在 Unix 的世界里是被歧视，被曲解的。Unix 的狂热分子很多都带有一种变态的“精英主义”。他们以用难用的工具为豪，鄙视那些使用“对用户友好”的工具的人。</p>
-<p>我曾经强烈的推崇 FVWM，TeX 等工具，可是现在擦亮眼睛看来，它们给用户的界面，其实也是非常糟糕的设计，跟 Unix 一脉相承。他们把程序设计的许多没必要的细节和自己的设计失误，无情的暴露给用户。让用户感觉有那么多东西要记，仿佛永远也没法掌握它。实话说吧，当年我把 TeXbook 看了两遍，做完了所有的习题（包括最难的“double bend”习题）。几个月之后，几乎全部忘记干净。为什么呢？因为 TeX 的语言是非常糟糕的设计，它没有遵循程序语言设计的基本原则。</p>
-<p>这里有一个鲜为人知的小故事。TeX 之所以有一个“扩展语言”，是 Scheme 的发明者 Guy Steele 的建议。那年夏天，Steele 在 Stanford 实习。他听说 Knuth 在设计一个排版系统，就强烈建议他使用一种扩展语言。后来 Knuth 采纳了他的建议。不幸的是 Steele 几个月后就离开了，没能帮助 Knuth 完成语言的设计。Knuth 老爹显然有我所说的那种“精英主义”，他咋总是设计一些难用的东西，写一些难懂的书？</p>
-<p>一个好的工具，应该只有少数几条需要记忆的规则，就像象棋一样。而这些源于 Unix 的工具却像是“魔鬼棋”或者“三国杀”，有太多的，无聊的，人造的规则。有些人鄙视图形界面，鄙视 IDE，鄙视含有垃圾回收的语言（比如 Java），鄙视一切“容易”的东西。他们却不知道，把自己沉浸在别人设计的繁复的规则中，是始终无法成为大师的。就像一个人，他有能力学会各种“魔鬼棋”的规则，却始终无法达到象棋大师的高度。所以，容易的东西不一定是坏的，而困难的东西也不一定是好的。学习计算机（或者任何其它工具），应该“只选对的，不选难的”。记忆一堆的命令，乌七八糟的工具用法，最后脑子里什么也不会留下。学习“原理性”的东西，才是永远不会过时的。</p>
-<p>Windows 技术设计上的很多细节，也许在早期是同样糟糕的。但是它却向着更加结构化，更加简单的方向发展。Windows 的技术从 OLE，COM，发展到 .NET，再加上 Visual Studio 这样高效的编程工具，这些带来了程序员和用户效率的大幅度提高，避免了 Unix 和 C 语言的很多不必存在的问题。Windows 程序从很早的时候就能比较方便的交换数据。比如，OLE 让你可以把 Excel 表格嵌入到 Word 文档里面。不得不指出，这些是非常好的想法，是超越“Unix 哲学”的。相反，由于受到“Unix 哲学”的误导，Unix 的程序间交换数据一直以来都是用字符串，而且格式得不到统一，以至于很多程序连拷贝粘贴都没法正确进行。Windows 的“配置”，全都记录在一个中央数据库（注册表）里面，这样程序的配置得到大大的简化。虽然在 Win95 的年代，注册表貌似老是惹麻烦，但现在基本上没有什么问题了。相反，Unix 的配置，全都记录在各种稀奇古怪的配置文件里面，分布在系统的各个地方。你搞不清楚哪个配置文件记录了你想要的信息。每个配置文件连语法都不一样！这就是为什么用 Unix 的公司总是需要一个“系统管理员”，因为软件工程师们才懒得记这些麻烦的东西。</p>
-<p>再来比较一下 Windows 和 Mac 吧。我认识一个 Adobe 的高级设计师。他告诉我说，当年他们把 Photoshop 移植到 Intel 构架的 Mac，花了两年时间。只不过换了个处理器，移植个应用程序就花了两年时间，为什么呢？因为 Xcode 比起 Visual Studio 真是差太多了。而 Mac OS X 的一些设计原因，让他们的移植很痛苦。不过他很自豪的说，当年很多人等了两年也没有买 Intel 构架的 Mac，就是因为他们在等待 Photoshop。最后他直言不讳的说，微软其实才是真正在乎程序员工具的公司。相比之下，Apple 虽然对用户显得友好，但是对程序员的界面却差很多。Apple 尚且如此，Linux 对程序员就更差了。可是有啥办法呢，有些人就是受虐狂。自己痛过之后，还想让别人也痛苦。就像当年的我。</p>
-<p>我当然不是人云亦云。微软在程序语言上的造诣和投入，我看得很清楚。我只是通过别人的经历，来验证我已经早已存在的看法。所以一再宣扬别的系统都是向自己学习的 Apple 受到这样的评价，我也一点不惊讶。Mac OS X 毕竟是从 Unix 改造而来的，还没有到脱胎换骨的地步。我有一个 Macbook Air，一个 iPhone 5，和一个退役的，装着 Windows 7 的 T60。我不得不承认，虽然我很喜欢 Macbook 和 iPhone 的硬件，但我发现 Windows 在软件上的很多设计其实更加合理。</p>
-<p>我为什么当年会鄙视微软？这很简单。我就是跟着一群人瞎起哄而已！他们说 Linux 能拯救我们，给我们自由。他们说微软是邪恶的公司…… 到现在我身边还有人无缘无故的鄙视微软，却不知道理由。可是 Unix 是谁制造的呢？是 AT&amp;T。微软和 AT&amp;T 哪个更邪恶呢？我不知道。但是你应该了解一下 Unix 的历史。AT&amp;T 当年发现 Unix 有利可图，找多少人打了多少年官司？说微软搞垄断，其实 AT&amp;T 早就搞过垄断了，还被拆散成了好几个公司。想想世界上还有哪一家公司，独立自主的设计出这从底至上全套家什：程序语言，编译器，IDE，操作系统，数据库，办公软件，游戏机，手机…… 我不得不承认，微软是值得尊敬的公司。</p>
-<p>公司还不都一样，都是以利益为本的。我们程序员就不要被他们利用，作为利益斗争的炮灰啦。见到什么好就用什么，就学什么。自己学到的东西，又不属于那些垄断企业。我们都有自由的头脑。</p>
-<p>当然我不是在这里打击 Linux 和 Mac 而鼓吹 Windows。这些系统的纷争基本上已经不关我什么事。我只是想告诉新人们，去除头脑里的宗教，偏激，仇恨和鄙视。每次仇恨一个东西，你就失去了向它学习的机会。</p>
-<p>后记：“对用户友好”是一个值得研究，却又研究得非常不够的东西。很多 UI 的设计者，把东西设计的很漂亮，但是却不方便，不顺手。如果你想了解我认为怎样的设计才是“对用户友好的”，可以参考这篇博客<a href="http://www.yinwang.org/blog-cn/2012/05/18/user-friendliness" target="_blank" rel="external">《什么是“对用户友好”》</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/什么是语义学/" itemprop="url">
-                  什么是语义学
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈 Linux，Windows 和 Mac/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈 Linux，Windows 和 Mac/" itemprop="commentsCount"></span>
                 </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:11:14+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/语义学/" itemprop="url" rel="index">
-                    <span itemprop="name">语义学</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
             
           
 
@@ -1413,15 +1280,14 @@
       
         
           
-            <h1 id="什么是语义学"><a href="#什么是语义学" class="headerlink" title="什么是语义学"></a>什么是语义学</h1><p><img src="http://www.yinwang.org/images/semantics.jpeg" alt=""></p>
-<p>很多人问我如何在掌握基本的程序语言技能之后进入“语义学”的学习。现在我就简单介绍一下什么是“语义”，然后推荐一本入门的书。这里我说的“语义”主要是针对程序语言，不过自然语言里的语义，其实本质上也是一样的。</p>
-<p>一个程序的“语义”通常是由另一个程序决定的，这另一个程序叫做“解释器”(interpreter)。程序只是一个数据结构，通常表示为语法树(abstract syntax tree)或者指令序列。这个数据结构本身其实没有意义，是解释器让它产生了意义。对同一个程序可以有不同的解释，就像上面这幅图，对画面元素的不同解释，可以看到不同的内容（少女或者老妇）。</p>
-<p>解释器接受一个“程序”(program)，输出一个“值”(value)。用图形的方法表示，解释器看起来就像一个箭头：程序 ===&gt; 值。这个所谓的“值”可以具有非常广泛的含义。它可能是一个整数，一个字符串，也有可能是更加奇妙的东西。</p>
-<p>其实解释器不止存在于计算机中，它是一个很广泛的概念。其中好些你可能还没有意识到。写 Python 程序，需要 Python 解释器，它的输入是 Python 代码，输出是一个 Python 里面的数据，比如 42 或者“foo”。CPU 其实也是一个解释器，它的输入是以二进制表示的机器指令，输出是一些电信号。人脑也是一个解释器，它的输入是图像或者声音，输出是神经元之间产生的“概念”。如果你了解类型推导系统 (type inference)，就会发现类型推导的过程也是一个解释器，它的输入是一个程序，输出是一个“类型”。类型也是一种值，不过它是一种抽象的值。比如，42 对应的类型是 int，我们说 42 被抽象为 int。</p>
-<p>所以“语义学”，基本上就是研究各种解释器。解释器的原理其实很简单，但是结构非常精巧微妙，如果你从复杂的语言入手，恐怕永远也学不会。最好的起步方式是写一个基本的 lambda calculus 的解释器。lambda calculus 只有三种元素，却可以表达所有程序语言的复杂结构。</p>
-<p>专门讲语义的书很少，现在推荐一本我觉得深入浅出的：<a href="https://dl.dropboxusercontent.com/u/392085/PLLC.pdf" target="_blank" rel="external">《Programming Languages and Lambda Calculi》</a>。只需要看完前半部分（Part I 和 II，100来页）就可以了。这书好在什么地方呢？它是从非常简单的布尔表达式（而不是 lambda calculus）开始讲解什么是递归定义，什么是解释，什么是 Church-Rosser，什么是上下文 (evaluation context)。在让你理解了这种简单语言的语义，有了足够的信心之后，才告诉你更多的东西。比如 lambda calculus 和 CEK，SECD 等抽象机 (abstract machine)。理解了这些概念之后，你就会发现所有的程序语言都可以比较容易的理解了。</p>
+          谈 Linux，Windows 和 Mac这段时间受到很多人的来信。他们看了我很早以前写的推崇 Linux 的文章，想知道如何“抛弃 Windows，学习 Linux”。天知道他们在哪里找到那么老的文章，真是好事不出门…… 我觉得我有责任消除我以前的文章对人的误导，洗清我这个“Linux 狂热分子”
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈 Linux，Windows 和 Mac/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1489,7 +1355,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">34</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1497,7 +1363,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1506,7 +1372,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1515,14 +1381,53 @@
         </nav>
 
         
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5315346623/home?wvr=5" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/wushuang2015" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/YYJN" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
                 <a href="http://www.ruanyifeng.com/blog/" target="_blank">
                   
                     <i class="fa fa-globe"></i> 阮一峰
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://notes.iissnan.com/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> notes
                   
                 </a>
               </span>
@@ -1641,15 +1546,58 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"YYJN"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
   
 
 
 
+
+
   
   
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
 
   
 

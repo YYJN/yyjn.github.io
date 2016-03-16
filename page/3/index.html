@@ -47,6 +47,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="Wushuang’blog" type="application/atom+xml" />
+
 
 
 
@@ -90,6 +92,15 @@
 
   
 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75158762-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 
@@ -226,6 +237,127 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/15/程序语言不是工具/" itemprop="url">
+                  程序语言不是工具
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:05:29+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/程序语言/" itemprop="url" rel="index">
+                    <span itemprop="name">程序语言</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/程序语言不是工具/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/程序语言不是工具/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          程序语言不是工具在谈论到程序语言的好坏的时候，总是有人说：“程序语言只是一种工具。只要你的算法好，不管用什么语言都能写出一样好的程序。”在本科第一堂编程课上，我的教授就这么对我们说。可是现在我却发现，这是一个根本错误的说法。
+我不知道这种说法确切的来源，然而昨天在浏览网页的时候，偶然发现了 C++ 
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/程序语言不是工具/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/15/程序语言的常见设计错误(1) - 片面追求短小/" itemprop="url">
                   程序语言的常见设计错误(1) - 片面追求短小
                 </a>
@@ -268,6 +400,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/程序语言的常见设计错误(1) - 片面追求短小/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/程序语言的常见设计错误(1) - 片面追求短小/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -288,61 +427,15 @@
       
         
           
-            <h1 id="程序语言的常见设计错误-1-片面追求短小"><a href="#程序语言的常见设计错误-1-片面追求短小" class="headerlink" title="程序语言的常见设计错误(1) - 片面追求短小"></a>程序语言的常见设计错误(1) - 片面追求短小</h1><p>我经常以自己写“非常短小”的代码为豪。有一些人听了之后很赞赏，然后说他也很喜欢写短小的代码，接着就开始说 C 语言其实有很多巧妙的设计，可以让代码变得非常短小。然后我才发现，这些人所谓的“短小”跟我所说的“短小”完全不是一回事。</p>
-<p>我的程序的“短小”是建立在语义明确，概念清晰的基础上的。在此基础上，我力求去掉冗余的，绕弯子的，混淆的代码，让程序更加直接，更加高效的表达我心中设想的“模型”。这是一种在概念级别的优化，而程序的短小精悍只是它的一种“表象”。就像是整理一团电线，并不是把它们揉成一团然后塞进一个盒子里就好。这样的做法只会给你以后的工作带来更大的麻烦，而且还有安全隐患。</p>
-<p>所以我的这种短小往往是在语义和逻辑 层面的，而不是在语法上死抠几行代码。我绝不会为了程序显得短小而让它变得难以理解或者容易出错。相反，很多其它人所追求的短小，却是盲目的而没有原则的。在很多时候这些小伎俩都只是在语法层面，比如想办法把两行代码“搓”成一行。可以说，这种“片面追求短小”的错误倾向，造就了一批语言设计上的错误，以及一批“擅长于”使用这些错误的程序员。</p>
-<p>现在我举几个简单的“片面追求短小”的语言设计。</p>
-<h3 id="自增减操作"><a href="#自增减操作" class="headerlink" title="自增减操作"></a>自增减操作</h3><p>很多语言里都有 i++ 和 ++i 这两个“自增”操作和 i– 和 –i 这两个“自减”操作（下文合称“自增减操作”。很多人喜欢在代码里使用自增减操作，因为这样可以“节省一行代码”。殊不知，节省掉的那区区几行代码比起由此带来的混淆和错误，其实是九牛之一毛。</p>
-<p>从理论上讲，自增减操作本身就是错误的设计。因为它们把对变量的“读”和“写”两种根本不同的操作，毫无原则的合并在一起。这种对读写操作的混淆不清，带来了非常难以发现的错误。相反，一种等价的，“笨”一点的写法，i = i + 1，不但更易理解，而且在逻辑上更加清晰。</p>
-<p>有些人很在乎 i++ 与 ++i 的区别，去追究 (i++) + (++i) 这类表达式的含义，追究 i++ 与 ++i 谁的效率更高。这些其实都是徒劳的。比如，i++ 与 ++i 的效率差别，其实来自于早期 C 编译器的愚蠢。因为 i++ 需要在增加之后返回 i 原来的值，所以它其实被编译为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tmp = i, i = i + 1, tmp)</span><br></pre></td></tr></table></figure>
-<p>但是在</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; max; i++)</span><br></pre></td></tr></table></figure>
-<p>这样的语句中，其实你并不需要在 i++ 之后得到它自增前的值。所以有人说，在这里应该用 ++i 而不是 i++，否则你就会浪费一次对中间变量 tmp 的赋值。而其实呢，一个良好设计的编译器应该在两种情况下都生成相同的代码。这是因为在 i++ 的情况，代码其实先被转化为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; max; (tmp = i, i = i + 1, tmp))</span><br></pre></td></tr></table></figure>
-<p>由于 tmp 这个临时变量从来没被用过，所以它会被编译器的“dead code elimination”消去。所以编译器最后实际上得到了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for (int i = 0; i &lt; max; i = i + 1)</span><br></pre></td></tr></table></figure>
-<p>所以，“精通”这些细微的问题，并不能让你成为一个好的程序员。很多人所认为的高明的技巧，经常都是因为早期系统设计的缺陷所致。一旦这些系统被改进，这些技巧就没什么用处了。</p>
-<p>真正正确的做法其实是：完全不使用自增减操作，因为它们本来就是错误的设计。</p>
-<p>好了，一个小小的例子，也许已经让你意识到了片面追求短小程序所带来的认知上，时间上的代价。很可惜的是，程序语言的设计者们仍然在继续为此犯下类似的错误。一些新的语言加入了很多类似的旨在“缩短代码”，“减少打字量”的雕虫小技。也许有一天你会发现，这些雕虫小技所带来的，除了短暂的兴奋，其实都是在浪费你的时间。</p>
-<h3 id="赋值语句返回值"><a href="#赋值语句返回值" class="headerlink" title="赋值语句返回值"></a>赋值语句返回值</h3><p>在几乎所有像 C，C++，Java 的语言里，赋值语句都可以被作为值。之所以设计成这样，是因为你就可以写这样的代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (y = 0) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
-<p>而不是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">y = 0;</span><br><span class="line">if (y) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
-<p>程序好像缩短了一行，然而，这种写法经常引起一种常见的错误，那就是为了写 if (y == 0) { … } 而把 == 比较操作少打了一个 =，变成了 if (y = 0) { … }。很多人犯这个错误，是因为数学里的 = 就是比较两个值是否相等的意思。</p>
-<p>不小心打错一个字，就让程序出现一个 bug。不管 y 原来的值是多少，经过这个“条件”之后，y 的值都会变成 0。所以这个判断语句会一直都为“假”，而且一声不吭的改变了 y 的值。这种 bug 相当难以发现。这就是另一个例子，说明片面追求短小带来的不应有的问题。</p>
-<p>正确的做法是什么呢？在一个类型完备的语言里面，像 y=0 这样的赋值语句，其实是不应该可以返回一个值的，所以它不允许你写：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x = y = 0</span><br></pre></td></tr></table></figure>
-<p>或者</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (y = 0) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
-<p>这样的代码。</p>
-<p>x = y = 0 的工作原理其实是这样：经过 parser 它其实变成了 x = (y = 0)（因为 = 操作符是“右结合”的）。x = (y = 0) 这个表达式也就是说 x 被赋值为 (y = 0) 的值。注意，我说的是 (y = 0) 这整个表达式的值，而不是 y 的值。所以这里的 (y = 0) 既有副作用又是值，它返回 y 的“新值”。</p>
-<p>正确的做法其实是：y = 0 不应该具有一个值。它的作用应该是“赋值”这种“动作”，而不应该具有任何“值”。即使牵强一点硬说它有值，它的值也应该是 void。这样一来 x = y = 0 和 if (y = 0) 就会因为“类型不匹配”而被编译器拒绝接受，从而避免了可能出现的错误。</p>
-<p>仔细想一想，其实 x = y = 0 和 if (y = 0) 带来了非常少的好处，但它们带来的问题却耗费了不知道多少人多少时间。这就是我为什么把它们叫做“小聪明”。</p>
-<h3 id="思考题："><a href="#思考题：" class="headerlink" title="思考题："></a>思考题：</h3><ol>
-<li>Google 公司的代码规范里面规定，在任何情况下 for 语句和 if 语句之后必须写花括号，即使 C 和 Java 允许你在其只包含一行代码的时候省略它们。比如，你不能这样写<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for (int i=0; i &lt; n; i++)</span><br><span class="line">   some_function(i);</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>而必须写成</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (int i=0; i &lt; n; i++) &#123;</span><br><span class="line">  some_function(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>请分析：这样多写两个花括号，是好还是不好？</p>
-<p>（提示，Google 的代码规范在这一点上是正确的。为什么？）</p>
-<ol>
-<li>当我第二次到 Google 实习的时候，发现我一年前给他们写的代码，很多被调整了结构。几乎所有如下结构的代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (condition) &#123;</span><br><span class="line">  return x;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>都被人改成了：</p>
-<figure class="highlight plain"><figcaption><span>(condition) &#123;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  return x;</span><br><span class="line">&#125;</span><br><span class="line">return y;</span><br></pre></td></tr></table></figure>
-<p>请问这里省略了一个 else 和两个花括号，会带来什么好处或者坏处？</p>
-<p>（提示，改过之后的代码不如原来的好。为什么？）</p>
-<ol>
-<li><p>根据本文对于自增减操作的看法，再参考传统的图灵机的设计，你是否发现图灵机的设计存在类似的问题？你如何改造图灵机，使得它不再存在这种问题？<br>（提示，注意图灵机的“读写头”。）</p>
-</li>
-<li><p>参考这个<a href="http://tour.golang.org/" target="_blank" rel="external">《Go 语言入门指南》</a>，看看你是否能从中发现由于“片面追求短小”而产生的，别的语言里都没有的设计错误？</p>
-</li>
-</ol>
+          程序语言的常见设计错误(1) - 片面追求短小我经常以自己写“非常短小”的代码为豪。有一些人听了之后很赞赏，然后说他也很喜欢写短小的代码，接着就开始说 C 语言其实有很多巧妙的设计，可以让代码变得非常短小。然后我才发现，这些人所谓的“短小”跟我所说的“短小”完全不是一回事。
+我的程序的“短小”是建立
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/程序语言的常见设计错误(1) - 片面追求短小/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -428,6 +521,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/编辑器与IDE/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/编辑器与IDE/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -448,28 +548,14 @@
       
         
           
-            <h1 id="编辑器与IDE"><a href="#编辑器与IDE" class="headerlink" title="编辑器与IDE"></a>编辑器与IDE</h1><h3 id="无谓的编辑器战争"><a href="#无谓的编辑器战争" class="headerlink" title="无谓的编辑器战争"></a>无谓的编辑器战争</h3><p>很多人都喜欢争论哪个编辑器是最好的。其中最大的争论莫过于 Emacs 与 vi 之争。vi 的支持者喜欢说：“看 vi 打起字来多快，手指完全不离键盘，连方向键都可以不用。”Emacs 的支持者往往对此不屑一顾，说：“打字再快又有什么用。我在 Emacs 里面按一个键，等于你在 vi 里面按几十个键。”</p>
-<p>其实还有另外一帮人，这些人喜欢说：“对于 Emacs 与 vi 之争，我的答案是 {jEdit， Geany, TextMate, Sublime…}”这些人厌倦了 Emacs 的无休止的配置和 bug，也厌倦了 vi 的盲目求快和麻烦的模式切换，所以他们选择了另外的更加简单的解决方案。</p>
-<h3 id="临时解决方案-IDE"><a href="#临时解决方案-IDE" class="headerlink" title="临时解决方案 - IDE"></a>临时解决方案 - IDE</h3><p>那么我对此的答案是什么呢？在目前的情况下，我对程序编辑的临时答案是：IDE。</p>
-<p>写程序的时候，我通常根据语言来选择最能“理解”那种语言的“IDE”（比如 Visual Studio, Eclipse, IntelliJ IDEA 等），而不是一种通用的“文本编辑器”（比如 Emacs, vi, jEdit, …）。这是因为“文本编辑器”这种东西一般都不真正的理解程序语言。很多 Emacs 和 vi 的用户以为用 etags 和 ctags 这样的工具就能让他们“跳转到定义”，然而这些 tags 工具其实只是对程序的“文本”做一些愚蠢的正则表达式匹配。它们根本没有对程序进行 parse，所以其实只是在进行一些“瞎猜”。简单的函数定义它们也许能猜对位置，但是对于有重名的定义，或者局部变量的时候，它们就力不从心了。</p>
-<p>很多人对 IDE 有偏见，因为他们认为这些工具让编程变得“傻瓜化”了，他们觉得写程序就是应该“困难”，所以他们眼看着免费的 IDE 也不试一下。有些人写 Java 都用 Emacs 或者 vi，而不是 Eclipse 或者 IntelliJ。可是这些人错了。他们没有意识到 IDE 里面其实蕴含了比普通文本编辑器高级很多的技术。这些 IDE 会对程序文本进行真正的 parse，之后才开始分析里面的结构。它们的“跳转到定义”一般都是很精确的跳转，而不是像文本编辑器那样瞎猜。</p>
-<p>这种针对程序语言的操作可以大大提高人们的思维效率，它让程序员的头脑从琐碎的细节里面解脱出来，所以他们能够更加专注于程序本身的语义和算法，这样他们能写出更加优美和可靠的程序。这就是我用 Eclipse 写 Java 程序的时候相对于 Emacs 的感觉。我感觉到自己的“心灵之眼”能够“看见”程序背后所表现的“模型”，而不只是看到程序的文本和细节。所以，我经常发现自己的头脑里面能够同时看到整个程序，而不只是它的一部分。我的代码比很多人的都要短很多也很有很大部分是这个原因，因为我使用的工具可以让我在相同的时间之内，对代码进行比别人多很多次的结构转换，所以我往往能够把程序变成其他人想象不到的样子。</p>
-<p>对于 Lisp 和 Scheme，Emacs 可以算是一个 IDE。Emacs 对于 elisp 当然是最友好的了，它的 Slime 模式用来编辑 Common Lisp 也相当不错。然而对于任何其它语言，Emacs 基本上都是门外汉。我大部分时间在 Emacs 里面是在写一些超级短小的 Scheme 代码，我有自己的一个简单的<a href="http://www.yinwang.org/blog-cn/2013/04/11/scheme-setup" target="_blank" rel="external">配置方案</a>。虽然谈不上是 IDE，Emacs 编辑 Scheme 确实比其它编辑器方便。R. Kent Dybvig 写 Chez Scheme 居然用的是 vi，但是我并不觉得他的编程效率比我高。我的代码很多时候比他的还要干净利落，一部分原因就是因为我使用的 ParEdit mode 能让我非常高效的转换代码的“形状”。</p>
-<p>当要写 Java 的时候，我一般都用 Eclipse。最近写 C++ 比较多，C++ 的最好的 IDE 当然是 Visual Studio。可惜的是 VS 没有 Linux 的版本，所以就拿 Eclipse 凑合用着，感觉还比较顺手。个别情况 Eclipse “跳转定义”到一些完全不相关的地方，对于 C++ 的 refactor 实现也很差，除了最简单的一些情况（比如局部变量重命名），其它时候几乎完全不可用。当然 Eclipse 遇到的这些困难，其实都来自于 C++ 语言本身的糟糕设计。</p>
-<h3 id="终极解决方案-结构化编辑器"><a href="#终极解决方案-结构化编辑器" class="headerlink" title="终极解决方案 - 结构化编辑器"></a>终极解决方案 - 结构化编辑器</h3><p>想要设计一个 IDE，可以支持所有的程序语言，这貌似一个不大可能的事情，但是其实没有那么难。有一种叫做“结构化编辑器”的东西，我觉得它可能就是未来编程的终极解决方案。</p>
-<p>跟普通的 IDE 不同，这种编辑器可以让你直接编辑程序的 AST 结构，而不是停留于文本。每一个界面上的“操作”，对应的是一个对 AST 结构的转换，而不是对文本字符的“编辑”。这种 AST 的变化，随之引起屏幕上显示的变化，就像是变化后的 AST 被“pretty print”出来一样。这些编辑器能够直接把程序语言保存为结构化的数据（比如 S表达式，XML 或者 JSON），到时候直接通过对 S表达式，XML 或者 JSON 的简单的“解码”，而不需要针对不同的程序语言进行不同的 parse。这样的编辑器，可以很容易的扩展到任何语言，并且提供很多人都想象不到的强大功能。这对于编程工具来说将是一个革命性的变化。</p>
-<ul>
-<li><p>已经有人设计了这样一种编辑器的模型，并且设计的相当不错。你可以参考一下这个结构化编辑器，它包含一些 Visual Studio 和 Eclipse 都没有的强大功能，却比它们两者都要更加容易实现。你可以在这个网页上下载这个编辑器模型来试用一下。</p>
-</li>
-<li><p>我之前推荐过的 TeXmacs 其实在本质上就是一个“超豪华”的结构化编辑器。你可能不知道，TeXmacs 不但能排版出 TeX 的效果，而且能够运行 Scheme 代码。</p>
-</li>
-<li><p>IntelliJ IDEA 的制造者 JetBrains 做了一个结构化编辑系统，叫做 MPS。它是开源软件，并且可以免费下载。</p>
-</li>
-<li><p>另外，Microsoft Word 的创造者 Charles Simonyi 开了一家叫做 Intentional Software 的公司，也做类似的软件。</p>
-</li>
-</ul>
+          编辑器与IDE无谓的编辑器战争很多人都喜欢争论哪个编辑器是最好的。其中最大的争论莫过于 Emacs 与 vi 之争。vi 的支持者喜欢说：“看 vi 打起字来多快，手指完全不离键盘，连方向键都可以不用。”Emacs 的支持者往往对此不屑一顾，说：“打字再快又有什么用。我在 Emacs 里面按一个键，
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/编辑器与IDE/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -555,103 +641,12 @@
 
           
             
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="爱因斯坦谈教育"><a href="#爱因斯坦谈教育" class="headerlink" title="爱因斯坦谈教育"></a>爱因斯坦谈教育</h1><p>继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。</p>
-<blockquote>
-<p>我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。</p>
-<p>世界上已经有太多的教育，特别是在美国的学校里面。</p>
-<p>教育的唯一理性的方式是自己做一个榜样——如果实在不行，你可以做一个反例。</p>
-<p>教一个人专业知识是不够的。通过专业知识，他可以变成一个有用的机器，但却不具有和谐的人格。</p>
-<p>过分强调竞争，过早的功利化和专业化，可以杀灭所有文化生活所赖以生存的精神。</p>
-<p>独立的，批判性的思维，必须从小培养。过度的，过于多样化的科目（分数制度）会破坏这种思维的发展。</p>
-<p>教育应该是这样：被传授的知识应该被当成宝贵的礼物，而不是沉重的任务。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/“解决问题”与“消灭问题”/" itemprop="url">
-                  “解决问题”与“消灭问题”
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/爱因斯坦谈教育/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/爱因斯坦谈教育/" itemprop="commentsCount"></span>
                 </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:02:47+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
+              </span>
             
           
 
@@ -673,141 +668,17 @@
       
         
           
-            <h1 id="“解决问题”与“消灭问题”"><a href="#“解决问题”与“消灭问题”" class="headerlink" title="“解决问题”与“消灭问题”"></a>“解决问题”与“消灭问题”</h1><p>一直以来，人们都重视“解决问题”的能力，却忽视了另一种重要的能力：“消灭问题”的能力。各种各样的竞赛，分数和排名，让很多人从小就片面的认为，能“解决问题”的人，就是最厉害的人。拿到一个问题就埋头求解，很少考虑这问题到底有什么意义。这种呆板的思维方式，不仅存在于低级的“应试”和“解题”过程，而且蔓延到了很多艰深的研究领域。</p>
-<p>如果你仔细观察就会发现，很多“难题”，其实是“人造”出来的，而不是“必然”的。它们的存在，往往是由于一些早期的“设计错误”。人造的东西里面往往有设计上的错误，如果你把这些东西看成是不可改变的东西，那你就会遇到很多不必要的问题。打个比方，如果当初轮子被设计成方形的，而没有人质疑这样做的“必要性”，那么也许人类早就因为“能源问题”而灭绝了。有点夸张，但它却形象的说明了，为什么错误的设计会导致不必要的难题。</p>
-<p>其实如果我们转换一下思路，或者改变一下“设计”，很多问题就可以不解自消。这就是我所谓的“消灭问题”的能力。这种“消灭问题”的能力，表面上容易其实难，有点像脑经急转弯，所以经常受到人们的忽视。看到一个问题轻而易举的消失了，总有人满不在乎的说：“这个容易。我也能做到。” 可问题就在于，你怎么没想到？说这种话的人，完全没有意识到，他们的思维里面其实缺少了非常重要的东西。由于喜欢炫耀自己的“头脑暴力”，他们经常解决（甚至制造）错误的问题。</p>
-<p>所以，在解决问题之前，我们应该先问自己三个问题：</p>
-<ol>
-<li>这问题是否真的“存在”？</li>
-</ol>
-<p>也许你已经看出来了，很多问题，即使众人都认为它存在，其实也可能是不存在的。在这一点上不能相信任何人或者机构，不管他有多么的“权威”。就像小马过河的道理，只有靠自己的实践。</p>
-<ol>
-<li>如果解决了这个问题，会给我和他人带来什么实际的好处？</li>
-</ol>
-<p>世界上不存在“永远”，也不存在“无穷”。如果一个“科学算命家”花100年才能算出我的未来，那我还不如坐等“未来”的到来。所有的人，都不过是来这世界上做短暂的旅行。所以，问题的答案，应该能在合理的时间之内给人带来实际的好处。</p>
-<ol>
-<li>这问题是否可以在简单的改变某些“设计”或者“思路”之后，不复存在？</li>
-</ol>
-<p>很多问题的“存在”，其实是因为人们的“思维定势”。他们看不到问题的“根源”和因果关系，而是经常在下意识里假定某种“先决条件”（A）的存在，然后坚定不移的相信由此“导致”的问题（B）的存在，如下图：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A -----&gt; B</span><br></pre></td></tr></table></figure></p>
-<p>然后，他们开始呆头呆脑的解决 B，完全忘记了质疑 A 存在的必要性。他们从来没有想过，如何消除 A，或者切断 A 与 B 之间的关系。他们没有发现，一旦这前提 A 不复存在，问题 B 就可以不解自消。</p>
-<p>对这一点，我想起一个有趣的故事。有人在饭桌上给大家出了一道“难题”，要他们把自己盘子里的鸡蛋立起来，最后只有一个人做到了。这个人把蛋壳打破了。所有其他人都没有想到这个做法，却说他“犯规”。可是应该检讨的其实应该是他们自己，因为出题的人根本没有说不能打破蛋壳，他们却对此做出了错误的假设。</p>
-<p>我经常发现计算机科学界存在这样的问题。研究了几十年，结果到最后才发现，辛辛苦苦解决的问题，其实包含了错误的假设。如果换一个角度来看，或者稍微改一改设计，这问题就基本不存在了。其中一个例子，就是编译器里面的“语法分析”（parsing）问题。</p>
-<p>语法分析成为一个问题的原因，就在于很多人错误的以为程序语言应该有复杂的语法。正是这些复杂的语法，造成了这个问题研究了很多年，仍然没有一个很好的解决方案。可是一旦语法设计被简化（比如像 Lisp 那样），语法分析就变成一个非常容易的问题。实际上计算机系统（比如 Unix）里的很多问题都是由此引发的，想要利用字符串来进行数据交换，却又设计了一些非常不方便的“数据格式”。简单的语法设计，会让这些问题一并消失掉。关于这个问题，我不想重复发文，细节请见另一篇博文《谈语法)》。</p>
-<p>爱因斯坦说“想象力比知识更重要”，也许就是这个道理。没有想象力的人经常钻牛角尖，走死胡同，忘记了自己其实还有另外的路可走。</p>
+          爱因斯坦谈教育继续看爱因斯坦的 Ideas and Opinions，发现挺多有趣的东西。现在把他关于教育的话题摘录在下面。自己关于教育的一些想法，等整理好了再写。
 
-          
-        
-      
-    </div>
+我在我的老师手里遭受了同样的待遇。因为我的独立，他们不喜欢我。当他们需要助教的时候，他们没有选择我。
+世界上已经有太多的教育，特别是
+          ...
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/TeXmacs：一个真正“所见即所得”的排版系统/" itemprop="url">
-                  TeXmacs：一个真正“所见即所得”的排版系统
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:02:47+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="TeXmacs：一个真正“所见即所得”的排版系统"><a href="#TeXmacs：一个真正“所见即所得”的排版系统" class="headerlink" title="TeXmacs：一个真正“所见即所得”的排版系统"></a>TeXmacs：一个真正“所见即所得”的排版系统</h1><p><img src="http://www.yinwang.org/images/texmacs.png" alt=""></p>
-<p>好久没有推荐过自己喜欢的软件了，现在推荐一款我在美国做数学作业的私家法宝：TeXmacs。我恐怕不可能跟以前那么有闲心写个长篇的 TeXmacs 说明文档了，不过这东西如此的简单好用，所以基本上不用我写什么文档了。鉴于知道的人很少，不理解它的人很多，这里只是帮它打个广告，吊一下胃口。</p>
-<p>TeXmacs 的主要特点是：</p>
-<ul>
-<li><p>跟 Lyx 等不同，它不是一个 TeX 的“前端”，而是一个完全独立的，超越 TeX 的系统。TeXmacs 拥有跟 TeX 相同，甚至更好的排版美观程度。这是因为它采用跟 TeX 一样的排版算法，并且用 C++ 重新实现。据说分页的算法比 TeX 的还要好些。</p>
-</li>
-<li><p>拥有超越 Word （或者任何一款字处理软件）的，真正的“所见即所得” (WYSIWYG)。Word 所谓的“所见即所得”其实是假的。所见即所得的含义应该是，屏幕上显示的内容，跟打印下来的完全一样。可是 Word 能做到吗？打印一个文档出来你就发现跟屏幕上显示的有很大区别，一般来说屏幕上显示的要粗糙一些。一些 TeX 的前端，比如 Lyx, Scientific Workspace 等也是类似的，它们都不能达到真正的所见即所得。</p>
-</li>
-<li><p>直接可在屏幕文档里绘图。完全可视化的表格，公式编辑环境。这些都是比 TeX 方便高效很多的方式。需要当心的是，用过 TeXmacs 一段时间之后，你会发现回到 TeX 的公式编辑方式简直就像回到原始社会。</p>
-</li>
-<li><p>非常人性化的按键设计。比如，在数学公式环境下，你按任意一个字符，然后就可以用多次 TAB 键相继选择“拓扑相同”的字符。举个例子，如果你按 @，然后再按几下 TAB，就会发现这个字符变成各种各样的圆圈形的字符。如果你按 &gt;，再按 =，就会出现大于等于号，之后再按 TAB，就会相继出现大于等于号的各种变体。</p>
-</li>
-<li><p>在直观的同时不失去对底层结构的控制。比如，（见下图）窗口右下角的状态栏，显示出当前光标位置的“上下文”是“proof eqnarry* (1,1) start”，这表示的是这是在一个 proof 环境里的 eqnarry 的坐标 (1,1) 的开始处。当你使用 Ctrl-Backspace，最靠近光标的那层“环境”会被删除。比如，如果你现在的字体是斜体，那么在 Ctrl-Backspace 之后，字体就立即还原成正体。</p>
-</li>
-</ul>
-<p><img src="http://www.yinwang.org/images/texmacs-context.png" alt=""></p>
-<ul>
-<li><p>结构化的浏览功能。比如，按 Ctrl-PgUp, Ctrl-PgDn 就可以在“相同类型”的结构里上下跳转。比如，如果你在小节标题里按这个键，就可以迅速的浏览所有的小节标题。如果你在数学公式里按这个键，就可以迅速浏览所有的数学公式。</p>
-</li>
-<li><p>与交互式程序接口。支持很多种计算机代数系统，和交互式软件，比如 MAXIMA，Octave，…… 这些系统返回的数学公式会直接被 TeXmacs 显示为“TeX 效果”。使用 Scheme 作为嵌入式语言，并且可以使用它来扩展系统。这比起 TeX 的语言是非常大的进步。</p>
-</li>
-</ul>
-<p>目前由于 TeX 的垄断地位，以及由于 TeXmacs 是法国人做的，这个系统在美国还不是很流行，很多人都没听说过有这种东西存在。学术圈的很多人由于受到某种错误思想的“洗脑”，都不理解这种图形化编辑软件的价值。希望中国人民和法国人民一样后来居上，超越美国。</p>
-<p>想要迅速的掌握 TeXmacs 的基本用法，可以参考我绘制的 <a href="http://www.mindomo.com/view.htm?m=b207992c90c046bdbe4053cbdf88b5d5" target="_blank" rel="external">TeXmacs 思维导图：</a><br><a href="http://www.mindomo.com/view.htm?m=b207992c90c046bdbe4053cbdf88b5d5" target="_blank" rel="external"> <img src="http://www.yinwang.org/images/texmacs-mindmap.png" alt=""> </a></p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/爱因斯坦谈教育/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -874,6 +745,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/Yoda 表示法错在哪里/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Yoda 表示法错在哪里/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -894,25 +772,220 @@
       
         
           
-            <h1 id="Yoda-表示法错在哪里"><a href="#Yoda-表示法错在哪里" class="headerlink" title="Yoda 表示法错在哪里"></a>Yoda 表示法错在哪里</h1><p>在上一篇<a href="http://www.yinwang.org/blog-cn/2013/04/14/terminology/" target="_blank" rel="external">博文</a>里，我提到了 Yoda 表示法。</p>
-<h3 id="Yoda-Notation（Yoda-表示法）"><a href="#Yoda-Notation（Yoda-表示法）" class="headerlink" title="Yoda Notation（Yoda 表示法）"></a>Yoda Notation（Yoda 表示法）</h3><p><img src="http://www.yinwang.org/images/yoda-notation.jpeg" alt=""></p>
-<p>它的含义是，在 C/C++ 里面使用这样的表达式顺序：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (&quot;blue&quot; == theSky) ...</span><br></pre></td></tr></table></figure></p>
-<p>这是为了避免意外的写成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (theSky = &quot;blue&quot;) ...</span><br></pre></td></tr></table></figure></p>
-<p>“Yoda 表示法”的名字来源于《星球大战》的 Yoda 大师。他说话的单词顺序相当奇特，比如：“Backwards it is, yes!”</p>
-<h3 id="一般认为"><a href="#一般认为" class="headerlink" title="一般认为"></a>一般认为</h3><blockquote>
-<p>使用这个表示法是为了“变通”（workaround） C/C++ 的一个设计抉择：使用 = 来表示赋值，而使用 == 来表示比较。这个设计充分的展现了“先辈的罪”（Sins of our Forefathers）这一词汇的精髓。</p>
-</blockquote>
-<h3 id="我认为"><a href="#我认为" class="headerlink" title="我认为"></a>我认为</h3><blockquote>
-<p>使用 = 来表示赋值其实并不是真正的错误所在。真正的错误在于 C/C++ 的赋值语句不应该返回一个值。</p>
-</blockquote>
-<p>也就是说，theSky = “blue” 的所有功能应该只是“赋值”这种“副作用”，副作用不应该具有“值”。即使你牵强附会说它有一个值，它的“值”也应该是 void（随之这个 void 会被类型检查所拒绝，因为它不是 if 所期望的 bool）。所以，一个良好的语言不应该允许你把 theSky = “blue” 放进 if (…) 的“条件”里面。如果你真的要赋值又要判断，它会迫使你把这拆开成两行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theSky = &quot;blue&quot;;</span><br><span class="line">if (theSky) ...</span><br></pre></td></tr></table></figure></p>
-<p>更近一步。if (theSky) 这个写法其实也是一个先辈的罪。theSky 的类型是 string，它不应该可以直接被作为 bool 使用。if (…) 的条件应该必须是一个 bool。 所以这里其实应该写成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theSky = &quot;blue&quot;;</span><br><span class="line">if (theSky != NULL) ...</span><br></pre></td></tr></table></figure></p>
-<p>因为赋值语句永远不可能出现在条件的位置，所以之前的那种错误，即使我们使用 = 作为赋值操作符，也完全不可能出现。这样我们也就完全没必要用 Yoda 表示法了。</p>
-<p>相反，如果我们只是把 = 换成像 Pascal 的 := 这样的赋值操作符，而保留其它的“特性”（赋值操作会返回值）的话，我们其实还是会遇到同样的问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (theSky := &quot;blue&quot;) ...</span><br></pre></td></tr></table></figure></p>
-<p>这里假设你想打 =，却不小心打成了 :=。机会虽然小，但是仍然有可能。而我推荐的解决方案，会让你故意想犯错误都不可能，编译器会拒绝接受你的程序。</p>
-<p>所以你看到了，问题的根源其实不在于赋值操作的名字，而是有更深的原因。</p>
+          Yoda 表示法错在哪里在上一篇博文里，我提到了 Yoda 表示法。
+Yoda Notation（Yoda 表示法）
+它的含义是，在 C/C++ 里面使用这样的表达式顺序：1if (&quot;blue&quot; == theSky) ...
+这是为了避免意外的写成：1if (theSky = &
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/Yoda 表示法错在哪里/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/“解决问题”与“消灭问题”/" itemprop="url">
+                  “解决问题”与“消灭问题”
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:02:47+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
 
           
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/“解决问题”与“消灭问题”/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/“解决问题”与“消灭问题”/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          “解决问题”与“消灭问题”一直以来，人们都重视“解决问题”的能力，却忽视了另一种重要的能力：“消灭问题”的能力。各种各样的竞赛，分数和排名，让很多人从小就片面的认为，能“解决问题”的人，就是最厉害的人。拿到一个问题就埋头求解，很少考虑这问题到底有什么意义。这种呆板的思维方式，不仅存在于低级的“应试”
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/“解决问题”与“消灭问题”/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/TeXmacs：一个真正“所见即所得”的排版系统/" itemprop="url">
+                  TeXmacs：一个真正“所见即所得”的排版系统
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:02:47+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/TeXmacs：一个真正“所见即所得”的排版系统/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/TeXmacs：一个真正“所见即所得”的排版系统/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          TeXmacs：一个真正“所见即所得”的排版系统
+好久没有推荐过自己喜欢的软件了，现在推荐一款我在美国做数学作业的私家法宝：TeXmacs。我恐怕不可能跟以前那么有闲心写个长篇的 TeXmacs 说明文档了，不过这东西如此的简单好用，所以基本上不用我写什么文档了。鉴于知道的人很少，不理解它的人很多，
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/TeXmacs：一个真正“所见即所得”的排版系统/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -979,6 +1052,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/Scheme 编程环境的设置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Scheme 编程环境的设置/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -999,44 +1079,16 @@
       
         
           
-            <h1 id="Scheme-编程环境的设置"><a href="#Scheme-编程环境的设置" class="headerlink" title="Scheme 编程环境的设置"></a>Scheme 编程环境的设置</h1><p><img src="http://www.yinwang.org/images/paredit1.gif" alt=""></p>
-<p>介绍了这么久的 Scheme，却没有讲过如何配置一个高效的 Scheme 的编程环境。有些人开始学习 Scheme 的时候感觉无从下手，所以今天讲一下它的配置。</p>
-<p>Scheme 的配置有很多种方式，我不想介绍太多东西，免得有人看花了眼，所以这里只介绍一下我自己的配置。我不大喜欢像 <a href="http://www.neilvandyke.org/quack" target="_blank" rel="external">Quack</a> 一类的复杂的环境，因为它们经常有很多多余的功能，却缺少我想要的功能。一旦我想修改它们，又到处出问题。我的配置很简约，我用它写了几千行的超高难度的代码，翻来覆去的改，感觉效率非常高，也没有觉得缺少什么特别重要的东西。</p>
-<p>现在我就一步一步的介绍我的配置。</p>
-<h3 id="安装-Scheme"><a href="#安装-Scheme" class="headerlink" title="安装 Scheme"></a>安装 Scheme</h3><p>世界上最好的 Scheme 实现是 Chez Scheme，但是它不免费也不开源。所以如果你不想破费，那就只好下载一个它的“免费版”，叫做 Petite Chez Scheme（petite 是法语里“小”的意思）。它可以在这里下载：</p>
-<p><a href="http://scheme.com/download" target="_blank" rel="external">http://scheme.com/download</a></p>
-<p>这个页面挺长，上面都是正式版的 Chez Scheme，一点击就会叫你“联系销售人员”。要滚动到下面才能看见免费的版本。怎么安装我就不讲了，自己看说明应该很容易的。</p>
-<p>Petite 是一个完善的，高效的实现，你可以把它当成解释器使用。这个解释器的速度非常之快，甚至比很多别的 Scheme 实现编译后的代码还要快。但是它有一个问题，就是它给出的出错信息太简约了，以至于连出错的函数名字都不告诉你。这样写大一点的程序就会比较痛苦了（虽然我还是用它写了2000多行的编译器代码）。</p>
-<p>所以如果你想写稍微大点的东西，可以用 Racket。它可以在这里下载：</p>
-<p><a href="http://racket-lang.org/" target="_blank" rel="external">http://racket-lang.org</a></p>
-<p>安装应该很容易。Ubuntu 也自带了 Racket，所以可以直接让系统安装它。</p>
-<h3 id="设置-ParEdit-mode"><a href="#设置-ParEdit-mode" class="headerlink" title="设置 ParEdit mode"></a>设置 ParEdit mode</h3><p>我编辑 Scheme 的时候都用 Emacs。我使用一个叫做 ParEdit mode 的插件。它可以让你“半结构化”式的编辑 Scheme 和其它的 Lisp 文件。开头你可能会有点不习惯，可是一旦习惯了，你就再也离不开它。</p>
-<p>ParEdit mode 可以在这里下载：</p>
-<p><a href="http://mumble.net/~campbell/emacs/paredit.el" target="_blank" rel="external">http://mumble.net/~campbell/emacs/paredit.el</a></p>
-<p>下载之后，把它放到一个目录里，比如 ~/.emacs.d，然后打开 ~/.emacs 配置文件，加入如下设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(autoload &apos;paredit-mode &quot;paredit&quot;</span><br><span class="line">  &quot;Minor mode for pseudo-structurally editing Lisp code.&quot;</span><br><span class="line">  t)</span><br></pre></td></tr></table></figure></p>
-<p>这样，只要你使用 M-x paredit-mode 就可以自动载入这个模式。具体的操作方式可以看它的说明（按 C-h m 查看“模式帮助”），我下面也会简单说一下。</p>
-<h3 id="设置-scheme-mode"><a href="#设置-scheme-mode" class="headerlink" title="设置 scheme mode"></a>设置 scheme mode</h3><p>我一般就用系统自带的 Scheme 模式，叫 cmuscheme。但是为了方便，我自己写了几个函数，用于在执行 Scheme 代码的时候自动启动解释器，并且打开解释器窗口。你基本只需要把下面的代码拷贝到你的 .emacs 文件里就行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">;;;;;;;;;;;;</span><br><span class="line">;; Scheme </span><br><span class="line">;;;;;;;;;;;;</span><br><span class="line"></span><br><span class="line">(require &apos;cmuscheme)</span><br><span class="line">(setq scheme-program-name &quot;racket&quot;)         ;; 如果用 Petite 就改成 &quot;petite&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">;; bypass the interactive question and start the default interpreter</span><br><span class="line">(defun scheme-proc ()</span><br><span class="line">  &quot;Return the current Scheme process, starting one if necessary.&quot;</span><br><span class="line">  (unless (and scheme-buffer</span><br><span class="line">               (get-buffer scheme-buffer)</span><br><span class="line">               (comint-check-proc scheme-buffer))</span><br><span class="line">    (save-window-excursion</span><br><span class="line">      (run-scheme scheme-program-name)))</span><br><span class="line">  (or (scheme-get-process)</span><br><span class="line">      (error &quot;No current process. See variable `scheme-buffer&apos;&quot;)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(defun scheme-split-window ()</span><br><span class="line">  (cond</span><br><span class="line">   ((= 1 (count-windows))</span><br><span class="line">    (delete-other-windows)</span><br><span class="line">    (split-window-vertically (floor (* 0.68 (window-height))))</span><br><span class="line">    (other-window 1)</span><br><span class="line">    (switch-to-buffer &quot;*scheme*&quot;)</span><br><span class="line">    (other-window 1))</span><br><span class="line">   ((not (find &quot;*scheme*&quot;</span><br><span class="line">               (mapcar (lambda (w) (buffer-name (window-buffer w)))</span><br><span class="line">                       (window-list))</span><br><span class="line">               :test &apos;equal))</span><br><span class="line">    (other-window 1)</span><br><span class="line">    (switch-to-buffer &quot;*scheme*&quot;)</span><br><span class="line">    (other-window -1))))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(defun scheme-send-last-sexp-split-window ()</span><br><span class="line">  (interactive)</span><br><span class="line">  (scheme-split-window)</span><br><span class="line">  (scheme-send-last-sexp))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(defun scheme-send-definition-split-window ()</span><br><span class="line">  (interactive)</span><br><span class="line">  (scheme-split-window)</span><br><span class="line">  (scheme-send-definition))</span><br><span class="line"></span><br><span class="line">(add-hook &apos;scheme-mode-hook</span><br><span class="line">  (lambda ()</span><br><span class="line">    (paredit-mode 1)</span><br><span class="line">    (define-key scheme-mode-map (kbd &quot;&lt;f5&gt;&quot;) &apos;scheme-send-last-sexp-split-window)</span><br><span class="line">    (define-key scheme-mode-map (kbd &quot;&lt;f6&gt;&quot;) &apos;scheme-send-definition-split-window)))</span><br></pre></td></tr></table></figure></p>
-<p>我的配置会在加载 Scheme 文件的时候自动载入 ParEdit mode，并且把 F5 键绑定到“执行前面的S表达式”。这样设置的目的是，我只要把光标移动到一个S表达式之后，然后用一根手指头按 F5，就可以执行程序。够懒吧。</p>
-<h3 id="ParEdit-mode-的简单使用方法"><a href="#ParEdit-mode-的简单使用方法" class="headerlink" title="ParEdit mode 的简单使用方法"></a>ParEdit mode 的简单使用方法</h3><p>ParEdit mode 是一个很特殊的模式。它起作用的时候，你不能直接修改括号。这样所有的括号都保持完整的匹配，不可能出现语法错误。但是这样有一个问题，如果你要把一块代码放进另一块代码，或者从里面拿出来，就不是很方便了。</p>
-<p>为此，ParEdit mode 提供了几个非常高效的编辑方式。我平时只使用两个：</p>
-<ol>
-<li><p>C-right: 也就是按住 Ctrl 再按右箭头。它的作用是让光标右边的括号，“吞掉”下一个S表达式。比如，(a b c) (d e)。你把光标放在 (a b c) 里面，然后按 C-right。结果就是 (a b c (d e))。也就是把 (d e) 被整个“吞进”了 (a b c) 里面。</p>
-</li>
-<li><p>M-r: 去掉外层代码。<br>这在你需要去掉外层的 let 等结构的时候非常有用。比如，如果你的代码看起来是这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(let ([x 10])</span><br><span class="line">  (* x 2))</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>当你把光标放在 (* x 2) 的最左边，然后按 M-r，结果就变成了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(* x 2)</span><br></pre></td></tr></table></figure></p>
-<p>也就是把外面的 (let ([x 10]) …) 给“掀掉”了。</p>
-<p>其它的一些按键虽然也有用，不过我觉得这两个是最有用的，甚至不可缺少的。有些其他的自动匹配括号的模式，没有提供这种按键，所以用起来很别扭。</p>
-<h3 id="设置括号颜色"><a href="#设置括号颜色" class="headerlink" title="设置括号颜色"></a>设置括号颜色</h3><p>很多人看见 Lisp 就怕了，就是因为它看起来括号太多。可是这样的语法，却是有很大的好处的（参考这篇博文《谈语法》）。如果你真的觉得括号碍眼，你可以稍微调整一下括号的颜色，比如淡灰色。这样括号看起来就没有那么显眼了。</p>
-<p>你只需要下载这个 el，放到你的 .emacs.d:</p>
-<p><a href="https://www.dropbox.com/s/v0ejctd1agrt95x/parenface.el" target="_blank" rel="external">https://www.dropbox.com/s/v0ejctd1agrt95x/parenface.el</a></p>
-<p>然后在 .emacs 里面加入两行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(require &apos;parenface)</span><br><span class="line">(set-face-foreground &apos;paren-face &quot;DimGray&quot;)</span><br></pre></td></tr></table></figure></p>
-<p>然后再打开 Scheme 代码的时候，你就会看到是这个样子：<br><img src="http://www.yinwang.org/images/scheme-paren.jpeg" alt=""></p>
-<p>好了，这就是我写 Scheme 的所有配置了。希望这些有所帮助。</p>
+          Scheme 编程环境的设置
+介绍了这么久的 Scheme，却没有讲过如何配置一个高效的 Scheme 的编程环境。有些人开始学习 Scheme 的时候感觉无从下手，所以今天讲一下它的配置。
+Scheme 的配置有很多种方式，我不想介绍太多东西，免得有人看花了眼，所以这里只介绍一下我自己的配置。我不
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/Scheme 编程环境的设置/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1103,97 +1155,12 @@
 
           
             
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Oberon-操作系统：被忽略的珍宝"><a href="#Oberon-操作系统：被忽略的珍宝" class="headerlink" title="Oberon 操作系统：被忽略的珍宝"></a>Oberon 操作系统：被忽略的珍宝</h1><p>推荐一篇很久以前看的文章：<a href="http://www.ics.uci.edu/~franz/Site/pubs-pdf/BC03.pdf" target="_blank" rel="external">Oberon - The Overlooked Jewel</a></p>
-<p>它介绍的是 Niklaus Wirth 设计的一种操作系统，叫做 Oberon。Niklaus Wirth 就是大家熟知的 Pascal 语言的设计者。绝大部分人都没听说过有 Oberon 这个东西存在，更难以把它跟 Niklaus Wirth 的大名挂上钩。所以作者说：“Wirth 因为 Pascal 而闻名于世，可是接下来几年，他成为了 Pascal 的受害者。” 确实是这样。Wirth 一直都不觉得 Pascal 是他的杰作。我想他应该会更喜欢以 Oberon 闻名于世。</p>
-<p>Oberon 比起 Unix，有很大的不同，在于它的数据都是结构化的。进程间不通过字符串交换数据，而是直接使用数据结构。很奇特的一点是，Oberon 操作系统是用一种同名的程序语言（Oberon 语言）写成。令人惊讶的是，在那个年代，ETH 计算机系的所有教职员工，学生，包括办公室的大妈，都是用的这种操作系统。</p>
-<p>操作系统的设计，真是天外有天。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/Markdown 的一些问题/" itemprop="url">
-                  Markdown 的一些问题
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/Oberon 操作系统：被忽略的珍宝/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Oberon 操作系统：被忽略的珍宝/" itemprop="commentsCount"></span>
                 </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:02:10+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
+              </span>
             
           
 
@@ -1215,26 +1182,15 @@
       
         
           
-            <h1 id="Markdown-的一些问题"><a href="#Markdown-的一些问题" class="headerlink" title="Markdown 的一些问题"></a>Markdown 的一些问题</h1><p>把我之前的博文基本上转换成了 markdown 格式。我发现 markdown 虽然在编辑器里看起来比 HTML 清晰一些，但也有一些不足。</p>
-<p>这些 markup 语言的格式都有点像我本科的时候给我爸做的一种“标准化试卷标记语言”（因为他是中学英语老师）。当时我写了一个1000来行的 Perl 脚本，可以把这种简单的标记语言转换成美观的 LaTeX 格式文档，并且带有友好的 Tk 图形界面。现在回想起来，我那时候的设计就已经相当先进了。跟我的语言相比，这些 blog 用的 markup 语言真是小巫见大巫了，而且问题多多。有点跑题了，还是回头来看看 markdown 的问题吧。</p>
-<ul>
-<li>Markdown 实际上采用的是类似 Python 和 Haskell 的 layout 语法。</li>
-</ul>
-<p>我已经在一篇英文博文里提到了 layout 语法的多种问题。因为空格的数量决定了文档的结构，这种文档格式相当的“脆弱”。稍微少打一两个空格，就会出现不可预测的结果。这种现象在“itemize”内部的代码块最容易出现。因为每个 item 带来了缩进，所以内部的代码必须比 item 的缩进多4个空格，才能被排到正确的位置。比如我转换博文的时候多次出现以下的情况：</p>
-<p><img src="http://www.yinwang.org/images/markdown-mistake.png" alt=""></p>
-<p>这里的问题是，代码里的第一行 helloworld z = let x = 1 因为缩进不够，被放到了代码块外面。但是为了准确的缩进所耗费的精力，其实比直接打 <pre> 这样的 tag 还要多。</pre></p>
-<ul>
-<li>特殊字符的选择不合理</li>
-</ul>
-<p>markdown 对特殊字符的使用不大合理。我多次发现文档段落整段的变成斜体，就是因为原来的文档里出现了 x<em>y 这样的表达式。在程序员的世界里，“乘法”显然比“强调”更加频繁。把 </em> 用于标记“强调”，实际上把一个非常有用的字符用在了很不频繁的用途。</p>
-<ul>
-<li>表达力相当有限</li>
-</ul>
-<p>在很多细节上，markdown 并不能表达我想要的格式。比如它不能正确的插入断行 <br>。如果你有两块紧接在一起的代码，但你不想把它们连在一起，markdown 非要给你连在一起…… 于是我就发现自己加入了越来越多的 HTML。</p>
-<p>这在图片的语法上就更加明显，markdown 引入了 <img src="image url" alt="alt"> 这样的格式，其实比起 HTML 还要难看和不一致。比如现在它仍然无法表达图片的大小，这是相当重要的信息。所以我觉得 markdown 的语法已经显示出了它的弱点，如果它要表达更复杂的信息，就会变得比 HTML 还要难记，难看。所以对于图片，我觉得还不如直接用 HTML 的 <img> 。</p>
-<p>所以总的感觉是 markdown 引入了太多的“语法”，以至于稍微复杂一点的信息表达起来还不如 HTML 来的直接。现在就这样先凑合着吧。也许过段时间自己设计一个格式。</p>
+          Oberon 操作系统：被忽略的珍宝推荐一篇很久以前看的文章：Oberon - The Overlooked Jewel
+它介绍的是 Niklaus Wirth 设计的一种操作系统，叫做 Oberon。Niklaus Wirth 就是大家熟知的 Pascal 语言的设计者。绝大部分人都没听说过有 O
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/Oberon 操作系统：被忽略的珍宝/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1301,6 +1257,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/Lisp 已死，Lisp 万岁！/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Lisp 已死，Lisp 万岁！/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1321,50 +1284,14 @@
       
         
           
-            <h1 id="Lisp-已死，Lisp-万岁！"><a href="#Lisp-已死，Lisp-万岁！" class="headerlink" title="Lisp 已死，Lisp 万岁！"></a>Lisp 已死，Lisp 万岁！</h1><p>有一句古话，叫做“国王已死，国王万岁！”它的意思是，老国王已经死去，国王的儿子现在继位。这句话的幽默，就在于这两个“国王”其实指的不是同一个人，而你咋一看还以为它自相矛盾。今天我的话题仿效了这句话，叫做“Lisp 已死，Lisp 万岁！”希望到最后你会明白这是什么意思。</p>
-<p>首先，我想总结一下 Lisp 的优点。你也许已经知道，Lisp 身上最重要的一些优点，其实已经“遗传”到了几乎每种流行的语言身上（Java，C#，JavaScript，Python, Ruby，Haskell，……）。由于我已经在其他博文里详细的叙述过其中一些，所以现在只把这些 Lisp 的优点简单列出来（关键部分加了链接）：</p>
-<ul>
-<li>Lisp 的语法是世界上最精炼，最美观，也是语法分析起来最高效的语法。这是 Lisp 独一无二的，其他语言都没有的优点。有些人喜欢设计看起来很炫的语法，其实都是自找麻烦。为什么这么说呢，请参考这篇<a href="http://www.yinwang.org/blog-cn/2013/03/08/on-syntax" target="_blank" rel="external">《谈语法》</a>。</li>
-<li>Lisp 是第一个可以在程序的任何位置定义函数，并且可以把函数作为值传递的语言。这样的设计使得它的表达能力非常强大。这种理念被 Python，JavaScript，Ruby 等语言所借鉴。</li>
-<li>Lisp 有世界上最强大的宏系统（macro system）。这种宏系统的表达力几乎达到了理论所允许的极限。如果你只见过 C 语言的“宏”，那我可以告诉你它是完全没法跟 Lisp 的宏系统相提并论的。</li>
-<li>Lisp 是世界上第一个使用垃圾回收（garbage collection）的语言。这种超前的理念，后来被 Java，C# 等语言借鉴。</li>
-</ul>
-<p>想不到吧，现代语言的很多优点，其实都是来自于 Lisp — 世界上第二古老的程序语言。所以有人才会说，每一种现代语言都在朝着 Lisp 的方向“进化”。如果你相信了这话，也许就会疑惑，为什么 Lisp 今天没有成为主流，为什么 Lisp Machine 会被 Unix 打败。其实除了商业原因之外，还有技术上的问题。</p>
-<p>早期的 Lisp 其实普遍存在一个非常严重的问题：它使用 dynamic scoping。所谓 dynamic scoping 就是说，如果你的函数定义里面有“自由变量”，那么这个自由变量的值，会随着函数的“调用位置”的不同而发生变化。</p>
-<p>比如下面我定义一个函数 f，它接受一个参数 y，然后返回 x 和 y 的积。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(setq f </span><br><span class="line">      (let ((x 1)) </span><br><span class="line">        (lambda (y) (* x y))))</span><br></pre></td></tr></table></figure>
-<p>这里 x 对于函数 (lambda (y) (* x y)) 来说是个“自由变量”（free variable），因为它不是它的参数。</p>
-<p>看着这段代码，你会很自然的认为，因为 x 的值是 1，那么 f 被调用的时候，结果应该等于 (* 1 y)，也就是说应该等于 y 的值。可是这在 dynamic scoping 的语言里结果如何呢？我们来看看吧。</p>
-<p>（你可以在 emacs 里面试验以下的结果，因为 Emacs Lisp 使用的就是 dynamic scoping。）</p>
-<p>如果我们在函数调用的外层定义一个 x，值为 2：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(let ((x 2))</span><br><span class="line">  (funcall f 2))</span><br></pre></td></tr></table></figure></p>
-<p>因为这个 x 跟 f 定义处的 x 的作用域不同，所以它们不应该互相干扰。所以我们应该得到 2。可是，这段代码返回的结果却为 4。</p>
-<p>再来。我们另外定义一个 x，值为 3：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(let ((x 3))</span><br><span class="line">  (funcall f 2))</span><br></pre></td></tr></table></figure>
-<p>我们的期望值还是 2，可是结果却是 6。</p>
-<p>再来。如果我们直接调用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(funcall f 2)</span><br></pre></td></tr></table></figure>
-<p>你想这次总该得到 2 了吧？结果，出错了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Debugger entered--Lisp error: (void-variable x)</span><br><span class="line">  (* x y)</span><br><span class="line">  (lambda (y) (* x y))(2)</span><br><span class="line">  funcall((lambda (y) (* x y)) 2)</span><br><span class="line">  eval_r((funcall f 2) nil)</span><br><span class="line">  eval-last-sexp-1(nil)</span><br><span class="line">  eval-last-sexp(nil)</span><br><span class="line">  call-interactively(eval-last-sexp nil nil)</span><br></pre></td></tr></table></figure>
-<p>看到问题了吗？f 的行为，随着调用位置的一个“名叫 x”的变量的值而发生变化。而这个 x，跟 f 定义处的 x 其实根本就不是同一个变量，它们只不过名字相同而已。这会导致非常难以发现的错误，也就是早期的 Lisp 最令人头痛的地方。我的老师 Dan Friedman 当年就为此痛苦了很多年，直到 Scheme 的出现，他才欢呼道：“终于有人把它给做对了！”</p>
-<p>（附带说一句，Scheme 不是 Dan Friedman 发明的，而是 Guy Steele 和 Gerald Sussman。然而，Friedman 对程序语言的本质理解，其实超越了 Lisp 的范畴，并且对 Scheme 的后期设计做出了重要的贡献。以至于 Sussman 在 Friedman 的 60 大寿时发表演说，戏称自己比起 Friedman 来，“只是 Scheme 的用户”。）</p>
-<p>好在现在的大部分语言其实已经吸取了这个教训，所以你不再会遇到这种让人发疯的痛苦。不管是 Scheme, Common Lisp, Haskell, OCaml, Python, JavaScript…… 都不使用 dynamic scoping。</p>
-<p>那现在也许你了解了，什么是让人深恶痛绝的 dynamic scoping。如果我告诉你，Lisp Machine 所使用的语言 Lisp Machine Lisp 使用的也是 dynamic scoping，你也许就明白了为什么 Lisp Machine 会失败。因为它跟现在的 Common Lisp 和 Scheme，真的是天壤之别。我宁愿写 C++，Java 或者 Python，也不愿意写 Lisp Machine Lisp 或者 Emacs Lisp。</p>
-<p>话说回来，为什么早期的 Lisp 会使用 dynamic scoping 呢？其实这根本就不是一个有意的“设计”，而是一个无意的“巧合”。你几乎什么都不用做，它就成那个样子了。这不是开玩笑，如果你在 emacs 里面显示 f 的值，它会打印出：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;(lambda (y) (* x y))</span><br></pre></td></tr></table></figure>
-<p>这说明 f 的值其实是一个 S 表达式，而不是像 Scheme 一样的“闭包”（closure）。原来，Emacs Lisp 直接把函数定义处的 S 表达式 ‘(lambda (y) (* x y)) 作为了函数的“值”，这是一种很幼稚的做法。如果你是第一次实现函数式语言的新手，很有可能就会这样做。Lisp 的设计者当年也是这样的情况。</p>
-<p>简单倒是简单，麻烦事接着就来了。调用 f 的时候，比如 (funcall f 2)，y 的值当然来自参数 2，可是 x 的值是多少呢？答案是：不知道！不知道怎么办？到“外层环境”去找呗，看到哪个就用哪个，看不到就报错。所以你就看到了之前出现的现象，函数的行为随着一个完全无关的变量而变化。如果你单独调用 (funcall f 2) 就会因为找不到 x 的值而出错。</p>
-<p>那么正确的实现函数的做法是什么呢？是制造“闭包”(closure)。这也就是 Scheme，Common Lisp 以及 Python，C# 的做法。在函数定义被解释或者编译的时候，当时的自由变量（比如 x）的值，会跟函数的代码绑在一起，被放进一种叫做“闭包”的结构里。比如上面的函数，就可以表示成这个样子：(Closure ‘(lambda (y) (* x y)) ‘((x . 1)))。</p>
-<p>在这里我用 (Closure …) 表示一个“结构”（就像 C 语言的 struct）。它的第一个部分，是这个函数的定义。第二个部分是 ‘((x . 1))，它是一个“环境”，其实就是一个从变量到值的映射（map）。利用这个映射，我们记住函数定义处的那个 x 的值，而不是在调用的时候才去瞎找。</p>
-<p>我不想在这里深入细节。如果你对实现语言感兴趣的话，可以参考我的另一篇博文《怎样写一个解释器》。它教你如何实现一个正确的，没有以上毛病的解释器。</p>
-<p>与 dynamic scoping 相对的就是“lexical scoping”。我刚才告诉你的闭包，就是 lexical scoping 的实现方法。第一个实现 lexical scoping 的语言，其实不是 Lisp 家族的，而是 Algol 60。“Algol”之所以叫这名字，是因为它的设计初衷是用来实现算法（algorithm）。其实 Algol 比起 Lisp 有很多不足，但在 lexical scoping 这一点上它却做对了。Scheme 从 Algol 60 身上学到了 lexical scoping，成为了第一个使用 lexical scoping 的“Lisp 方言”。9 年之后，Lisp 家族的“集大成者” Common Lisp 诞生了，它也采用了 lexical scoping。看来英雄所见略同。</p>
-<p>你也许发现了，Lisp 其实不是一种语言，而是很多种语言。这些被人叫做“Lisp 家族”的语言，其实共同点只是它们的“语法”：它们都是基于 S 表达式。如果你因此对它们同样赞美的话，那么你赞美的其实只是 S 表达式，而不是这些语言本身。因为一个语言的本质应该是由它的语义决定的，而跟语法没有很大关系。你甚至可以给同一种语言设计多种不同的语法，而不改变这语言的本质。比如，我曾经给 TeX 设计了 Lisp 的语法，我把它叫做 SchTeX（Scheme + TeX）。SchTeX 的文件看起来是这个样子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(documentclass article (11pt))</span><br><span class="line">(document</span><br><span class="line">  (abstract (...))</span><br><span class="line">  (section (First Section)</span><br><span class="line">      ... )</span><br><span class="line">  (section (Second Section)</span><br><span class="line">      ... )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>很明显，虽然这看起来像是 Scheme，本质却仍然是 TeX。</p>
-<p>所以，因为 Scheme 的语法使用 S 表达式，就把 Scheme 叫做 Lisp 的“方言”，其实是不大准确的做法。Scheme 和 Emacs Lisp，Common Lisp 其实是三种不同的语言。Racket 曾经叫做 PLT Scheme，但是它跟 Scheme 的区别日益增加，以至于现在 PLT 把它改名叫 Racket。这是有他们的道理的。</p>
-<p>所以，你也许明白了为什么这篇文章的标题叫做“Lisp 已死，Lisp 万岁！” 因为这句话里面的两个 “Lisp”其实是完全不同的语言。“Lisp 已死”，其实是说 Lisp Machine Lisp 这样的 Lisp，由于严重的设计问题，已经死去。而“Lisp 万岁”，是说像 Scheme，Common Lisp 这样的 Lisp，还会继续存在。它们先进于其它语言的地方，也会更多的被借鉴，被发扬广大。</p>
-<p>（其实老 Lisp 的死去还有另外一个重要的原因，那就是因为早期的 Lisp 编译器生成的代码效率非常低下。这个问题我留到下一篇博文再讲。）</p>
+          Lisp 已死，Lisp 万岁！有一句古话，叫做“国王已死，国王万岁！”它的意思是，老国王已经死去，国王的儿子现在继位。这句话的幽默，就在于这两个“国王”其实指的不是同一个人，而你咋一看还以为它自相矛盾。今天我的话题仿效了这句话，叫做“Lisp 已死，Lisp 万岁！”希望到最后你会明白这是什么意思
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/Lisp 已死，Lisp 万岁！/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1432,7 +1359,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">34</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1440,7 +1367,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1449,7 +1376,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1458,14 +1385,53 @@
         </nav>
 
         
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
 
         <div class="links-of-author motion-element">
           
             
               <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5315346623/home?wvr=5" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/wushuang2015" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/YYJN" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
                 <a href="http://www.ruanyifeng.com/blog/" target="_blank">
                   
                     <i class="fa fa-globe"></i> 阮一峰
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://notes.iissnan.com/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> notes
                   
                 </a>
               </span>
@@ -1584,15 +1550,58 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"YYJN"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
   
 
 
 
+
+
   
   
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
 
   
 
