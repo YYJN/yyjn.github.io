@@ -68,7 +68,7 @@
 <meta property="og:description" content="通过判断浏览器的userAgent，用正则来判断是否是ios和Android客户端。代码如下：
 1234567&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;var u = navigator.userAgent;var isAndroid = u.indexOf(&apos;Android&apos;) &amp;gt; -1 || u.indexOf(&apos;Adr&apos;) &amp;gt; -1; //andr">
 <meta property="og:image" content="http://img.caibaojian.com/uploads/2014/08/qrcode-7.png">
-<meta property="og:updated_time" content="2016-03-16T11:40:39.685Z">
+<meta property="og:updated_time" content="2016-03-16T13:00:46.744Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS判断客户端是否是iOS或者Android">
 <meta name="twitter:description" content="通过判断浏览器的userAgent，用正则来判断是否是ios和Android客户端。代码如下：
@@ -287,7 +287,7 @@
 
       
         <p>通过判断浏览器的userAgent，用正则来判断是否是ios和Android客户端。代码如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"><span class="keyword">var</span> u = navigator.userAgent;</span><br><span class="line"><span class="keyword">var</span> isAndroid = u.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">-1</span> || u.indexOf(<span class="string">'Adr'</span>) &gt; <span class="number">-1</span>; <span class="comment">//android终端</span></span><br><span class="line"><span class="keyword">var</span> isiOS = !!u.match(<span class="regexp">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span>); <span class="comment">//ios终端</span></span><br><span class="line">alert(<span class="string">'是否是Android：'</span>+isAndroid);</span><br><span class="line">alert(<span class="string">'是否是iOS：'</span>+isiOS);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"><span class="keyword">var</span> u = navigator.userAgent;</span><br><span class="line"><span class="keyword">var</span> isAndroid = u.indexOf(<span class="string">'Android'</span>) &gt; <span class="number">-1</span> || u.indexOf(<span class="string">'Adr'</span>) &gt; <span class="number">-1</span>; <span class="comment">//android终端</span></span><br><span class="line"><span class="keyword">var</span> isiOS = !!u.match(<span class="regexp">/\(i[^;]+;( U;)? CPU.+Mac OS X/</span>); <span class="comment">//ios终端</span></span><br><span class="line">alert(<span class="string">'是否是Android：'</span>+isAndroid);</span><br><span class="line">alert(<span class="string">'是否是iOS：'</span>+isiOS);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>可以打开你的Android手机或者iphone扫描看看</p>
 <p><img src="http://img.caibaojian.com/uploads/2014/08/qrcode-7.png" alt=""></p>
 <p>下面一个比较全面的浏览器检查函数，提供更多的检查内容，你可以检查是否是移动端（Mobile）、ipad、iphone、微信、QQ等。</p>
