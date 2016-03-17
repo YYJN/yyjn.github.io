@@ -300,7 +300,7 @@
       
 
       
-        <h3 id="h5和android的混合开发（前端代码）："><a href="#h5和android的混合开发（前端代码）：" class="headerlink" title="h5和android的混合开发（前端代码）："></a>h5和android的混合开发（前端代码）：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"><span class="comment">//  console.log("我是token："+req.session.accessToken)</span></span><br><span class="line"><span class="comment">//	var accessToken="15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d";</span></span><br><span class="line">	<span class="keyword">var</span> jsonObject=&#123;</span><br><span class="line">    <span class="string">"userInfo"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"9"</span>, </span><br><span class="line">        <span class="string">"accessToken"</span>: <span class="string">"15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;	</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">syncLogin</span>(<span class="params">jsonObject</span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">/*app native未登录，H5端登录后同步userInfo到native实现自动登录 */</span></span><br><span class="line">		 <span class="keyword">if</span>(<span class="string">"JsBridge"</span> <span class="keyword">in</span> <span class="built_in">window</span>)&#123;</span><br><span class="line"><span class="comment">//		 	JsBridge.toast('测试一下而已')</span></span><br><span class="line">			JsBridge.syncLogin(jsonObject);</span><br><span class="line">		 &#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	syncLogin(jsonObject);</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">checkNativeLogin</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		JsBridge.checkNativeLogin();</span><br><span class="line"><span class="comment">//		var userInfo=JSON.parse(JsBridge.checkNativeLogin());</span></span><br><span class="line">		<span class="keyword">var</span> userInfo=JsBridge.checkNativeLogin();</span><br><span class="line"><span class="comment">//		JsBridge.toast(userInfo.userInfo.userId);</span></span><br><span class="line"><span class="comment">//		JsBridge.toast(userInfo.userInfo.userId);</span></span><br><span class="line">	&#125;</span><br><span class="line">	checkNativeLogin();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+        <h3 id="h5和android的混合开发（前端代码）："><a href="#h5和android的混合开发（前端代码）：" class="headerlink" title="h5和android的混合开发（前端代码）："></a>h5和android的混合开发（前端代码）：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line"><span class="comment">//  console.log("我是token："+req.session.accessToken)</span></span><br><span class="line"><span class="comment">//	var accessToken="15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d";</span></span><br><span class="line">	<span class="keyword">var</span> jsonObject=&#123;</span><br><span class="line">    <span class="string">"userInfo"</span>: &#123;</span><br><span class="line">        <span class="string">"id"</span>: <span class="string">"9"</span>, </span><br><span class="line">        <span class="string">"accessToken"</span>: <span class="string">"15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;	</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">syncLogin</span>(<span class="params">jsonObject</span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">  <span class="comment">/*app native未登录，H5端登录后同步userInfo到native实现自动登录 */</span></span><br><span class="line">		 <span class="keyword">if</span>(<span class="string">"JsBridge"</span> <span class="keyword">in</span> <span class="built_in">window</span>)&#123;</span><br><span class="line"><span class="comment">//		 	JsBridge.toast('测试一下而已')</span></span><br><span class="line">			JsBridge.syncLogin(jsonObject);</span><br><span class="line">		 &#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	syncLogin(jsonObject);</span><br><span class="line">	<span class="function"><span class="keyword">function</span> <span class="title">checkNativeLogin</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		JsBridge.checkNativeLogin();</span><br><span class="line"><span class="comment">//		var userInfo=JSON.parse(JsBridge.checkNativeLogin());</span></span><br><span class="line">		<span class="keyword">var</span> userInfo=JsBridge.checkNativeLogin();</span><br><span class="line"><span class="comment">//		JsBridge.toast(userInfo.userInfo.userId);</span></span><br><span class="line"><span class="comment">//		JsBridge.toast(userInfo.userInfo.userId);</span></span><br><span class="line">	&#125;</span><br><span class="line">	checkNativeLogin();</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <h3 id="h5和object-c的混合开发（前端代码）："><a href="#h5和object-c的混合开发（前端代码）：" class="headerlink" title="h5和object-c的混合开发（前端代码）："></a>h5和object-c的混合开发（前端代码）：</h3>
       
     </div>
@@ -331,6 +331,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/17/ydiff - 结构化的程序比较/" rel="prev" title="ydiff - 结构化的程序比较">
+                ydiff - 结构化的程序比较 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -402,7 +406,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -410,7 +414,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -619,6 +623,46 @@
                 <a href="http://div.io/pro/index" target="_blank">
                   
                     <i class="fa fa-globe"></i> Div.IO
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jikexueyuan.com/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 极客学院
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.miaov.com/2013/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 妙味课堂
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.imooc.com/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 慕课网
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhinengshe.com/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 智能社
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.itcast.cn/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> 传智播客
                   
                 </a>
               </span>
