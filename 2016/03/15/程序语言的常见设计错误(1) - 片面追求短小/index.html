@@ -312,11 +312,11 @@
 <p>有些人很在乎 i++ 与 ++i 的区别，去追究 (i++) + (++i) 这类表达式的含义，追究 i++ 与 ++i 谁的效率更高。这些其实都是徒劳的。比如，i++ 与 ++i 的效率差别，其实来自于早期 C 编译器的愚蠢。因为 i++ 需要在增加之后返回 i 原来的值，所以它其实被编译为：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(tmp = <span class="selector-tag">i</span>, <span class="selector-tag">i</span> = <span class="selector-tag">i</span> + <span class="number">1</span>, tmp)</span><br></pre></td></tr></table></figure>
 <p>但是在</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (int <span class="built_in">i</span> = <span class="number">0</span>; <span class="built_in">i</span> &lt; max; <span class="built_in">i</span>++)</span><br></pre></td></tr></table></figure>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span><span class="comment">; i &lt; max; i++)</span></span><br></pre></td></tr></table></figure>
 <p>这样的语句中，其实你并不需要在 i++ 之后得到它自增前的值。所以有人说，在这里应该用 ++i 而不是 i++，否则你就会浪费一次对中间变量 tmp 的赋值。而其实呢，一个良好设计的编译器应该在两种情况下都生成相同的代码。这是因为在 i++ 的情况，代码其实先被转化为：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (int <span class="built_in">i</span> = <span class="number">0</span>; <span class="built_in">i</span> &lt; max; (tmp = <span class="built_in">i</span>, <span class="built_in">i</span> = <span class="built_in">i</span> + <span class="number">1</span>, tmp))</span><br></pre></td></tr></table></figure>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span><span class="comment">; i &lt; max; (tmp = i, i = i + 1, tmp))</span></span><br></pre></td></tr></table></figure>
 <p>由于 tmp 这个临时变量从来没被用过，所以它会被编译器的“dead code elimination”消去。所以编译器最后实际上得到了：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (int <span class="built_in">i</span> = <span class="number">0</span>; <span class="built_in">i</span> &lt; max; <span class="built_in">i</span> = <span class="built_in">i</span> + <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span><span class="comment">; i &lt; max; i = i + 1)</span></span><br></pre></td></tr></table></figure>
 <p>所以，“精通”这些细微的问题，并不能让你成为一个好的程序员。很多人所认为的高明的技巧，经常都是因为早期系统设计的缺陷所致。一旦这些系统被改进，这些技巧就没什么用处了。</p>
 <p>真正正确的做法其实是：完全不使用自增减操作，因为它们本来就是错误的设计。</p>
 <p>好了，一个小小的例子，也许已经让你意识到了片面追求短小程序所带来的认知上，时间上的代价。很可惜的是，程序语言的设计者们仍然在继续为此犯下类似的错误。一些新的语言加入了很多类似的旨在“缩短代码”，“减少打字量”的雕虫小技。也许有一天你会发现，这些雕虫小技所带来的，除了短暂的兴奋，其实都是在浪费你的时间。</p>
@@ -335,7 +335,7 @@
 <p>正确的做法其实是：y = 0 不应该具有一个值。它的作用应该是“赋值”这种“动作”，而不应该具有任何“值”。即使牵强一点硬说它有值，它的值也应该是 void。这样一来 x = y = 0 和 if (y = 0) 就会因为“类型不匹配”而被编译器拒绝接受，从而避免了可能出现的错误。</p>
 <p>仔细想一想，其实 x = y = 0 和 if (y = 0) 带来了非常少的好处，但它们带来的问题却耗费了不知道多少人多少时间。这就是我为什么把它们叫做“小聪明”。</p>
 <h3 id="思考题："><a href="#思考题：" class="headerlink" title="思考题："></a>思考题：</h3><ol>
-<li>Google 公司的代码规范里面规定，在任何情况下 for 语句和 if 语句之后必须写花括号，即使 C 和 Java 允许你在其只包含一行代码的时候省略它们。比如，你不能这样写<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (int <span class="built_in">i</span>=<span class="number">0</span>; <span class="built_in">i</span> &lt; n; <span class="built_in">i</span>++)</span><br><span class="line">   some_function(<span class="built_in">i</span>);</span><br></pre></td></tr></table></figure>
+<li>Google 公司的代码规范里面规定，在任何情况下 for 语句和 if 语句之后必须写花括号，即使 C 和 Java 允许你在其只包含一行代码的时候省略它们。比如，你不能这样写<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span><span class="comment">; i &lt; n; i++)</span></span><br><span class="line">   some_function(i)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>而必须写成</p>
@@ -461,7 +461,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">41</span>
+              <span class="site-state-item-count">42</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -469,7 +469,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -478,7 +478,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
