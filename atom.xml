@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-17T11:18:42.921Z</updated>
+  <updated>2016-03-17T12:58:07.462Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://yoursite.com/2016/03/17/%E4%B8%98%E5%A5%87%E5%92%8C%E5%9B%BE%E7%81%B5/"/>
     <id>http://yoursite.com/2016/03/17/丘奇和图灵/</id>
     <published>2016-03-17T11:09:59.000Z</published>
-    <updated>2016-03-17T11:18:42.921Z</updated>
+    <updated>2016-03-17T12:58:07.462Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://www.yinwang.org/images/Alonzo_Church.jpg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;http://www.yinwang.org/images/Alan_Turing.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;丘奇（Alonzo Church）和图灵（Alan Turing）是两位对计算机科学具有最大影响力的人物，然而他们却具有非常对立的观点和相差很多的名气。在我长达16年的计算机科学生涯中，总是感觉到自己的思想反反复复的徘徊于这两个“阵营”之间。丘奇代表了“逻辑”和“语言”，而图灵代表着“物理”和“机器”。在前面的8年中，我对丘奇一无所知，而在后面的8年中，我却很少再听到图灵的名字。他们的观点谁对谁错，是一个无法回答的问题。完全投靠丘奇，或者完全投靠图灵，貌似都是错误的做法。这是一种非常难说清楚的，矛盾的感觉，但是今天我试图把自己的感悟简要的介绍一下。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h3 id=&quot;丘奇与图灵之争&quot;&gt;&lt;a href=&quot;#丘奇与图灵之争&quot; class=&quot;headerlink&quot; title=&quot;丘奇与图灵之争&quot;&gt;&lt;/a&gt;丘奇与图灵之争&lt;/h3&gt;&lt;p&gt;想必世界上所有的计算机学生都知道图灵的大名和事迹，因为美国计算机器学会（ACM）每年都会颁发“图灵奖”，它被誉为计算机科学的最高荣誉。大部分的计算机学生都会在某门课程（比如“计算理论”）学习“图灵机”的原理。然而，有多少人知道丘奇是什么人，他做出了什么贡献，他与图灵是什么样的关系呢？我想恐怕不到一半的人吧。&lt;/p&gt;
 &lt;p&gt;如果你查一下&lt;a href=&quot;http://www.genealogy.math.ndsu.nodak.edu/id.php?id=8014&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数学家谱图&lt;/a&gt;，就会发现丘奇其实是图灵的博士导师。然而从 Andrew Hodges 所著的《&lt;a href=&quot;http://www.turing.org.uk/bio/part3.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图灵传&lt;/a&gt;》，你却可以看到图灵的心目中仿佛并没有这个导师，仿佛自己的“全新发明”应得的名气，被丘奇抢走了一样（注意作者的用词：robbed）。事实到底是怎样的，恐怕谁也说不清楚。我只能说，貌似计算机科学从诞生之日开始就充满了各种“宗教斗争”。&lt;/p&gt;
 &lt;p&gt;虽然现在图灵更加有名，然而在现实的程序设计中，却是丘奇的理论在起着绝大部分的作用。据我的经验，丘奇的理论让很多事情变得简单，而图灵的机器却过度的复杂。丘奇所发明的 lambda calculus 以及后续的工作，是几乎一切程序语言的理论基础。而根据老一辈的计算机工程师们的描述，最早的计算机构架也没有受到图灵的启发，那是一些电机工程师完全独立的工作。然而有趣的是，继承了丘奇衣钵的计算机科学家们拿到的那个大奖，仍然被叫做“图灵奖”。我粗略的算了一下，在迄今所有的图灵奖之中，程序语言的研究者占了近三分之一。&lt;/p&gt;
@@ -43,7 +44,7 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://www.yinwang.org/images/Alonzo_Church.jpg&quot; alt=&quot;&quot;&gt; &lt;img src=&quot;http://www.yinwang.org/images/Alan_Turing.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;
+&lt;p&gt;丘奇（Alonzo Church）和图灵（Alan Turing）是两位对计算机科学具有最大影响力的人物，然而他们却具有非常对立的观点和相差很多的名气。在我长达16年的计算机科学生涯中，总是感觉到自己的思想反反复复的徘徊于这两个“阵营”之间。丘奇代表了“逻辑”和“语言”，而图灵代表着“物理”和“机器”。在前面的8年中，我对丘奇一无所知，而在后面的8年中，我却很少再听到图灵的名字。他们的观点谁对谁错，是一个无法回答的问题。完全投靠丘奇，或者完全投靠图灵，貌似都是错误的做法。这是一种非常难说清楚的，矛盾的感觉，但是今天我试图把自己的感悟简要的介绍一下。&lt;/p&gt;
     
     </summary>
     
@@ -57,9 +58,10 @@
     <link href="http://yoursite.com/2016/03/17/PyDiff%20-%20Python%20%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83%E5%B7%A5%E5%85%B7/"/>
     <id>http://yoursite.com/2016/03/17/PyDiff - Python 结构化程序比较工具/</id>
     <published>2016-03-17T11:04:36.000Z</published>
-    <updated>2016-03-17T11:07:59.373Z</updated>
+    <updated>2016-03-17T12:59:28.633Z</updated>
     
     <content type="html">&lt;p&gt;在之前的一篇博文里，我介绍了 &lt;a href=&quot;http://www.yinwang.org/blog-cn/2013/04/21/ydiff-%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ydiff&lt;/a&gt;，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有人注意到它。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;现在我发现 Python 其实是一个挺重要而且有趣的语言。说它重要是因为它简单而且在某种程度上是优雅的，所以有很多人用它。说它有趣是因为它的一些设计其实比起很多更加“严谨”的语言要来得合理。语言的设计不只要有逻辑的严谨和效率，而且需要有“易用性”（usability）。Python 在易用性上面是做的比较好的。最近仔细看了一下 &lt;a href=&quot;http://www.python.org/dev/peps/pep-0008/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PEP 8&lt;/a&gt; (Python 的 “Style Guide”），发现它有很多地方比起 Java, Scheme, Haskell 都有让程序更加“易读”的特点。&lt;/p&gt;
 &lt;p&gt;所以，现在我为这个 Python 的结构化比较程序重新建立了它自己的 GitHub 项目。你可以在这里得到它的代码： &lt;a href=&quot;http://github.com/yinwang0/pydiff&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/yinwang0/pydiff&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;对比大型文件的时候可能速度会成一定的问题。不过我打算以后对算法做一个比较大的改进。如果发现 bug 请在 GitHub 中向我报告。谢谢。&lt;/p&gt;
@@ -76,7 +78,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;在之前的一篇博文里，我介绍了 &lt;a href=&quot;http://www.yinwang.org/blog-cn/2013/04/21/ydiff-%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E
+      &lt;p&gt;在之前的一篇博文里，我介绍了 &lt;a href=&quot;http://www.yinwang.org/blog-cn/2013/04/21/ydiff-%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83/&quot;&gt;ydiff&lt;/a&gt;，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有人注意到它。&lt;/p&gt;
     
     </summary>
     
@@ -90,9 +92,10 @@
     <link href="http://yoursite.com/2016/03/17/%E5%8E%9F%E5%9B%A0%E4%B8%8E%E8%AF%81%E6%98%8E/"/>
     <id>http://yoursite.com/2016/03/17/原因与证明/</id>
     <published>2016-03-17T11:02:10.000Z</published>
-    <updated>2016-03-17T11:02:56.579Z</updated>
+    <updated>2016-03-17T12:59:52.802Z</updated>
     
     <content type="html">&lt;h3 id=&quot;证明&quot;&gt;&lt;a href=&quot;#证明&quot; class=&quot;headerlink&quot; title=&quot;证明&quot;&gt;&lt;/a&gt;证明&lt;/h3&gt;&lt;p&gt;我在 Cornell 的时候经常遇到这样的问题，那就是教授们一上课就在黑板上写长篇的“定理证明”，全体同学认认真真在下面抄笔记，就连只有十来个人的小课也是那样。有些写字速度慢的人就不得不带上小型录音机，把教授的课全都录下来，要不就是之后去借别人的笔记来抄。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;有一次某知名教授照着讲义，背对着学生，在黑板上写了大半节课，写下好几板的证明，证明的是 simply typed lambda calculus （STLC）的 strong normalization 特性（SN）。刚写完就到下课时间了，他回过头来喘了一口气，说：“Any questions？”没有人啃声，于是他说：“很好！下课！”&lt;/p&gt;
 &lt;p&gt;几天后我问他，你证明了 STLC 有这个特性，然而你却没有告诉我它“为什么”有这个特性。他神气的看了我一眼：“你不懂吗？”我说：“你的证明我看懂了大部分，可是一个东西具有如此的性质，并不是因为你证明了它。这性质是它天生就有的，不管你是否能证明它。我想知道的是什么让 STLC 具有这个性质，而不只是证明它。”他说：“你问这样的问题有什么意义吗？你需要非常聪明，并且需要经过大量的努力才能想出这样的证明。”&lt;/p&gt;
 &lt;h3 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原因&lt;/h3&gt;&lt;p&gt;两年之后，我在 Indiana 上了另外一堂程序语言理论课。教授是我之前的导师 Amr Sabry。他上课从来不带讲义，貌似也没有准备，漫不经心的，却每次都能讲清楚问题的关键。于是有一天他也开始讲 STLC 的 SN 特性。他说，我不想写下这个证明让你们抄，我只告诉你们大概怎么去想。SN 的意思就是程序肯定会“终止”。所有会终止的程序，都会有一个“特征值”会随着程序的运行而减小。你需要做的就是找到 STLC 的“特征值”是什么。接着他就开始在黑板上画一个图……&lt;/p&gt;
@@ -105,7 +108,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;证明&quot;&gt;&lt;a href=&quot;#证明&quot; class=&quot;headerlink&quot; title=&quot;证明&quot;&gt;&lt;/a&gt;证明&lt;/h3&gt;&lt;p&gt;我在 Cornell 的时候经常遇到这样的问题，那就是教授们一上课就在黑板上写长篇的“定理证明”，全体同学认认真真在下面抄笔记，就连只有十来
+      &lt;h3 id=&quot;证明&quot;&gt;&lt;a href=&quot;#证明&quot; class=&quot;headerlink&quot; title=&quot;证明&quot;&gt;&lt;/a&gt;证明&lt;/h3&gt;&lt;p&gt;我在 Cornell 的时候经常遇到这样的问题，那就是教授们一上课就在黑板上写长篇的“定理证明”，全体同学认认真真在下面抄笔记，就连只有十来个人的小课也是那样。有些写字速度慢的人就不得不带上小型录音机，把教授的课全都录下来，要不就是之后去借别人的笔记来抄。&lt;/p&gt;
     
     </summary>
     
@@ -119,10 +122,11 @@
     <link href="http://yoursite.com/2016/03/17/ydiff%20-%20%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83/"/>
     <id>http://yoursite.com/2016/03/17/ydiff - 结构化的程序比较/</id>
     <published>2016-03-17T09:41:40.000Z</published>
-    <updated>2016-03-17T10:55:47.049Z</updated>
+    <updated>2016-03-17T13:00:07.713Z</updated>
     
     <content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/yinwang0/ydiff&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ydiff&lt;/a&gt; 是我的一个开源项目，用以探索一种全新的程序比较以及版本控制系统。&lt;/p&gt;
 &lt;p&gt;也许我根本不应该给它起名叫“ydiff”，让人感觉它只不过是对 diff 的微小改进。然而，ydiff 跟 diff 是有本质区别的。它们的区别在于，diff 只是对程序进行基于“文本”的对比，它根本不对程序进行 parse。而 ydiff 含有完整的针对程序语言的 parser，在得到了 AST 之后，才对 AST 进行“结构化的比较”。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;这种结构化的程序比较，不但可以避免文件里的“空白字符”引起的肤浅区别，而且可以根据程序的结构，进行更加有意义的对比。比如，ydiff 不会认为字符串 “1000” 和数字 1000 的区别只是多了一对引号。ydiff 在比较函数的时候，首先寻找名字相同的函数，而不只是对相同位置的函数进行无谓的对比。&lt;/p&gt;
 &lt;p&gt;ydiff 含有 C++, JavaScript 和 Lisp 的 parser。这些 parser，包括用于支持这些 parser 的库代码，都是我自己完成的。ydiff 不含有任何第三方代码。ydiff 的 parser 技术不依赖于任何第三方工具（比如 ANTLR 或者 YACC）。&lt;/p&gt;
 &lt;h3 id=&quot;界面&quot;&gt;&lt;a href=&quot;#界面&quot; class=&quot;headerlink&quot; title=&quot;界面&quot;&gt;&lt;/a&gt;界面&lt;/h3&gt;&lt;p&gt;跟普通 diff 程序的输出不一样，ydiff 生成美观的含有 JavaScript 的 HTML 文件，可以直接使用浏览器浏览，并且可以嵌入其它网页，比如像下面这样：&lt;/p&gt;
@@ -160,8 +164,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://github.com/yinwang0/ydiff&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ydiff&lt;/a&gt; 是我的一个开源项目，用以探索一种全新的程序比较以及版本控制系统。&lt;/p&gt;
-&lt;p&gt;也许我根本不应该给它起名
+      &lt;p&gt;&lt;a href=&quot;https://github.com/yinwang0/ydiff&quot;&gt;ydiff&lt;/a&gt; 是我的一个开源项目，用以探索一种全新的程序比较以及版本控制系统。&lt;/p&gt;
+&lt;p&gt;也许我根本不应该给它起名叫“ydiff”，让人感觉它只不过是对 diff 的微小改进。然而，ydiff 跟 diff 是有本质区别的。它们的区别在于，diff 只是对程序进行基于“文本”的对比，它根本不对程序进行 parse。而 ydiff 含有完整的针对程序语言的 parser，在得到了 AST 之后，才对 AST 进行“结构化的比较”。&lt;/p&gt;
     
     </summary>
     
@@ -177,16 +181,16 @@
     <link href="http://yoursite.com/2016/03/17/%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91/"/>
     <id>http://yoursite.com/2016/03/17/混合开发/</id>
     <published>2016-03-17T02:59:03.000Z</published>
-    <updated>2016-03-17T12:40:30.574Z</updated>
+    <updated>2016-03-17T12:55:27.114Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/mixed.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;h5和android的混合开发（前端代码）：&quot;&gt;&lt;a href=&quot;#h5和android的混合开发（前端代码）：&quot; class=&quot;headerlink&quot; title=&quot;h5和android的混合开发（前端代码）：&quot;&gt;&lt;/a&gt;h5和android的混合开发（前端代码）：&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//  console.log(&quot;我是token：&quot;+req.session.accessToken)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//	var accessToken=&quot;15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d&quot;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; jsonObject=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;userInfo&quot;&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;9&quot;&lt;/span&gt;, &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&quot;accessToken&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;syncLogin&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;jsonObject&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;/*app native未登录，H5端登录后同步userInfo到native实现自动登录 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		 &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;JsBridge&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		 	JsBridge.toast(&#39;测试一下而已&#39;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			JsBridge.syncLogin(jsonObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		 &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	syncLogin(jsonObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;checkNativeLogin&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		JsBridge.checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		var userInfo=JSON.parse(JsBridge.checkNativeLogin());&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; userInfo=JsBridge.checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		JsBridge.toast(userInfo.userInfo.userId);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		JsBridge.toast(userInfo.userInfo.userId);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;h5和android的混合开发（前端代码）：&quot;&gt;&lt;a href=&quot;#h5和android的混合开发（前端代码）：&quot; class=&quot;headerlink&quot; title=&quot;h5和android的混合开发（前端代码）：&quot;&gt;&lt;/a&gt;h5和android的混合开发（前端代码）：&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//  console.log(&quot;我是token：&quot;+req.session.accessToken)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//	var accessToken=&quot;15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d&quot;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; jsonObject=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;userInfo&quot;&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;9&quot;&lt;/span&gt;, &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;string&quot;&gt;&quot;accessToken&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;15242ed7d2a359547fb286f5b5cb44274470060b6c694399b023893cb6cbb762d11ca0c3ccfb49f4b03e857389b40da7d333fa48d7f3b8cbc6afee53d707220d&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;syncLogin&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;jsonObject&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;/*app native未登录，H5端登录后同步userInfo到native实现自动登录 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		 &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;JsBridge&quot;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		 	JsBridge.toast(&#39;测试一下而已&#39;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			JsBridge.syncLogin(jsonObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		 &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	syncLogin(jsonObject);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;checkNativeLogin&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		JsBridge.checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		var userInfo=JSON.parse(JsBridge.checkNativeLogin());&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; userInfo=JsBridge.checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		JsBridge.toast(userInfo.userInfo.userId);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//		JsBridge.toast(userInfo.userInfo.userId);&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	checkNativeLogin();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;h5和object-c的混合开发（前端代码）：&quot;&gt;&lt;a href=&quot;#h5和object-c的混合开发（前端代码）：&quot; class=&quot;headerlink&quot; title=&quot;h5和object-c的混合开发（前端代码）：&quot;&gt;&lt;/a&gt;h5和object-c的混合开发（前端代码）：&lt;/h3&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;http-equiv&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;content-type&quot;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;content=&quot;text&lt;/span&gt;/&lt;span class=&quot;attr&quot;&gt;html&lt;/span&gt;;&lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;utf-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;js调用oc&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javaScript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;comment&quot;&gt;/* 调用本地带参数的方法 */&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;testFunction1&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;cmd,parameter1&lt;/span&gt;)&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.location=&lt;span class=&quot;string&quot;&gt;&quot;objc://&quot;&lt;/span&gt;+cmd+&lt;span class=&quot;string&quot;&gt;&quot;:/&quot;&lt;/span&gt;+parameter1; &lt;span class=&quot;comment&quot;&gt;//cmd代表objective-c中的的方法名，parameter1自然就是参数了  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;comment&quot;&gt;/* 调用本地不带参数的方法 */&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;testFunction2&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;cmd&lt;/span&gt;)&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.location=&lt;span class=&quot;string&quot;&gt;&quot;objc://&quot;&lt;/span&gt;+cmd; &lt;span class=&quot;comment&quot;&gt;//cmd代表objective-c中的的方法名  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text1&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;点击这里1&quot;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;onclick=&quot;testFunction1(&#39;printLog:&#39;,&#39;str&#39;)&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;调用本地带参数的方法&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text2&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;点击这里2&quot;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;onclick=&quot;testFunction2(&#39;testFunc&#39;)&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;调用本地不带参数的方法&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/images/mixed.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;h5和android的混合开发（前端代码）：&quot;&gt;&lt;a href=&quot;#h5和android的混合开发（前端代码）：&quot; class=&quot;headerlink&quot; title=&quot;h5和a
     
     </summary>
     
@@ -202,12 +206,13 @@
     <link href="http://yoursite.com/2016/03/16/%E6%80%9D%E5%BF%B5%E7%9A%84%E6%9E%81%E8%87%B4%C2%B7%E5%85%B6%E5%9B%9B/"/>
     <id>http://yoursite.com/2016/03/16/思念的极致·其四/</id>
     <published>2016-03-16T13:10:48.000Z</published>
-    <updated>2016-03-16T13:19:54.684Z</updated>
+    <updated>2016-03-17T13:00:24.425Z</updated>
     
     <content type="html">&lt;p&gt;有人说，陪伴，是最长情的告白。&lt;/p&gt;
 &lt;p&gt;那么我觉得，等待，或许就是最极致的思念了吧。&lt;/p&gt;
 &lt;p&gt;前几天我看了部关于思念与等待的动画短片，虽然故事简单，却感人肺腑。看到这题，觉得与主题十分契合，我就来跟大家聊聊这部动画吧。&lt;/p&gt;
 &lt;p&gt;片名《父与女》，豆瓣得分9.2分，并获得了第73届奥斯卡金像奖最佳动画短片奖。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;https://pic3.zhimg.com/5c53ffb338300d348b6748a4d7fb8ae6_b.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;故事的开头，是一对父女于秋日的傍晚，在林间小路骑着单车。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/201324-5f639aec2abff3fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -285,7 +290,7 @@
       &lt;p&gt;有人说，陪伴，是最长情的告白。&lt;/p&gt;
 &lt;p&gt;那么我觉得，等待，或许就是最极致的思念了吧。&lt;/p&gt;
 &lt;p&gt;前几天我看了部关于思念与等待的动画短片，虽然故事简单，却感人肺腑。看到这题，觉得与主题十分契合，我就来跟大家聊聊这部动画吧。&lt;/p&gt;
-&lt;p&gt;片名《父与女》，豆瓣得分9.
+&lt;p&gt;片名《父与女》，豆瓣得分9.2分，并获得了第73届奥斯卡金像奖最佳动画短片奖。&lt;/p&gt;
     
     </summary>
     
@@ -301,11 +306,12 @@
     <link href="http://yoursite.com/2016/03/16/%E6%80%9D%E5%BF%B5%E7%9A%84%E6%9E%81%E8%87%B4%C2%B7%E5%85%B6%E4%B8%89/"/>
     <id>http://yoursite.com/2016/03/16/思念的极致·其三/</id>
     <published>2016-03-16T13:10:15.000Z</published>
-    <updated>2016-03-16T13:15:24.250Z</updated>
+    <updated>2016-03-17T13:00:34.882Z</updated>
     
     <content type="html">&lt;p&gt;包子是部门新来的实习生。&lt;/p&gt;
 &lt;p&gt;他是个奇怪的人。&lt;/p&gt;
 &lt;p&gt;他有两部手机，一部是像模像样的智能机，另一部是过时到收废品的人也不会正眼瞧一眼的板砖诺基亚，样子与下面这张图片很像：&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/201324-7d2c5241b94c868b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;工作实习上的电话来往，包子都会用那个正常的智能机。但这部满身划痕的诺基亚，他一直都放在办公桌上，也不见落灰，想必是天天都会拿起来用吧。&lt;/p&gt;
 &lt;p&gt;包子和我的工位是紧挨着的，虽然不在同一个项目组，我们还算熟识。&lt;/p&gt;
@@ -341,7 +347,6 @@
       &lt;p&gt;包子是部门新来的实习生。&lt;/p&gt;
 &lt;p&gt;他是个奇怪的人。&lt;/p&gt;
 &lt;p&gt;他有两部手机，一部是像模像样的智能机，另一部是过时到收废品的人也不会正眼瞧一眼的板砖诺基亚，样子与下面这张图片很像：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jian
     
     </summary>
     
@@ -357,9 +362,10 @@
     <link href="http://yoursite.com/2016/03/16/%E6%80%9D%E5%BF%B5%E7%9A%84%E6%9E%81%E8%87%B4%C2%B7%E5%85%B6%E4%BA%8C/"/>
     <id>http://yoursite.com/2016/03/16/思念的极致·其二/</id>
     <published>2016-03-16T13:09:26.000Z</published>
-    <updated>2016-03-16T13:14:17.119Z</updated>
+    <updated>2016-03-17T13:00:48.242Z</updated>
     
     <content type="html">&lt;p&gt;近日，论坛中一位网友的发帖引来了无数人泪奔感动。帖子中写到该网友无意中点进了已故5年多的高中同学的QQ空间，却发现自2010年同学不幸离世至今5年多的时间里，同学母亲一直坚持不断地在儿子的QQ空间留言板上留言。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;看着留言板上的字字句句，发帖网友感触颇深，他说简直不敢想象这位母亲是如何度过这5年的日日夜夜。尽管QQ空间的主人已不在，但他的至亲还在深深的思念着他。楼主并没有提供该QQ空间地址，仅仅贴出了几张留言板的截图，众网友看完都心酸不已。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/201324-33f33701bf945a79.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;母亲5年来坚持在已故孩子QQ空间留言 网友泪崩&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/201324-14f6a5f19614cf33.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;母亲5年来坚持在已故孩子QQ空间留言 网友泪崩&quot;&gt;&lt;/p&gt;
@@ -373,7 +379,6 @@
     <summary type="html">
     
       &lt;p&gt;近日，论坛中一位网友的发帖引来了无数人泪奔感动。帖子中写到该网友无意中点进了已故5年多的高中同学的QQ空间，却发现自2010年同学不幸离世至今5年多的时间里，同学母亲一直坚持不断地在儿子的QQ空间留言板上留言。&lt;/p&gt;
-&lt;p&gt;看着留言板上的字字句句，发帖网友感触颇深，他说简
     
     </summary>
     
@@ -389,9 +394,10 @@
     <link href="http://yoursite.com/2016/03/16/%E6%80%9D%E5%BF%B5%E7%9A%84%E6%9E%81%E8%87%B4%C2%B7%E5%85%B6%E4%B8%80/"/>
     <id>http://yoursite.com/2016/03/16/思念的极致·其一/</id>
     <published>2016-03-16T13:08:15.000Z</published>
-    <updated>2016-03-16T13:08:23.108Z</updated>
+    <updated>2016-03-17T13:01:05.673Z</updated>
     
     <content type="html">&lt;p&gt;我和朋友昨晚去喝酒，我的朋友腰缠万贯，开着豪车，日入斗金，身边美女不断，却在喝醉了之后蹲在路边的小树下哭的像个傻逼，他哭着说他想他妈，我想把他拉走，他却死死的抱着那棵树不放手，不停的喃喃自语：&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;小时候我缠着我妈买玩具，一把玩具手枪要三块钱，我妈没有那么多钱，就哄着我说下次再来买，我不听拿着那把枪大哭大闹不肯走，我妈没办法，只能掏钱把玩具买了。我拿着玩具在前面欢天喜地的走着，从来没想过那是我家买菜种子的钱，我爸回去后问我妈怎么没把种子买回来，我妈就说钱不小心掉了，我爸就把我妈按在地上打了一顿。&lt;/p&gt;
 &lt;p&gt;第二天，我看到我妈额头青肿，问我妈是怎么回事，我妈抱着我笑着说：没事儿，妈妈不小心撞到门了。&lt;/p&gt;
 &lt;p&gt;我爸是个混蛋，一喝醉就喜欢打人，每次一看到我爸喝醉酒，我妈就连忙把我抱到房里锁上门，然后就听到我爸不停的踹着门，轰轰隆隆，成了我小时候挥之不去的噩梦，我发誓一定要出人头地，带我妈离开这个家。&lt;/p&gt;
@@ -439,7 +445,6 @@
     <summary type="html">
     
       &lt;p&gt;我和朋友昨晚去喝酒，我的朋友腰缠万贯，开着豪车，日入斗金，身边美女不断，却在喝醉了之后蹲在路边的小树下哭的像个傻逼，他哭着说他想他妈，我想把他拉走，他却死死的抱着那棵树不放手，不停的喃喃自语：&lt;/p&gt;
-&lt;p&gt;小时候我缠着我妈买玩具，一把玩具手枪要三块钱，我妈没有那么多钱，就
     
     </summary>
     
@@ -455,7 +460,7 @@
     <link href="http://yoursite.com/2016/03/16/JS%E5%88%A4%E6%96%AD%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%98%AF%E5%90%A6%E6%98%AFiOS%E6%88%96%E8%80%85Android/"/>
     <id>http://yoursite.com/2016/03/16/JS判断客户端是否是iOS或者Android/</id>
     <published>2016-03-16T11:37:19.000Z</published>
-    <updated>2016-03-16T13:00:46.744Z</updated>
+    <updated>2016-03-17T13:01:30.340Z</updated>
     
     <content type="html">&lt;p&gt;通过判断浏览器的userAgent，用正则来判断是否是ios和Android客户端。代码如下：&lt;/p&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; u = navigator.userAgent;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isAndroid = u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Android&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; || u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Adr&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//android终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isiOS = !!u.match(&lt;span class=&quot;regexp&quot;&gt;/\(i[^;]+;( U;)? CPU.+Mac OS X/&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//ios终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(&lt;span class=&quot;string&quot;&gt;&#39;是否是Android：&#39;&lt;/span&gt;+isAndroid);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(&lt;span class=&quot;string&quot;&gt;&#39;是否是iOS：&#39;&lt;/span&gt;+isiOS);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -463,6 +468,7 @@
 &lt;p&gt;&lt;img src=&quot;http://img.caibaojian.com/uploads/2014/08/qrcode-7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;下面一个比较全面的浏览器检查函数，提供更多的检查内容，你可以检查是否是移动端（Mobile）、ipad、iphone、微信、QQ等。&lt;/p&gt;
 &lt;p&gt;第一种：来自HTTP://blog.baiwand.com/?post=176&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//判断访问终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; browser=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    versions:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; u = navigator.userAgent, app = navigator.appVersion;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            trident: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Trident&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//IE内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            presto: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Presto&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//opera内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            webKit: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;AppleWebKit&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//苹果、谷歌内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            gecko: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Gecko&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; &amp;amp;&amp;amp; u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;KHTML&#39;&lt;/span&gt;) == &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;,&lt;span class=&quot;comment&quot;&gt;//火狐内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            mobile: !!u.match(&lt;span class=&quot;regexp&quot;&gt;/AppleWebKit.*Mobile.*/&lt;/span&gt;), &lt;span class=&quot;comment&quot;&gt;//是否为移动终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            ios: !!u.match(&lt;span class=&quot;regexp&quot;&gt;/\(i[^;]+;( U;)? CPU.+Mac OS X/&lt;/span&gt;), &lt;span class=&quot;comment&quot;&gt;//ios终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            android: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Android&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; || u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Adr&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//android终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            iPhone: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;iPhone&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; , &lt;span class=&quot;comment&quot;&gt;//是否为iPhone或者QQHD浏览器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            iPad: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;iPad&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//是否iPad&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            webApp: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Safari&#39;&lt;/span&gt;) == &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//是否web应该程序，没有头部与底部&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            weixin: u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;MicroMessenger&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;, &lt;span class=&quot;comment&quot;&gt;//是否微信 （2015-01-22新增）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            qq: u.match(&lt;span class=&quot;regexp&quot;&gt;/\sQQ/i&lt;/span&gt;) == &lt;span class=&quot;string&quot;&gt;&quot; qq&quot;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;//是否QQ&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;(),&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    language:(navigator.browserLanguage || navigator.language).toLowerCase()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;regexp&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;使用方法：&quot;&gt;&lt;a href=&quot;#使用方法：&quot; class=&quot;headerlink&quot; title=&quot;使用方法：&quot;&gt;&lt;/a&gt;使用方法：&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//判断是否IE内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(browser.versions.trident)&amp;#123; alert(&lt;span class=&quot;string&quot;&gt;&quot;is IE&quot;&lt;/span&gt;); &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//判断是否webKit内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(browser.versions.webKit)&amp;#123; alert(&lt;span class=&quot;string&quot;&gt;&quot;is webKit&quot;&lt;/span&gt;); &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//判断是否移动端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(browser.versions.mobile||browser.versions.android||browser.versions.ios)&amp;#123; alert(&lt;span class=&quot;string&quot;&gt;&quot;移动端&quot;&lt;/span&gt;); &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;检测浏览器语言&quot;&gt;&lt;a href=&quot;#检测浏览器语言&quot; class=&quot;headerlink&quot; title=&quot;检测浏览器语言&quot;&gt;&lt;/a&gt;检测浏览器语言&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;currentLang = navigator.language;   &lt;span class=&quot;comment&quot;&gt;//判断除IE外其他浏览器使用语言&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(!currentLang)&amp;#123;&lt;span class=&quot;comment&quot;&gt;//判断IE浏览器使用语言&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    currentLang = navigator.browserLanguage;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(currentLang);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -474,7 +480,11 @@
     <summary type="html">
     
       &lt;p&gt;通过判断浏览器的userAgent，用正则来判断是否是ios和Android客户端。代码如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; u = navigator.userAgent;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isAndroid = u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Android&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt; || u.indexOf(&lt;span class=&quot;string&quot;&gt;&#39;Adr&#39;&lt;/span&gt;) &amp;gt; &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;; &lt;span class=&quot;comment&quot;&gt;//android终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; isiOS = !!u.match(&lt;span class=&quot;regexp&quot;&gt;/\(i[^;]+;( U;)? CPU.+Mac OS X/&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//ios终端&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(&lt;span class=&quot;string&quot;&gt;&#39;是否是Android：&#39;&lt;/span&gt;+isAndroid);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;alert(&lt;span class=&quot;string&quot;&gt;&#39;是否是iOS：&#39;&lt;/span&gt;+isiOS);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;可以打开你的Android手机或者iphone扫描看看&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.caibaojian.com/uploads/2014/08/qrcode-7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;下面一个比较全面的浏览器检查函数，提供更多的检查内容，你可以检查是否是移动端（Mobile）、ipad、iphone、微信、QQ等。&lt;/p&gt;
+&lt;p&gt;第一种：来自HTTP://blog.baiwand.com/?post=176&lt;/p&gt;
     
     </summary>
     
@@ -488,10 +498,11 @@
     <link href="http://yoursite.com/2016/03/16/%E5%89%8D%E7%AB%AF%E6%90%9C%E9%9B%86/"/>
     <id>http://yoursite.com/2016/03/16/前端搜集/</id>
     <published>2016-03-16T06:53:28.000Z</published>
-    <updated>2016-03-16T12:59:49.889Z</updated>
+    <updated>2016-03-17T13:01:59.095Z</updated>
     
     <content type="html">&lt;h1 id=&quot;前端收集&quot;&gt;&lt;a href=&quot;#前端收集&quot; class=&quot;headerlink&quot; title=&quot;前端收集&quot;&gt;&lt;/a&gt;前端收集&lt;/h1&gt;&lt;p&gt;在前端路上摸索前行，在这里分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者。欢迎更新，以下各排名不分先后顺序。&lt;/p&gt;
 &lt;p&gt;自己 RSS 长期订阅了一些IT 和技术相关博客，这里是我Feedly 输出的opml，可直接导入一些RSS 阅读器:&lt;br&gt;&lt;a href=&quot;https://github.com/foru17/luolei-dotfiles/blob/master/feedly.opml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/foru17/luolei-dotfiles/blob/master/feedly.opml&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;====&lt;/p&gt;
 &lt;h4 id=&quot;前端收集图谱&quot;&gt;&lt;a href=&quot;#前端收集图谱&quot; class=&quot;headerlink&quot; title=&quot;前端收集图谱&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://get-set.cn/front-end-collect/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前端收集图谱&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;此部分为&lt;a href=&quot;https://github.com/jikeytang&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@jikeytang &lt;/a&gt;贡献&lt;/p&gt;
 &lt;ul&gt;
@@ -1663,7 +1674,8 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前端收集&quot;&gt;&lt;a href=&quot;#前端收集&quot; class=&quot;headerlink&quot; title=&quot;前端收集&quot;&gt;&lt;/a&gt;前端收集&lt;/h1&gt;&lt;p&gt;在前端路上摸索前行，在这里分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者。欢迎更新，以下各排名不分先后顺序。
+      &lt;h1 id=&quot;前端收集&quot;&gt;&lt;a href=&quot;#前端收集&quot; class=&quot;headerlink&quot; title=&quot;前端收集&quot;&gt;&lt;/a&gt;前端收集&lt;/h1&gt;&lt;p&gt;在前端路上摸索前行，在这里分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者。欢迎更新，以下各排名不分先后顺序。&lt;/p&gt;
+&lt;p&gt;自己 RSS 长期订阅了一些IT 和技术相关博客，这里是我Feedly 输出的opml，可直接导入一些RSS 阅读器:&lt;br&gt;&lt;a href=&quot;https://github.com/foru17/luolei-dotfiles/blob/master/feedly.opml&quot;&gt;https://github.com/foru17/luolei-dotfiles/blob/master/feedly.opml&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1679,11 +1691,12 @@
     <link href="http://yoursite.com/2016/03/16/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84/"/>
     <id>http://yoursite.com/2016/03/16/前端开发知识结构/</id>
     <published>2016-03-16T03:42:12.000Z</published>
-    <updated>2016-03-16T03:42:33.191Z</updated>
+    <updated>2016-03-17T13:02:09.679Z</updated>
     
     <content type="html">&lt;h1 id=&quot;Frontend-Knowledge-Structure&quot;&gt;&lt;a href=&quot;#Frontend-Knowledge-Structure&quot; class=&quot;headerlink&quot; title=&quot;Frontend Knowledge Structure&quot;&gt;&lt;/a&gt;Frontend Knowledge Structure&lt;/h1&gt;&lt;h2 id=&quot;项目起源&quot;&gt;&lt;a href=&quot;#项目起源&quot; class=&quot;headerlink&quot; title=&quot;项目起源&quot;&gt;&lt;/a&gt;项目起源&lt;/h2&gt;&lt;p&gt;还记得@jayli 的这幅前端知识结构图么。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.github.com/JacksonTian/fks/master/figures/fks.jpg&quot; alt=&quot;前端知识结构&quot;&gt;&lt;/p&gt;
 &lt;p&gt;图片的形式具有诸多的不便。缺失源图的我们，无法为此图贡献些什么，随着时间的迁移，或许有些技术点会发生改变，所以有了这个GitHub项目。我们可以通过协作的方式来共同维护这个项目。Git的历史记录也可以见证前端行业的一些变迁。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;a href=&quot;http://html5ify.com/fks/fks_chart/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;可视化效果&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;前端开发知识结构&quot;&gt;&lt;a href=&quot;#前端开发知识结构&quot; class=&quot;headerlink&quot; title=&quot;前端开发知识结构&quot;&gt;&lt;/a&gt;前端开发知识结构&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;前端工程师&lt;/p&gt;
@@ -2054,7 +2067,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Frontend-Knowledge-Structure&quot;&gt;&lt;a href=&quot;#Frontend-Knowledge-Structure&quot; class=&quot;headerlink&quot; title=&quot;Frontend Knowledge Structure&quot;&gt;&lt;/a&gt;Fr
+      &lt;h1 id=&quot;Frontend-Knowledge-Structure&quot;&gt;&lt;a href=&quot;#Frontend-Knowledge-Structure&quot; class=&quot;headerlink&quot; title=&quot;Frontend Knowledge Structure&quot;&gt;&lt;/a&gt;Frontend Knowledge Structure&lt;/h1&gt;&lt;h2 id=&quot;项目起源&quot;&gt;&lt;a href=&quot;#项目起源&quot; class=&quot;headerlink&quot; title=&quot;项目起源&quot;&gt;&lt;/a&gt;项目起源&lt;/h2&gt;&lt;p&gt;还记得@jayli 的这幅前端知识结构图么。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.github.com/JacksonTian/fks/master/figures/fks.jpg&quot; alt=&quot;前端知识结构&quot;&gt;&lt;/p&gt;
+&lt;p&gt;图片的形式具有诸多的不便。缺失源图的我们，无法为此图贡献些什么，随着时间的迁移，或许有些技术点会发生改变，所以有了这个GitHub项目。我们可以通过协作的方式来共同维护这个项目。Git的历史记录也可以见证前端行业的一些变迁。&lt;/p&gt;
     
     </summary>
     
@@ -2068,10 +2083,11 @@
     <link href="http://yoursite.com/2016/03/16/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%EF%BC%88Quicksort%EF%BC%89%E7%9A%84Javascript%E5%AE%9E%E7%8E%B0/"/>
     <id>http://yoursite.com/2016/03/16/快速排序（Quicksort）的Javascript实现/</id>
     <published>2016-03-15T16:51:02.000Z</published>
-    <updated>2016-03-16T02:55:06.989Z</updated>
+    <updated>2016-03-17T13:02:21.624Z</updated>
     
     <content type="html">&lt;p&gt;日本程序员norahiko，写了一个排序算法的&lt;a href=&quot;http://jsdo.it/norahiko/oxIy/fullscreen&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;动画演示&lt;/a&gt;，非常有趣。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Sorting_algorithm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;排序算法&lt;/a&gt;（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。&lt;br&gt;目前，最常见的排序算法大概有七八种，其中&lt;a href=&quot;http://en.wikipedia.org/wiki/Quicksort&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“快速排序”&lt;/a&gt;（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;a href=&quot;http://jsdo.it/norahiko/oxIy/fullscreen&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt; &lt;img src=&quot;http://image.beekka.com/blog/201104/bg2011040401_0.png&quot; alt=&quot;&quot;&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://image.beekka.com/blog/201104/bg2011040402.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;“快速排序”的思想很简单，整个排序过程只需要三步：&lt;/p&gt;
@@ -2111,8 +2127,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;日本程序员norahiko，写了一个排序算法的&lt;a href=&quot;http://jsdo.it/norahiko/oxIy/fullscreen&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;动画演示&lt;/a&gt;，非常有趣。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;ht
+      &lt;p&gt;日本程序员norahiko，写了一个排序算法的&lt;a href=&quot;http://jsdo.it/norahiko/oxIy/fullscreen&quot;&gt;动画演示&lt;/a&gt;，非常有趣。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Sorting_algorithm&quot;&gt;排序算法&lt;/a&gt;（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。&lt;br&gt;目前，最常见的排序算法大概有七八种，其中&lt;a href=&quot;http://en.wikipedia.org/wiki/Quicksort&quot;&gt;“快速排序”&lt;/a&gt;（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。&lt;/p&gt;
     
     </summary>
     
@@ -2128,9 +2144,10 @@
     <link href="http://yoursite.com/2016/03/15/%E6%80%8E%E6%A0%B7%E5%86%99%E4%B8%80%E4%B8%AA%E8%A7%A3%E9%87%8A%E5%99%A8/"/>
     <id>http://yoursite.com/2016/03/15/怎样写一个解释器/</id>
     <published>2016-03-15T11:14:30.000Z</published>
-    <updated>2016-03-15T16:00:00.141Z</updated>
+    <updated>2016-03-17T13:02:27.641Z</updated>
     
     <content type="html">&lt;h1 id=&quot;怎样写一个解释器&quot;&gt;&lt;a href=&quot;#怎样写一个解释器&quot; class=&quot;headerlink&quot; title=&quot;怎样写一个解释器&quot;&gt;&lt;/a&gt;怎样写一个解释器&lt;/h1&gt;&lt;p&gt;这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是这篇教程并不是针对编程的入门知识，所以我假设你已经学会了最基本的 Scheme 和函数式编程。我不是很推崇函数式编程，但它里面确实包含了很重要的一些方法。如果你完全不了解这些，可以读一下 SICP 的第一，二章（或者接下去读 The Little Schemer)。当然你也可以继续读这篇文章，有不懂的地方再去查资料。我在这里也会讲递归和模式匹配的原理。如果你已经了解这些东西，这里的内容也许可以加深你的理解。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;解释器是一种简单却又深奥的东西，以至于好多人都不会写，或者自认为会写却又不真正的会写。在这个领域里有一些历史遗留下来的误解，以至于很少有人真正的知道如何写出正确的解释器。很多“语言专家”或者“逻辑学家”的解释器代码里面有各种各样的错误，却又以谬传谬，搞得无比复杂。这误解的渊源之深，真是一言难尽。&lt;/p&gt;
 &lt;p&gt;你必须从最简单的语言开始，逐步增加语言的复杂度，才能构造出正确的解释器。这篇文章就是告诉你如何写出一个最简单的语言 (lambda calculus) 的解释器，并且带有基本的的算术功能，可以作为一个高级计算器来使用。&lt;/p&gt;
 &lt;p&gt;一般的程序语言课程往往从语法分析(parsing)开始，折腾 lex 和 yacc 等麻烦却不中用的工具，解决一些根本不需要存在的问题。Parsing 的作用其实只是把字符串解码成程序的语法树（AST）结构。麻烦好久得到了 AST 之后，真正的困难才开始！而很多人在写完 parser 之后就已经倒下了。鉴于这个原因，这里我用所谓的“S-expression”来表示程序的语法树（AST）结构。S-expression （加上 Lisp 对它发自“本能”的处理能力）让我们可以直接跳过 parse 的步骤，进入关键的主题：语义(semantics)。&lt;/p&gt;
@@ -2250,7 +2267,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;怎样写一个解释器&quot;&gt;&lt;a href=&quot;#怎样写一个解释器&quot; class=&quot;headerlink&quot; title=&quot;怎样写一个解释器&quot;&gt;&lt;/a&gt;怎样写一个解释器&lt;/h1&gt;&lt;p&gt;这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是
+      &lt;h1 id=&quot;怎样写一个解释器&quot;&gt;&lt;a href=&quot;#怎样写一个解释器&quot; class=&quot;headerlink&quot; title=&quot;怎样写一个解释器&quot;&gt;&lt;/a&gt;怎样写一个解释器&lt;/h1&gt;&lt;p&gt;这是一篇解释器的入门教程。虽然我试图从最基本的原理讲起，尽量让这篇文章不依赖于其它知识，但是这篇教程并不是针对编程的入门知识，所以我假设你已经学会了最基本的 Scheme 和函数式编程。我不是很推崇函数式编程，但它里面确实包含了很重要的一些方法。如果你完全不了解这些，可以读一下 SICP 的第一，二章（或者接下去读 The Little Schemer)。当然你也可以继续读这篇文章，有不懂的地方再去查资料。我在这里也会讲递归和模式匹配的原理。如果你已经了解这些东西，这里的内容也许可以加深你的理解。&lt;/p&gt;
     
     </summary>
     
@@ -2266,12 +2283,14 @@
     <link href="http://yoursite.com/2016/03/15/%E4%B8%80%E7%A7%8D%E6%96%B0%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
     <id>http://yoursite.com/2016/03/15/一种新的操作系统设计/</id>
     <published>2016-03-15T11:14:06.000Z</published>
-    <updated>2016-03-15T15:59:53.194Z</updated>
+    <updated>2016-03-17T13:02:33.866Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一种新的操作系统设计&quot;&gt;&lt;a href=&quot;#一种新的操作系统设计&quot; class=&quot;headerlink&quot; title=&quot;一种新的操作系统设计&quot;&gt;&lt;/a&gt;一种新的操作系统设计&lt;/h1&gt;&lt;p&gt;我一直在试图利用程序语言的设计原理，设计一种超越“Unix 哲学”的操作系统。这里是我的设想：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;这种系统里面的程序间通信不使用无结构的字符串，而是使用带有类型和结构的数据。在这样的系统里面，Unix 和其它类似操作系统（比如 Windows）里的所谓“应用程序”的概念基本上完全消失。系统由一个个很小的“函数”组成，每个函数都可以调用另外一个函数，通过参数传递数据。每个函数都可以手动或者自动并发执行。用现在的系统术语打个比方，这就像是所有代码都是“库”代码，而不存在独立的“可执行文件”。&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;这种系统里面的程序间通信不使用无结构的字符串，而是使用带有类型和结构的数据。在这样的系统里面，Unix 和其它类似操作系统（比如 Windows）里的所谓“应用程序”的概念基本上完全消失。系统由一个个很小的“函数”组成，每个函数都可以调用另外一个函数，通过参数传递数据。每个函数都可以手动或者自动并发执行。用现在的系统术语打个比方，这就像是所有代码都是“库”代码，而不存在独立的“可执行文件”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;由于参数是数据结构而不是字符串，这避免了程序间通信繁琐的编码和解码过程。使得“进程间通信”变得轻而易举。任何函数都可以调用另一个函数来处理特定类型的数据，这使得像 “OLE 嵌入”这样的机制变得极其简单。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;所有函数由同一种先进的高级程序语言写成，所以函数间的调用完全不需要“翻译”。不存在 SQL injection 之类由于把程序当成字符串而产生的错误。&lt;/p&gt;
@@ -2301,7 +2320,10 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一种新的操作系统设计&quot;&gt;&lt;a href=&quot;#一种新的操作系统设计&quot; class=&quot;headerlink&quot; title=&quot;一种新的操作系统设计&quot;&gt;&lt;/a&gt;一种新的操作系统设计&lt;/h1&gt;&lt;p&gt;我一直在试图利用程序语言的设计原理，设计一种超越“Unix 哲学”的操作系统
+      &lt;h1 id=&quot;一种新的操作系统设计&quot;&gt;&lt;a href=&quot;#一种新的操作系统设计&quot; class=&quot;headerlink&quot; title=&quot;一种新的操作系统设计&quot;&gt;&lt;/a&gt;一种新的操作系统设计&lt;/h1&gt;&lt;p&gt;我一直在试图利用程序语言的设计原理，设计一种超越“Unix 哲学”的操作系统。这里是我的设想：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这种系统里面的程序间通信不使用无结构的字符串，而是使用带有类型和结构的数据。在这样的系统里面，Unix 和其它类似操作系统（比如 Windows）里的所谓“应用程序”的概念基本上完全消失。系统由一个个很小的“函数”组成，每个函数都可以调用另外一个函数，通过参数传递数据。每个函数都可以手动或者自动并发执行。用现在的系统术语打个比方，这就像是所有代码都是“库”代码，而不存在独立的“可执行文件”。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
@@ -2317,9 +2339,10 @@
     <link href="http://yoursite.com/2016/03/15/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A6%BB%E5%BC%80%20Cornell/"/>
     <id>http://yoursite.com/2016/03/15/我为什么离开 Cornell/</id>
     <published>2016-03-15T11:13:49.000Z</published>
-    <updated>2016-03-15T15:59:46.772Z</updated>
+    <updated>2016-03-17T13:02:38.889Z</updated>
     
     <content type="html">&lt;h1 id=&quot;我为什么离开-Cornell&quot;&gt;&lt;a href=&quot;#我为什么离开-Cornell&quot; class=&quot;headerlink&quot; title=&quot;我为什么离开 Cornell&quot;&gt;&lt;/a&gt;我为什么离开 Cornell&lt;/h1&gt;&lt;p&gt;很多人都知道，我曾经在 Cornell 博士就读，两年之后转学到了 Indiana 大学。几乎所有人，包括 Indiana 大学的人都感觉奇怪，为什么会有人从 Cornell 这样的“牛校”转学到 Indiana。我曾经在之前的博文里提到 Cornell 的情况，比如学生一上课就忙着抄笔记，作业压得喘不过气，等等。那些都是实际的情况，所以我没什么必要为我的“母校”说好话。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;离开 Cornell 之后，看到有人在 facebook 上成立了一个“Cornell 痛恨者协会”。其中一个人写到：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“Cornell 说要教你游泳，就把你推进池塘里，任凭你扑腾挣扎。等你快扑腾到岸边的时候，它忽然拿起一块大石头砸在你头上，然后继续等着你上岸。当你再次接近岸边的时候，它又拿起一个榔头敲在你头上，这样你就可以死了，可是 Cornell 仍然继续等着你游上岸边……”&lt;/p&gt;
@@ -2331,7 +2354,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;我为什么离开-Cornell&quot;&gt;&lt;a href=&quot;#我为什么离开-Cornell&quot; class=&quot;headerlink&quot; title=&quot;我为什么离开 Cornell&quot;&gt;&lt;/a&gt;我为什么离开 Cornell&lt;/h1&gt;&lt;p&gt;很多人都知道，我曾经在 Cornell 博士
+      &lt;h1 id=&quot;我为什么离开-Cornell&quot;&gt;&lt;a href=&quot;#我为什么离开-Cornell&quot; class=&quot;headerlink&quot; title=&quot;我为什么离开 Cornell&quot;&gt;&lt;/a&gt;我为什么离开 Cornell&lt;/h1&gt;&lt;p&gt;很多人都知道，我曾经在 Cornell 博士就读，两年之后转学到了 Indiana 大学。几乎所有人，包括 Indiana 大学的人都感觉奇怪，为什么会有人从 Cornell 这样的“牛校”转学到 Indiana。我曾经在之前的博文里提到 Cornell 的情况，比如学生一上课就忙着抄笔记，作业压得喘不过气，等等。那些都是实际的情况，所以我没什么必要为我的“母校”说好话。&lt;/p&gt;
     
     </summary>
     
@@ -2345,9 +2368,10 @@
     <link href="http://yoursite.com/2016/03/15/%E8%B0%88%E8%AF%AD%E6%B3%95/"/>
     <id>http://yoursite.com/2016/03/15/谈语法/</id>
     <published>2016-03-15T11:13:13.000Z</published>
-    <updated>2016-03-15T15:59:40.790Z</updated>
+    <updated>2016-03-17T13:02:49.153Z</updated>
     
     <content type="html">&lt;h1 id=&quot;谈语法&quot;&gt;&lt;a href=&quot;#谈语法&quot; class=&quot;headerlink&quot; title=&quot;谈语法&quot;&gt;&lt;/a&gt;谈语法&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://www.yinwang.org/images/lisp_cycles.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;要想指出 Scheme 所有的优点，并且跟其它语言比较，恐怕要写一本书才讲的清楚。所以在这篇文章里，我只提其中一个最简单，却又几乎被所有人忽视的方面：语法。&lt;/p&gt;
 &lt;p&gt;其它的 Lisp “方言”也有跟 Scheme 类似的语法（都是基于“S表达式”），所以在这篇（仅限这篇）文章里我所指出的“Scheme 的优点”，其实也可以作用于其它的 Lisp 方言。从现在开始，“Scheme”和“Lisp”这两个词基本上含义相同。&lt;/p&gt;
 &lt;p&gt;我觉得 Scheme （Lisp） 的基于“S表达式”（S-expression）的语法，是世界上最完美的设计。其实我希望它能更简单一点，但是在现存的语言中，我没有找到第二种能与它比美。也许在读过这篇文章之后，你会发现这种语法设计的合理性，已经接近理论允许的最大值。&lt;/p&gt;
@@ -2391,7 +2415,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;谈语法&quot;&gt;&lt;a href=&quot;#谈语法&quot; class=&quot;headerlink&quot; title=&quot;谈语法&quot;&gt;&lt;/a&gt;谈语法&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://www.yinwang.org/images/lisp_cycles.png&quot; alt=&quot;&quot;&gt;&lt;b
+      &lt;h1 id=&quot;谈语法&quot;&gt;&lt;a href=&quot;#谈语法&quot; class=&quot;headerlink&quot; title=&quot;谈语法&quot;&gt;&lt;/a&gt;谈语法&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;http://www.yinwang.org/images/lisp_cycles.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。&lt;/p&gt;
     
     </summary>
     
@@ -2407,10 +2431,10 @@
     <link href="http://yoursite.com/2016/03/15/%E8%B0%88%E8%B0%88%20Currying/"/>
     <id>http://yoursite.com/2016/03/15/谈谈 Currying/</id>
     <published>2016-03-15T11:12:55.000Z</published>
-    <updated>2016-03-15T15:59:34.121Z</updated>
+    <updated>2016-03-17T13:03:06.136Z</updated>
     
     <content type="html">&lt;h1 id=&quot;谈谈-Currying&quot;&gt;&lt;a href=&quot;#谈谈-Currying&quot; class=&quot;headerlink&quot; title=&quot;谈谈 Currying&quot;&gt;&lt;/a&gt;谈谈 Currying&lt;/h1&gt;&lt;p&gt;很多基于 lambda calculus 的程序语言，比如 ML 和 Haskell，都习惯用一种叫做 currying 的手法来表示函数。比如，如果你在 Haskell 里面这样写一个函数：&lt;br&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;f &lt;span class=&quot;keyword&quot;&gt;x&lt;/span&gt; y = &lt;span class=&quot;keyword&quot;&gt;x&lt;/span&gt; + y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;然后你就可以这样把链表里的每个元素加上 2：&lt;br&gt;&lt;figure class=&quot;highlight accesslog&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;map (f &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;string&quot;&gt;[1, 2, 3]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后你就可以这样把链表里的每个元素加上 2：&lt;br&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;map (f 2) [1, 2, 3]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;它会输出 [3, 4, 5]。&lt;/p&gt;
 &lt;p&gt;注意本来 f 需要两个参数才能算出结果，可是这里的 (f 2) 只给了 f 一个参数。这是因为 Haskell 的函数定义的缺省方式是“currying”。Currying 其实就是用“单参数”的函数，来模拟多参数的函数。比如，上面的 f 的定义在 Scheme 里面相当于：&lt;br&gt;&lt;figure class=&quot;highlight scheme&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;define&lt;/span&gt;&lt;/span&gt; f&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;lambda&lt;/span&gt;&lt;/span&gt; (x)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;lambda&lt;/span&gt;&lt;/span&gt; (y)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      (&lt;span class=&quot;name&quot;&gt;&lt;span class=&quot;builtin-name&quot;&gt;+&lt;/span&gt;&lt;/span&gt; x y))))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;它是说，函数 f，接受一个参数 x，返回另一个函数（没有名字）。这个匿名函数，如果再接受一个参数 y，就会返回 x + y。所以上面的例子里面，(f 2) 返回的是一个匿名函数，它会把 2 加到自己的参数上面返回。所以把它 map 到 [1, 2, 3]，我们就得到了 [3, 4, 5]。&lt;/p&gt;
@@ -2457,9 +2481,9 @@
     <link href="http://yoursite.com/2016/03/15/%E8%B0%88%E6%83%B0%E6%80%A7%E6%B1%82%E5%80%BC/"/>
     <id>http://yoursite.com/2016/03/15/谈惰性求值/</id>
     <published>2016-03-15T11:12:36.000Z</published>
-    <updated>2016-03-15T15:59:28.430Z</updated>
+    <updated>2016-03-17T13:03:15.363Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;谈惰性求值&quot;&gt;&lt;a href=&quot;#谈惰性求值&quot; class=&quot;headerlink&quot; title=&quot;谈惰性求值&quot;&gt;&lt;/a&gt;谈惰性求值&lt;/h1&gt;&lt;p&gt;从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;谈惰性求值&quot;&gt;&lt;a href=&quot;#谈惰性求值&quot; class=&quot;headerlink&quot; title=&quot;谈惰性求值&quot;&gt;&lt;/a&gt;谈惰性求值&lt;/h1&gt;&lt;p&gt;从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;复杂的基于缩进的语法，使得任何编辑器都不能高效的编辑 Haskell 程序，并且使得语法分析难度加倍。对这个观点，请参考我的博文《谈语法》以及我的英文博文《Layout Syntax Considered Harmful》。&lt;/p&gt;
 &lt;/li&gt;
@@ -2486,7 +2510,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;谈惰性求值&quot;&gt;&lt;a href=&quot;#谈惰性求值&quot; class=&quot;headerlink&quot; title=&quot;谈惰性求值&quot;&gt;&lt;/a&gt;谈惰性求值&lt;/h1&gt;&lt;p&gt;从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我
+      &lt;h1 id=&quot;谈惰性求值&quot;&gt;&lt;a href=&quot;#谈惰性求值&quot; class=&quot;headerlink&quot; title=&quot;谈惰性求值&quot;&gt;&lt;/a&gt;谈惰性求值&lt;/h1&gt;&lt;p&gt;从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：&lt;br&gt;
     
     </summary>
     
@@ -2500,9 +2524,9 @@
     <link href="http://yoursite.com/2016/03/15/%E8%B0%88%E7%A8%8B%E5%BA%8F%E7%9A%84%E2%80%9C%E9%80%9A%E7%94%A8%E6%80%A7%E2%80%9D/"/>
     <id>http://yoursite.com/2016/03/15/谈程序的“通用性”/</id>
     <published>2016-03-15T11:12:19.000Z</published>
-    <updated>2016-03-15T15:59:20.417Z</updated>
+    <updated>2016-03-17T13:03:22.530Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;谈程序的“通用性”&quot;&gt;&lt;a href=&quot;#谈程序的“通用性”&quot; class=&quot;headerlink&quot; title=&quot;谈程序的“通用性”&quot;&gt;&lt;/a&gt;谈程序的“通用性”&lt;/h1&gt;&lt;p&gt;在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;谈程序的“通用性”&quot;&gt;&lt;a href=&quot;#谈程序的“通用性”&quot; class=&quot;headerlink&quot; title=&quot;谈程序的“通用性”&quot;&gt;&lt;/a&gt;谈程序的“通用性”&lt;/h1&gt;&lt;p&gt;在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这些人的思维方式是这样的：“将来这段代码可能会被用到更多的场合，所以我现在就考虑到扩展问题。”于是乎，他们在代码中加入了各种各样的“框架结构”，目的是为了在将来有新的需要的时候，代码能够“不加修改”就被用到新的地方。&lt;/p&gt;
 &lt;p&gt;我并不否认“通用性”的价值，实际上我的某些程序通用性非常之强。可是很多人所谓的“通用性”，其实达到的是适得其反的效果。这种现象通常被称为“过度工程” (over-engineer)。关于过度工程，有一个有趣的故事：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.snopes.com/business/genius/spacepen.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.snopes.com/business/genius/spacepen.asp&lt;/a&gt;&lt;/p&gt;
@@ -2537,7 +2561,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;谈程序的“通用性”&quot;&gt;&lt;a href=&quot;#谈程序的“通用性”&quot; class=&quot;headerlink&quot; title=&quot;谈程序的“通用性”&quot;&gt;&lt;/a&gt;谈程序的“通用性”&lt;/h1&gt;&lt;p&gt;在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却
+      &lt;h1 id=&quot;谈程序的“通用性”&quot;&gt;&lt;a href=&quot;#谈程序的“通用性”&quot; class=&quot;headerlink&quot; title=&quot;谈程序的“通用性”&quot;&gt;&lt;/a&gt;谈程序的“通用性”&lt;/h1&gt;&lt;p&gt;在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。&lt;br&gt;
     
     </summary>
     

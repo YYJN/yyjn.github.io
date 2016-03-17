@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -59,26 +59,23 @@
 
 
 
-<meta name="description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。
-这不是一个坏主意。我在 Kent 的编译器课程上也使用了很多测试。它们在编译">
+<meta name="description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="谈“测试驱动的开发”">
 <meta property="og:url" content="http://yoursite.com/2016/03/15/谈“测试驱动的开发”/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
-<meta property="og:description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。
-这不是一个坏主意。我在 Kent 的编译器课程上也使用了很多测试。它们在编译">
-<meta property="og:updated_time" content="2016-03-15T15:59:10.319Z">
+<meta property="og:description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。">
+<meta property="og:updated_time" content="2016-03-17T13:03:26.623Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="谈“测试驱动的开发”">
-<meta name="twitter:description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。
-这不是一个坏主意。我在 Kent 的编译器课程上也使用了很多测试。它们在编译">
+<meta name="twitter:description" content="谈“测试驱动的开发”现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -284,7 +281,7 @@
       
 
       
-        <h1 id="谈“测试驱动的开发”"><a href="#谈“测试驱动的开发”" class="headerlink" title="谈“测试驱动的开发”"></a>谈“测试驱动的开发”</h1><p>现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。</p>
+        <h1 id="谈“测试驱动的开发”"><a href="#谈“测试驱动的开发”" class="headerlink" title="谈“测试驱动的开发”"></a>谈“测试驱动的开发”</h1><p>现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。<br><a id="more"></a></p>
 <p>这不是一个坏主意。我在 Kent 的编译器课程上也使用了很多测试。它们在编译器的开发中是不可缺少的。编译器是一种极其精密的程序，微小的改动都可能带来重大的错误。所以编译器的项目一般都含有大量的测试。</p>
 <p>然而测试的构建，应该是在程序主体已经成形的情况下才能进行。如果程序属于创造性的设计，主体并未成形，过早的加入测试反而会大幅度的降低开发效率。所以当我给 Google 开发 Python 静态分析的时候，我几乎没有使用任何测试。虽然组里的成员催我写测试，但是我却知道那只会降低我的开发效率，因为这个程序在几个星期的过程中，被我推翻重来了好几次。要是我一开头就写上测试，这些测试就会碍手碍脚，阻碍我大幅度的修改代码。</p>
 <p>测试的另一个副作用是，它让很多人对测试有一种盲目的依赖心理。改了程序之后，把测试跑一遍没出错，就以为自己的代码是正确的。可是测试其实并不能保证代码的正确，即使完全“覆盖”了也是一样。覆盖只是说你的代码被测试碰到过了，可是它在什么条件下碰到的却没法判断。如果实际的条件跟测试时的条件不同，那么实际运行中仍然会出问题。测试的条件往往是“组合爆炸”的数量级，所以你不可能测试所有的情况。唯一能可靠的方法是使用严密的“逻辑推理”，证明它的正确。</p>
@@ -315,8 +312,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/什么是语义学/" rel="next" title="什么是语义学">
-                <i class="fa fa-chevron-left"></i> 什么是语义学
+              <a href="/2016/03/15/谈 Linux，Windows 和 Mac/" rel="next" title="谈 Linux，Windows 和 Mac">
+                <i class="fa fa-chevron-left"></i> 谈 Linux，Windows 和 Mac
               </a>
             
           </div>
@@ -725,7 +722,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -778,6 +775,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
 
   
   

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -60,19 +60,13 @@
 
 
 <meta name="description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
-排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
-  
-
-“快速排">
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速排序（Quicksort）的Javascript实现">
 <meta property="og:url" content="http://yoursite.com/2016/03/16/快速排序（Quicksort）的Javascript实现/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
 <meta property="og:description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
-排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
-  
-
-“快速排">
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。">
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040401_0.png">
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040402.jpg">
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040403.png">
@@ -82,14 +76,11 @@
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040407.png">
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040408.png">
 <meta property="og:image" content="http://image.beekka.com/blog/201104/bg2011040409.png">
-<meta property="og:updated_time" content="2016-03-16T02:55:06.989Z">
+<meta property="og:updated_time" content="2016-03-17T13:02:21.624Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速排序（Quicksort）的Javascript实现">
 <meta name="twitter:description" content="日本程序员norahiko，写了一个排序算法的动画演示，非常有趣。
-排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。
-  
-
-“快速排">
+排序算法（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。目前，最常见的排序算法大概有七八种，其中“快速排序”（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。">
 <meta name="twitter:image" content="http://image.beekka.com/blog/201104/bg2011040401_0.png">
 
 
@@ -97,7 +88,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -324,6 +315,7 @@
       
         <p>日本程序员norahiko，写了一个排序算法的<a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external">动画演示</a>，非常有趣。</p>
 <p><a href="http://en.wikipedia.org/wiki/Sorting_algorithm" target="_blank" rel="external">排序算法</a>（Sorting algorithm）是计算机科学最古老、最基本的课题之一。要想成为合格的程序员，就必须理解和掌握各种排序算法。<br>目前，最常见的排序算法大概有七八种，其中<a href="http://en.wikipedia.org/wiki/Quicksort" target="_blank" rel="external">“快速排序”</a>（Quicksort）使用得最广泛，速度也较快。它是图灵奖得主C. A. R. Hoare（1934–）于1960时提出来的。</p>
+<a id="more"></a>
 <p><a href="http://jsdo.it/norahiko/oxIy/fullscreen" target="_blank" rel="external"> <img src="http://image.beekka.com/blog/201104/bg2011040401_0.png" alt=""> </a></p>
 <p><img src="http://image.beekka.com/blog/201104/bg2011040402.jpg" alt=""></p>
 <p>“快速排序”的思想很简单，整个排序过程只需要三步：</p>
@@ -792,7 +784,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -845,6 +837,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
 
   
   

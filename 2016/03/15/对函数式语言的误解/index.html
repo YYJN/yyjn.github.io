@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -65,7 +65,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/03/15/对函数式语言的误解/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
 <meta property="og:description" content="对函数式语言的误解很早的时候，“函数式语言”对于我来说就是 Lisp，因为 Lisp 可以在程序的几乎任何位置定义函数，并且把它们作为值来传递（这叫做 first-class function）。后来有人告诉我，Lisp 其实不算是“函数式语言”，因为 Lisp 的函数并不“纯”（pure）。所谓“纯函数”的意思，就是像数学的函数一样，如果你给它同样的输入，它就给你同样的输出。然后你就发现在这种定">
-<meta property="og:updated_time" content="2016-03-15T15:57:59.099Z">
+<meta property="og:updated_time" content="2016-03-17T13:04:20.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对函数式语言的误解">
 <meta name="twitter:description" content="对函数式语言的误解很早的时候，“函数式语言”对于我来说就是 Lisp，因为 Lisp 可以在程序的几乎任何位置定义函数，并且把它们作为值来传递（这叫做 first-class function）。后来有人告诉我，Lisp 其实不算是“函数式语言”，因为 Lisp 的函数并不“纯”（pure）。所谓“纯函数”的意思，就是像数学的函数一样，如果你给它同样的输入，它就给你同样的输出。然后你就发现在这种定">
@@ -75,7 +75,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -300,7 +300,7 @@
       
 
       
-        <h1 id="对函数式语言的误解"><a href="#对函数式语言的误解" class="headerlink" title="对函数式语言的误解"></a>对函数式语言的误解</h1><p>很早的时候，“函数式语言”对于我来说就是 Lisp，因为 Lisp 可以在程序的几乎任何位置定义函数，并且把它们作为值来传递（这叫做 first-class function）。后来有人告诉我，Lisp 其实不算是“函数式语言”，因为 Lisp 的函数并不“纯”（pure）。所谓“纯函数”的意思，就是像数学的函数一样，如果你给它同样的输入，它就给你同样的输出。然后你就发现在这种定义下，几乎所有程序语言里面常见的随机数函数（random），其实都不是“纯函数”。因为每一次调用 random()，你都会得到不同的随机数。</p>
+        <h1 id="对函数式语言的误解"><a href="#对函数式语言的误解" class="headerlink" title="对函数式语言的误解"></a>对函数式语言的误解</h1><p>很早的时候，“函数式语言”对于我来说就是 Lisp，因为 Lisp 可以在程序的几乎任何位置定义函数，并且把它们作为值来传递（这叫做 first-class function）。后来有人告诉我，Lisp 其实不算是“函数式语言”，因为 Lisp 的函数并不“纯”（pure）。所谓“纯函数”的意思，就是像数学的函数一样，如果你给它同样的输入，它就给你同样的输出。然后你就发现在这种定义下，几乎所有程序语言里面常见的随机数函数（random），其实都不是“纯函数”。因为每一次调用 random()，你都会得到不同的随机数。<br><a id="more"></a></p>
 <p>在这种害怕自己所用的语言“不纯”的恐慌之下，我开始接触 Haskell，一种号称“纯函数式”的语言。Haskell 的社区喜欢在他们的概念里省掉“纯”这个字，把 Haskell 叫做“函数式语言”。他们喜欢“纠正”别人的概念。他们告诉人们，“不纯”的函数式语言，其实都不配叫做“函数式语言”。在他们的这种定义下，Lisp 这么老牌的函数式语言，居然都不能叫“函数式语言”了。但是看完这篇文章你就会发现，其实他们的这种定义是狭隘和错误的。</p>
 <p>在 Haskell 里面，你不能使用通常语言里面都有的赋值语句，比如 Pascal 里的 x:=1，C 和 Java 里的 x=1，或者 Scheme 里的 (set! x 1)，Common Lisp 里的 (setq x 1)。这样一来，你就不可能保留“状态”（state）。所谓“状态”，就是指“随机数种子”那样的东西，其实本质上就是“全局变量”。比如，在 C 语言里定义 random() 函数，你可以这么做：</p>
 <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> random()</span><br><span class="line">&#123;</span><br><span class="line">  static <span class="keyword">int</span> <span class="keyword">seed</span> = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">seed</span> = next_random(<span class="keyword">seed</span>);</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">seed</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -760,7 +760,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -813,6 +813,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
 
   
   
