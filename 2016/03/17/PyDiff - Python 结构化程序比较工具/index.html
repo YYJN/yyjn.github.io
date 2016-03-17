@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="转摘," />
+  <meta name="keywords" content="转摘, ydiff," />
 
 
 
@@ -59,19 +59,16 @@
 
 
 
-<meta name="description" content="论对东西的崇拜在之前的几篇博文里面，我多次提到了 Lisp，它相对于其它语言的优势，以及 Lisp Machine 相对于 Unix 的优点。于是有人来信请教我如何学习 Lisp，也有人问我为什么 Lisp Machine 没有“流行”起来。我感觉到了他们言语中对 Lisp 的敬畏和好奇心，但也感觉到了一些隐含的怀疑。
-这是一种复杂的感觉，仿佛我在原始人的部落兜售一些原子能小玩具，却被人当成了来自">
+<meta name="description" content="在之前的一篇博文里，我介绍了 ydiff，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论对东西的崇拜">
-<meta property="og:url" content="http://yoursite.com/2016/03/15/论对东西的崇拜/index.html">
+<meta property="og:title" content="PyDiff - Python 结构化程序比较工具">
+<meta property="og:url" content="http://yoursite.com/2016/03/17/PyDiff - Python 结构化程序比较工具/index.html">
 <meta property="og:site_name" content="Wushuang’blog">
-<meta property="og:description" content="论对东西的崇拜在之前的几篇博文里面，我多次提到了 Lisp，它相对于其它语言的优势，以及 Lisp Machine 相对于 Unix 的优点。于是有人来信请教我如何学习 Lisp，也有人问我为什么 Lisp Machine 没有“流行”起来。我感觉到了他们言语中对 Lisp 的敬畏和好奇心，但也感觉到了一些隐含的怀疑。
-这是一种复杂的感觉，仿佛我在原始人的部落兜售一些原子能小玩具，却被人当成了来自">
-<meta property="og:updated_time" content="2016-03-15T15:58:24.625Z">
+<meta property="og:description" content="在之前的一篇博文里，我介绍了 ydiff，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有">
+<meta property="og:updated_time" content="2016-03-17T11:07:59.373Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="论对东西的崇拜">
-<meta name="twitter:description" content="论对东西的崇拜在之前的几篇博文里面，我多次提到了 Lisp，它相对于其它语言的优势，以及 Lisp Machine 相对于 Unix 的优点。于是有人来信请教我如何学习 Lisp，也有人问我为什么 Lisp Machine 没有“流行”起来。我感觉到了他们言语中对 Lisp 的敬畏和好奇心，但也感觉到了一些隐含的怀疑。
-这是一种复杂的感觉，仿佛我在原始人的部落兜售一些原子能小玩具，却被人当成了来自">
+<meta name="twitter:title" content="PyDiff - Python 结构化程序比较工具">
+<meta name="twitter:description" content="在之前的一篇博文里，我介绍了 ydiff，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有">
 
 
 
@@ -89,7 +86,7 @@
   };
 </script>
 
-  <title> 论对东西的崇拜 | Wushuang’blog </title>
+  <title> PyDiff - Python 结构化程序比较工具 | Wushuang’blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -238,7 +235,7 @@
             
             
               
-                论对东西的崇拜
+                PyDiff - Python 结构化程序比较工具
               
             
           </h1>
@@ -250,8 +247,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:09:05+08:00" content="2016-03-15">
-              2016-03-15
+            <time itemprop="dateCreated" datetime="2016-03-17T19:04:36+08:00" content="2016-03-17">
+              2016-03-17
             </time>
           </span>
 
@@ -261,8 +258,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/15/论对东西的崇拜/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/论对东西的崇拜/" itemprop="commentsCount"></span>
+                <a href="/2016/03/17/PyDiff - Python 结构化程序比较工具/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/PyDiff - Python 结构化程序比较工具/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -284,16 +281,19 @@
       
 
       
-        <h1 id="论对东西的崇拜"><a href="#论对东西的崇拜" class="headerlink" title="论对东西的崇拜"></a>论对东西的崇拜</h1><p>在之前的几篇博文里面，我多次提到了 Lisp，它相对于其它语言的优势，以及 Lisp Machine 相对于 Unix 的优点。于是有人来信请教我如何学习 Lisp，也有人问我为什么 Lisp Machine 没有“流行”起来。我感觉到了他们言语中对 Lisp 的敬畏和好奇心，但也感觉到了一些隐含的怀疑。</p>
-<p>这是一种复杂的感觉，仿佛我在原始人的部落兜售一些原子能小玩具，却被人当成了来自天外的传教士。敬畏和奉承，并不能引起我的好感。怀疑和嘲讽，也不能引起我的不平。当我看到有人说“别听他误导群众，学那些语言是找不到工作的”的时候，我心里完全没有愤怒，也没有鄙视，我也没必要说服他。我只是微笑着摇摇头，对自己说：可怜而可笑的人。</p>
-<p>不明白为什么，当我提到某个东西相对于另一个东西的优点的时候，我总是被人认为是在“推崇”某个东西，或者被人称为是它的“狂热分子”。现在显然已经有人认为我在推崇 Lisp 了，甚至在某个地方看到有人称我为“国内三大 Lisp 狂人之一”。他们仿佛觉得我推荐一个东西，就是想让他们完全的拥抱这个东西，而丢弃自己已经有的东西。而“支持”这另一个东西的人，也往往会产生敌视情绪。</p>
-<p>很多人都不明白，每个东西都有它好的方面，也有它不好的方面。我推荐的只是 Lisp 好的方面，不好的方面我心里清楚，但是还没有机会讲。这些人显然已经在下意识里把“东西”当成了人。有人说“爱一个人就要爱她（他）的全部”，这是一种很无奈的说法，因为你没有能力把一个人分解成你喜欢的和不喜欢的两部分，然后重新组装成你的梦中情人。可是东西却不一样。因为东西是人造出来的，所以你可以把它们大卸八块，然后挑出你喜欢的部分。</p>
-<p>所以我可以很清楚的告诉你，我并不推崇 Lisp，我也不是 Lisp 狂人，它只是我的小玩意儿之一。这个非常精巧的小玩意儿，包含了很多其它东西身上没有的优点。人们都说忘记历史就等于毁灭未来。如果 Java 没有从 Lisp 身上学会“垃圾回收”，C# 没有从 Lisp 身上学会 lambda，那么我们今天也许还在为 segfault 而烦恼，也许会继续使用没必要的 design patterns。如果你了解一点历史就会发现，今天非常流行的 JavaScript，其实不过是一个“没能正确实现的 Scheme”。所以 Lisp 的精髓，其实正在越来越多的渗透到常用的语言里面。</p>
-<p>很多人没有设计程序语言的能力，所以他们把程序语言，操作系统一类的东西当成是不可改变的，凌驾于自己之上的。相比之下，我受到的训练却给了我设计和实现几乎任何语言的能力。我知道它们的优点和弱点，我有能力把它们大卸八十块，再组装还原。我有能力改变其中我不喜欢的地方，或者增加我觉得有必要的功能。当我谈论某个东西比另一个好的地方，总有人以为我在“抱怨”，说：“既然如此，那为什么你说的这个好东西被打败了？”他不明白，其实我只是在“分析”。我希望从各个东西里面提取出好的部分，然后想办法把它们都注入到一个新的东西里面。我也希望吸取前人教训，免得重犯这些东西里面的设计错误。</p>
-<p>如果在见识短浅的人们心目中，Paul Graham 和 Peter Norvig 算是“Lisp 牛人”的话，那么 Dan Friedman 和 R. Kent Dybvig 就应该被称为 “Lisp 天外来客”了。我不敢大言不惭的说我超过了恩师们，但我除了学到他们的真功夫之外，还偷学了一些他们不屑一顾的“旁门左道”。所以我经常能看到他们看不到的东西，我知道他们的弱点。他们对于 Lisp 的热爱，防止了他们看到它的一些缺点，但这些对于我却非常的清晰明了。然而也是因为他们对其它语言的不屑，才让我逐步的理解了，我曾经认为是优点的某些语言特征（比如 Hindley-Milner 类型系统），其实是缺点。</p>
-<p>所以，我其实并不是那么热心的希望有更多的人用 Lisp，Haskell 或者其它什么语言。我不会，也没那工夫去分享自己的秘诀。我没有责任，也没有能力去拯救世界。这是一种找到巨大宝藏的感觉，我蹲在一堆堆的财宝上休养生息。我知道世界上即使没有了我，太阳明天照样会升起。我为什么要那么热心的让别人也知道如何进入这个宝藏？我不是一个特别自私的人，但我也不需要推销什么。这就像我介绍了我的“减肥成功经验”，你觉得太辛苦，偏要去买那些吹得神乎其神的减肥药。我有什么动机来说服你呢？又不是我身上的肥肉。</p>
-<p>推崇一个东西，为一个东西狂热，这些感情都在我身上存在过。也许它们确实给我带来了一些益处，让我很快的学会了一些东西。但是这些感情的存在，其实也显示了一个人的弱小。当一个人没有办法控制一个东西的时候，他就会对它产生“崇拜”的心理，这就像所有的宗教和迷信一样。当人们处于自然灾害的凌威之下，没有能力掌握自己命运的时候，他们就对神和超自然的力量产生了崇拜。这是一种心灵的慰藉，至少有上帝或者观音菩萨，可以聆听他们的心声，可以给予他们度过灾难的勇气，但它同时也显示出人的无助和自卑。这种无助和自卑，也引发了偏激的宗教心理，因为他们害怕自己的“保护神”被别人的“保护神”所压倒，以至于让自己受制于他人。这是一种愚昧和卑劣的感情。</p>
-<p>可是当你拥有了强大的力量，可以不再畏惧的时候，这种崇拜，以及由于崇拜所带来的偏激心理，就渐渐的消亡了。这就像是一个身怀绝世武功的人，他完全没必要让别人都相信他是高手。因为他知道，自己在谈笑之间，就可以让樯橹灰飞烟灭。于是，他自得其乐，对别人表现出的任何感情，都变得淡漠和无动于衷。</p>
+        <p>在之前的一篇博文里，我介绍了 <a href="http://www.yinwang.org/blog-cn/2013/04/21/ydiff-%E7%BB%93%E6%9E%84%E5%8C%96%E7%9A%84%E7%A8%8B%E5%BA%8F%E6%AF%94%E8%BE%83/" target="_blank" rel="external">ydiff</a>，一个通用的结构化程序比较工具。其实在设计 ydiff 之前，这个工具是用 Python 实现的，并且只处理 Python 程序。在设计了 ydiff 之后，我发现其实我不想费很多精力来写 Python 的 parser，所以对 Python 的支持就日渐疏忽了。后来我把那块代码放在了 ydiff 的 repo 里面（叫做 pydiff.py），然而几乎没有人注意到它。</p>
+<p>现在我发现 Python 其实是一个挺重要而且有趣的语言。说它重要是因为它简单而且在某种程度上是优雅的，所以有很多人用它。说它有趣是因为它的一些设计其实比起很多更加“严谨”的语言要来得合理。语言的设计不只要有逻辑的严谨和效率，而且需要有“易用性”（usability）。Python 在易用性上面是做的比较好的。最近仔细看了一下 <a href="http://www.python.org/dev/peps/pep-0008/" target="_blank" rel="external">PEP 8</a> (Python 的 “Style Guide”），发现它有很多地方比起 Java, Scheme, Haskell 都有让程序更加“易读”的特点。</p>
+<p>所以，现在我为这个 Python 的结构化比较程序重新建立了它自己的 GitHub 项目。你可以在这里得到它的代码： <a href="http://github.com/yinwang0/pydiff" target="_blank" rel="external">https://github.com/yinwang0/pydiff</a></p>
+<p>对比大型文件的时候可能速度会成一定的问题。不过我打算以后对算法做一个比较大的改进。如果发现 bug 请在 GitHub 中向我报告。谢谢。</p>
+<h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><p>你可以在下面的窗口中看到 PyDiff 的输出结果，是 PyDiff 对比它自己的代码（我最近两天对它的修改）。</p>
+<p><iframe width="100%" height="540" src="http://www.yinwang.org/resources/pydiff1-pydiff2.html"></iframe><br>(<a href="http://www.yinwang.org/resources/pydiff1-pydiff2.html" target="_blank" rel="external">单独浏览</a>)</p>
+<p>上面的界面有如下特点：</p>
+<ol>
+<li>红色表示“删除”，绿色表示“插入”，白色表示“移动”或者没有变化，蓝色表示有小幅度“修改”。</li>
+<li>左右窗口同步滚动。</li>
+<li>点击白色方框，就可以依据框里的变量进行对齐。</li>
+<li>点击之后，左右窗口根据对齐的变量重新“耦合”，同步滚动。</li>
+</ol>
 
       
     </div>
@@ -308,7 +308,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/转摘/" rel="tag">#转摘</a>
+            <a href="/tags/转摘-ydiff/" rel="tag">#转摘, ydiff</a>
           
         </div>
       
@@ -317,16 +317,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/解密“设计模式”/" rel="next" title="解密“设计模式”">
-                <i class="fa fa-chevron-left"></i> 解密“设计模式”
+              <a href="/2016/03/17/原因与证明/" rel="next" title="原因与证明">
+                <i class="fa fa-chevron-left"></i> 原因与证明
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/15/什么是“对用户友好”/" rel="prev" title="什么是“对用户友好”">
-                什么是“对用户友好” <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/17/丘奇和图灵/" rel="prev" title="丘奇和图灵">
+                丘奇和图灵 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -353,8 +353,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/15/论对东西的崇拜/"
-           data-title="论对东西的崇拜" data-url="http://yoursite.com/2016/03/15/论对东西的崇拜/">
+      <div class="ds-thread" data-thread-key="2016/03/17/PyDiff - Python 结构化程序比较工具/"
+           data-title="PyDiff - Python 结构化程序比较工具" data-url="http://yoursite.com/2016/03/17/PyDiff - Python 结构化程序比较工具/">
       </div>
     
   </div>
@@ -691,7 +691,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#论对东西的崇拜"><span class="nav-number">1.</span> <span class="nav-text">论对东西的崇拜</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Demo"><span class="nav-number">1.</span> <span class="nav-text">Demo</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
