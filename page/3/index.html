@@ -237,6 +237,444 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/15/谈语法/" itemprop="url">
+                  谈语法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:13:13+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/语法/" itemprop="url" rel="index">
+                    <span itemprop="name">语法</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈语法/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="谈语法"><a href="#谈语法" class="headerlink" title="谈语法"></a>谈语法</h1><p><img src="http://www.yinwang.org/images/lisp_cycles.png" alt=""><br>使用和研究过这么多程序语言之后，我觉得几乎不包含多余功能的语言，只有一个：Scheme。所以我觉得它是学习程序设计最好的入手点和进阶工具。当然 Scheme 也有少数的问题，而且缺少一些我想要的功能，但这些都瑕不掩瑜。在用了很多其它的语言之后，我觉得 Scheme 真的是非常优美的语言。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈语法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/谈谈 Currying/" itemprop="url">
+                  谈谈 Currying
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:12:55+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈谈 Currying/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈谈 Currying/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="谈谈-Currying"><a href="#谈谈-Currying" class="headerlink" title="谈谈 Currying"></a>谈谈 Currying</h1><p>很多基于 lambda calculus 的程序语言，比如 ML 和 Haskell，都习惯用一种叫做 currying 的手法来表示函数。比如，如果你在 Haskell 里面这样写一个函数：<br><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f <span class="keyword">x</span> y = <span class="keyword">x</span> + y</span><br></pre></td></tr></table></figure></p>
+<p>然后你就可以这样把链表里的每个元素加上 2：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--more--&gt;</span></span><br><span class="line"></span><br><span class="line">map (f 2) [1, 2, 3]</span><br></pre></td></tr></table></figure></p>
+<p>它会输出 [3, 4, 5]。</p>
+<p>注意本来 f 需要两个参数才能算出结果，可是这里的 (f 2) 只给了 f 一个参数。这是因为 Haskell 的函数定义的缺省方式是“currying”。Currying 其实就是用“单参数”的函数，来模拟多参数的函数。比如，上面的 f 的定义在 Scheme 里面相当于：<br><figure class="highlight scheme"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">define</span></span> f</span><br><span class="line">  (<span class="name"><span class="builtin-name">lambda</span></span> (x)</span><br><span class="line">    (<span class="name"><span class="builtin-name">lambda</span></span> (y)</span><br><span class="line">      (<span class="name"><span class="builtin-name">+</span></span> x y))))</span><br></pre></td></tr></table></figure></p>
+<p>它是说，函数 f，接受一个参数 x，返回另一个函数（没有名字）。这个匿名函数，如果再接受一个参数 y，就会返回 x + y。所以上面的例子里面，(f 2) 返回的是一个匿名函数，它会把 2 加到自己的参数上面返回。所以把它 map 到 [1, 2, 3]，我们就得到了 [3, 4, 5]。</p>
+<p>在这个例子里面，currying 貌似一个挺有用的东西，它让程序变得“简短”。如果不用 currying，你就需要制造另一个函数，写成这个样子：<br><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">map</span> (\y-&gt;</span>f <span class="number">2</span> y) [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure></p>
+<p>这就是为什么 Haskell 和 ML 的程序员那么喜欢 currying。这个做法其实来源于最早的 lambda calculus 的设计。因为 lambda calculus 的函数都只有一个参数，所以为了能够表示多参数的函数，有一个叫 Haskell Curry 的数学家和逻辑学家，发明了这个方法。</p>
+<p>当然，Haskell Curry 是我很尊敬的人。不过我今天想指出的是，currying 在程序设计的实践中，其实并不是想象中的那么好。大量使用 currying，其实会带来程序难以理解，复杂性增加，并且还可能因此引起意想不到的错误。</p>
+<p>不用 currying 的写法(\y-&gt;f 2 y)虽然比起 currying 的写法(f 2)长了那么一点，但是它有一点好。那就是你作为一个人（而不是机器），可以很清楚的从“\y-&gt;f 2 y”这个表达式，看到它的“用意”是什么。你会很清楚的看到：</p>
+<blockquote>
+<p>“f 本来是一个需要两个参数的函数。我们只给了它第一个参数 2。我们想要把 [1, 2, 3] 这个链表里的每一个元素，放进 f 的第二个参数 y，然后把 f 返回的结果一个一个的放进返回值的链表里。”</p>
+</blockquote>
+<p>仔细看看上面这段话说了什么吧，再来看看 (f 2) 是否表达了同样的意思？注意，我们现在的“重点”在于你，一个人，而不在于计算机。你仔细想，不要让思维的定势来影响你的判断。</p>
+<p>你发现了吗？(f 2) 并不完全的含有 \y-&gt;f 2 y 所表达的内容。因为单从 (f 2) 这个表达式（不看它的定义），你看不到“f 总共需要几个参数”这一信息，你也看不到 (f 2) 会返回什么东西。f 有可能需要2个参数，也有可能需要3个，4个，5个…… 比如，如果它需要3个参数的话，map (f 2) [1, 2, 3] 就不会返回一个整数的链表，而会返回一个函数的链表，它看起来是这样：[(\z-&gt;f 2 1 z), (\z-&gt;f 2 2 z), (\z-&gt;f 2 3 z)]。这三个函数分别还需要一个参数，才会输出结果。</p>
+<p>这样一来，表达式 (f 2) 含有的对“人”有用的信息，就比较少了。你不能很可靠地知道这个函数接受了一个参数之后会变成什么样子。当然，你可以去看 f 的定义，然后再回来，但是这里有一种“直觉”上的开销。如果你不能同时看见这些信息，你的脑子就需要多转一道弯，你就会缺少一些重要的直觉。这种直觉能帮助你写出更好的程序。</p>
+<p>然而，currying 的问题不止在于这种“认知”的方面，有时候使用 curry 会直接带来代码复杂性的增加。比如，如果你的 f 定义不是加法，而是除法：<br><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f <span class="keyword">x</span> y = <span class="keyword">x</span> / y</span><br></pre></td></tr></table></figure></p>
+<p>然后，我们现在需要把链表 [1, 2, 3] 里的每一个数都除以 2。你会怎么做呢？</p>
+<p>map (f 2) [1, 2, 3] 肯定不行，因为 2 是除数，而不是被除数。熟悉 Haskell 的人都知道，可以这样做：<br><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (flip f <span class="number">2</span>) <span class="string">[1, 2, 3]</span></span><br></pre></td></tr></table></figure></p>
+<p>flip 的作用是“交换”两个参数的位置。它可以被定义为：<br><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flip f <span class="keyword">x</span> y = f y <span class="keyword">x</span></span><br></pre></td></tr></table></figure></p>
+<p>但是，如果 f 有 3 个参数，而我们需要把它的第 2 个参数 map 到一个链表，怎么办呢？比如，如果 f 被定义为：<br><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f <span class="keyword">x</span> y z = (<span class="keyword">x</span> - y) / z</span><br></pre></td></tr></table></figure></p>
+<p>稍微动一下脑筋，你可能会想出这样的代码：<br><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (flip (f <span class="number">1</span>) <span class="number">2</span>) <span class="string">[1, 2, 3]</span></span><br></pre></td></tr></table></figure></p>
+<p>能想出这段代码说明你挺聪明，可是如果你这样写代码，那就是缺乏一些“智慧”。有时候，好的程序其实不在于显示你有多“聪明”，而在于显示你有多“笨”。现在我们就来看看笨一点的代码：<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (<span class="string">\y</span> <span class="function">-&gt;</span> f <span class="number">1</span> y <span class="number">2</span>) [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure></p>
+<p>现在比较一下，你仍然觉得之前那段代码很聪明吗？如果你注意观察，就会发现 (flip (f 1) 2) 这个表达式，是多么的晦涩，多么的复杂。</p>
+<p>从 (flip (f 1) 2) 里面，你几乎看不到自己想要干什么。而 \y-&gt; f 1 y 2 却很明确的显示出，你想用 1 和 2 填充掉 f 的第一，三号参数，把第二个参数留下来，然后把得到的函数 map 到链表 [1, 2, 3]。仔细看看，是不是这样的？</p>
+<p>所以你花费了挺多的脑力才把那使用 currying 的代码写出来，然后你每次看到它，还需要耗费同样多的脑力，才能明白你当时写它来干嘛。你是不是吃饱了没事干呢？</p>
+<p>练习题：如果你还不相信，就请你用 currying 的方法（加上 flip）表达下面这个语句，也就是把 f 的第一个参数 map 到链表 [1, 2, 3]：<br><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">map (<span class="string">\y</span> <span class="function">-&gt;</span> f y <span class="number">1</span> <span class="number">2</span>) [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure></p>
+<p>得到结果之后再跟上面这个语句对比，看谁更加简单？</p>
+<p>到现在你也许注意到了，以上的“笨办法”对于我们想要 map 的每一个参数，都是差不多的形式；而使用 currying 的代码，对于每个参数，形式有很大的差别。所以我们的“笨办法”其实才是以不变应万变的良策。</p>
+<p>才三个参数，currying 就显示出了它的弱点，如果超过三个参数，那就更麻烦了。所以很多人为了写 currying 的函数，特意把参数调整到方便 currying 的顺序。可是程序的设计总是有意想不到的变化。有时候你需要增加一个参数，有时候你又想减少一个参数，有时候你又会有别的用法，导致你需要调整参数的顺序…… 事先安排好的那些参数顺序，很有可能不能满足你后来的需要。即使它能满足你后来的需要，你的函数也会因为 currying 而难以看懂。</p>
+<p>这就是为什么我从来不在我的 ML 和 Haskell 程序里使用 currying 的原因。古老而美丽的理论，也许能够给我带来思想的启迪，可是未必就能带来工程中理想的效果。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/谈惰性求值/" itemprop="url">
+                  谈惰性求值
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:12:36+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈惰性求值/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈惰性求值/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="谈惰性求值"><a href="#谈惰性求值" class="headerlink" title="谈惰性求值"></a>谈惰性求值</h1><p>从之前的几篇博文里面你也许已经看到了，Haskell 其实是问题相当严重的语言，然而这些问题却没有引起足够的重视。我能看到的 Haskell 的问题在于：<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈惰性求值/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/谈程序的“通用性”/" itemprop="url">
+                  谈程序的“通用性”
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:12:19+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈程序的“通用性”/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈程序的“通用性”/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="谈程序的“通用性”"><a href="#谈程序的“通用性”" class="headerlink" title="谈程序的“通用性”"></a>谈程序的“通用性”</h1><p>在现实的软件工程中，我经常发现这样的一种现象。本来用很简单的代码就可以解决的问题，却因为设计者过分的关注了“通用性”，“可维护性”和“可扩展性”，被搞得绕了几道弯，让人琢磨不透。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈程序的“通用性”/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/15/谈“测试驱动的开发”/" itemprop="url">
                   谈“测试驱动的开发”
                 </a>
@@ -289,105 +727,6 @@
           <h1 id="谈“测试驱动的开发”"><a href="#谈“测试驱动的开发”" class="headerlink" title="谈“测试驱动的开发”"></a>谈“测试驱动的开发”</h1><p>现在的很多公司，包括 Google 和我现在的公司 Coverity，都喜欢一种“测试驱动的开发”（test-driven development）。它的原理是，在写程序的时候同时写上自动化的“单元测试”（unit test）。在代码修改之后，这些测试可以批量的被运行，这样就可以避免不应该出现的错误。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/15/谈“测试驱动的开发”/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/谈 Linux，Windows 和 Mac/" itemprop="url">
-                  谈 Linux，Windows 和 Mac
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:11:14+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/谈 Linux，Windows 和 Mac/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈 Linux，Windows 和 Mac/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="谈-Linux，Windows-和-Mac"><a href="#谈-Linux，Windows-和-Mac" class="headerlink" title="谈 Linux，Windows 和 Mac"></a>谈 Linux，Windows 和 Mac</h1><p>这段时间受到很多人的来信。他们看了我很早以前写的推崇 Linux 的文章，想知道如何“抛弃 Windows，学习 Linux”。天知道他们在哪里找到那么老的文章，真是好事不出门…… 我觉得我有责任消除我以前的文章对人的误导，洗清我这个“Linux 狂热分子”的恶名。我觉得我已经写过一些澄清的文章了，可是怎么还是有人来信问 Linux 的问题。也许因为感觉到“舆论压力”，我把文章都删了。</p>
-<p>简言之，我想对那些觉得 Linux 永远也学不会的“菜鸟”们说：</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/15/谈 Linux，Windows 和 Mac/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -506,6 +845,105 @@
 <p>很多人问我如何在掌握基本的程序语言技能之后进入“语义学”的学习。现在我就简单介绍一下什么是“语义”，然后推荐一本入门的书。这里我说的“语义”主要是针对程序语言，不过自然语言里的语义，其实本质上也是一样的。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/15/什么是语义学/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/15/谈 Linux，Windows 和 Mac/" itemprop="url">
+                  谈 Linux，Windows 和 Mac
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T19:11:14+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/谈 Linux，Windows 和 Mac/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/谈 Linux，Windows 和 Mac/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="谈-Linux，Windows-和-Mac"><a href="#谈-Linux，Windows-和-Mac" class="headerlink" title="谈 Linux，Windows 和 Mac"></a>谈 Linux，Windows 和 Mac</h1><p>这段时间受到很多人的来信。他们看了我很早以前写的推崇 Linux 的文章，想知道如何“抛弃 Windows，学习 Linux”。天知道他们在哪里找到那么老的文章，真是好事不出门…… 我觉得我有责任消除我以前的文章对人的误导，洗清我这个“Linux 狂热分子”的恶名。我觉得我已经写过一些澄清的文章了，可是怎么还是有人来信问 Linux 的问题。也许因为感觉到“舆论压力”，我把文章都删了。</p>
+<p>简言之，我想对那些觉得 Linux 永远也学不会的“菜鸟”们说：</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/15/谈 Linux，Windows 和 Mac/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -827,441 +1265,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/论对东西的崇拜/" itemprop="url">
-                  论对东西的崇拜
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:09:05+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/论对东西的崇拜/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/论对东西的崇拜/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="论对东西的崇拜"><a href="#论对东西的崇拜" class="headerlink" title="论对东西的崇拜"></a>论对东西的崇拜</h1><p>在之前的几篇博文里面，我多次提到了 Lisp，它相对于其它语言的优势，以及 Lisp Machine 相对于 Unix 的优点。于是有人来信请教我如何学习 Lisp，也有人问我为什么 Lisp Machine 没有“流行”起来。我感觉到了他们言语中对 Lisp 的敬畏和好奇心，但也感觉到了一些隐含的怀疑。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/15/论对东西的崇拜/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/解密“设计模式”/" itemprop="url">
-                  解密“设计模式”
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:08:34+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/设计模式/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/解密“设计模式”/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/解密“设计模式”/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="解密“设计模式”"><a href="#解密“设计模式”" class="headerlink" title="解密“设计模式”"></a>解密“设计模式”</h1><p>有些人问我，你说学习操作系统的最好办法是学习程序设计。那我们是不是应该学习一些“设计模式”（design patterns）。这是一个我很早就有定论，而且经过实践检验的问题，所以想在这里做一个总结。</p>
-<p>总的来说，如果光从字面上讲，程序里确实是有一些“模式”可以发掘的。因为你总是可以借鉴以前的经验，用来构造新的程序。你可以把这种经验叫做“模式”。可是自从《设计模式》（通常叫做 GoF，“Gang of Four”，“四人帮”）这本书在 1994 年发表以来，“设计模式”这个词有了新的，扭曲的含义。它变成了一种教条，带来了公司里程序的严重复杂化以及效率低下。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/15/解密“设计模式”/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/几个超炫的专业词汇/" itemprop="url">
-                  几个超炫的专业词汇
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:08:16+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/几个超炫的专业词汇/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/几个超炫的专业词汇/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="几个超炫的专业词汇"><a href="#几个超炫的专业词汇" class="headerlink" title="几个超炫的专业词汇"></a>几个超炫的专业词汇</h1><p>从同事的博客上学会了几个超炫的专业词汇，激动不已。觉得这些词汇可以言简意赅的概括我的好几篇博文，自己的文章水准真是自愧不如。现在来见识一下真正大师级的英语词汇：</p>
-<ul>
-<li>Yoda Notation（Yoda 表示法）</li>
-</ul>
-<p><img src="http://www.yinwang.org/images/yoda-notation.jpeg" alt=""><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/15/几个超炫的专业词汇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/关于语言的思考/" itemprop="url">
-                  关于语言的思考
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T19:07:53+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/程序语言/" itemprop="url" rel="index">
-                    <span itemprop="name">程序语言</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/关于语言的思考/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/关于语言的思考/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="关于语言的思考"><a href="#关于语言的思考" class="headerlink" title="关于语言的思考"></a>关于语言的思考</h1><p>之前写了那么多 Haskell 的不好的地方，却没有提到它好的地方，其实我必须承认我从 Haskell 身上学到了非常重要的东西，那就是对于“类型”的思考。虽然 Haskell 的类型系统有过于强烈的约束性，从一种“哲学”的角度（不是数学的角度）来看非常“不自然”，但如果一个程序员从来没学过 Haskell，那么他的脑子里就会缺少一种重要的东西。这种东西很难从除 Haskell，ML，Clean，Coq，Agda 以外的其它语言身上学到。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/03/15/关于语言的思考/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1307,7 +1310,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">46</span>
+              <span class="site-state-item-count">50</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1324,7 +1327,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
